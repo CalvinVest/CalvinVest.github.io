@@ -13,31 +13,23 @@
 
     /* Light Red */
     --light-red: #DF8677;
-    /* 10% lighter */
-    --light-red-light: #E89688;
-    /* 10% darker */
-    --light-red-dark: #CC7868;
+    --light-red-light: #F5A59A;
+    --light-red-dark: #B36C63;
 
     /* Light Blue */
     --light-blue: #88B1B2;
-    /* 10% lighter */
-    --light-blue-light: #97C2C3;
-    /* 10% darker */
-    --light-blue-dark: #7C9A9B;
+    --light-blue-light: #B9D7D8;
+    --light-blue-dark: #5E8C8D;
 
     /* Dark Red */
     --dark-red: #E55E37;
-    /* 10% lighter */
-    --dark-red-light: #F2653C;
-    /* 10% darker */
-    --dark-red-dark: #D6552E;
+    --dark-red-light: #FF8C66;
+    --dark-red-dark: #AC4D2A;
 
     /* Dark Blue */
     --dark-blue: #284548;
-    /* 10% lighter */
-    --dark-blue-light: #334D58;
-    /* 10% darker */
-    --dark-blue-dark: #22363E;
+    --dark-blue-light: #3E5764;
+    --dark-blue-dark: #1C2E3B;
 
     /* Black */
     --black: #040505;
@@ -58,6 +50,8 @@ body {
     color: var(--black);
 }
 
+
+
 .top-navbar {
     background-color: var(--dark-blue);
     color: var(--white);
@@ -67,7 +61,7 @@ body {
     top: 0;
     height: 30px;
     width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     /* Add a subtle shadow for depth */
 }
 
@@ -82,26 +76,32 @@ body {
     margin-right: 20px;
 }
 
-.top-navbar .currpage {
+.currpage {
     color: var(--light-red);
     font-weight: bold;
 }
 
 .top-navbar a {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 24px;
     color: var(--white);
     transition: color 0.3s;
     /* Add a smooth color transition */
 }
 
-.top-navbar a.logo {
+.top-navbar img.logo {
     padding: 0px;
+    width: 60px;
+    height: 36px;
+}
+
+.top-navbar a.currpage {
+    color: var(--light-blue);
 }
 
 /* Style the navigation links */
 .top-navbar a:not(.currpage):hover {
-    color: var(--light-blue);
+    color: var(--light-red);
 }
 
 /* Add a subtle gradient background to the header */
@@ -138,11 +138,16 @@ body {
     position: absolute;
     background-color: var(--dark-blue-dark);
     padding: 10px;
+    top: 100%; /* Position the dropdown below the parent */
+    left: 0; /* Align the left edge of the dropdown with the parent */
+    z-index: 1; /* Ensure the dropdown appears above other content */
+    flex-direction: column; /* Stack list items vertically */
 }
 
 .has-dropdown:hover .dropdown {
-    display: block;
+    display: flex; /* Show the dropdown as a flex container */
 }
+
 
 .container {
     display: flex;
@@ -152,7 +157,7 @@ body {
     width: 200px;
     background-color: var(--dark-blue-dark);
     color: var(--white);
-    padding: 80px 20px 20px 20px;
+    padding: 60px 20px 20px 20px;
     height: 100vh;
     overflow-y: auto;
 }
@@ -171,10 +176,14 @@ body {
     color: var(--white);
 }
 
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
 main {
     flex: 1;
     /*max-width: 1000px;*/
-    margin: 80px 20px 20px 20px;
+    margin: 60px 20px 20px 20px;
     /* Add a top margin of 80px to push the main content down */
     padding: 20px;
     background-color: var(--white);
