@@ -1,0 +1,139 @@
+:root {
+    --success-color: #28A745;
+    --warning-color: #FFC107;
+    --danger-color: #DC3545;
+    --info-color: #17A2B8;
+    --light-color: #F8F9FA;
+    --dark-color: #343A40;
+    
+    /* Shades of White */
+    --white: #FBFAFA;
+    --light-gray: #9B9A9A;
+    --dark-gray: #3B3A3A;
+
+    /* Light Red */
+    --light-red: #DF8677;
+    /* 10% lighter */
+    --light-red-light: #E89688;
+    /* 10% darker */
+    --light-red-dark: #CC7868;
+
+    /* Light Blue */
+    --light-blue: #88B1B2;
+    /* 10% lighter */
+    --light-blue-light: #97C2C3;
+    /* 10% darker */
+    --light-blue-dark: #7C9A9B;
+
+    /* Dark Red */
+    --dark-red: #E55E37;
+    /* 10% lighter */
+    --dark-red-light: #F2653C;
+    /* 10% darker */
+    --dark-red-dark: #D6552E;
+
+    /* Dark Blue */
+    --dark-blue: #32515B;
+    /* 10% lighter */
+    --dark-blue-light: #3B5A65;
+    /* 10% darker */
+    --dark-blue-dark: #2A404A;
+
+    /* Black */
+    --black: #040505;
+}
+
+body,
+h1,
+h2,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+header {
+    background-color: var(--dark-blue-dark);
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    /* Fixed position to stick it at the top of the viewport */
+    top: 0;
+    /* Attach to the top of the viewport */
+    width: 100%;
+    /* Occupy the full width of the viewport */
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    /* Make the list items display in a row (horizontal) */
+    justify-content: left;
+    /* Left-justify the list items */
+}
+
+header li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header .currpage {
+    color: var(--light-red);
+    font-weight: bold;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: var(--dark-blue-dark);
+    color: var(--white);
+    padding: 80px 20px 20px 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+main {
+    flex: 1;
+    max-width: 960px;
+    margin: 80px 20px 20px 20px;
+    /* Add a top margin of 80px to push the main content down */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
