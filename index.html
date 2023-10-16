@@ -14,29 +14,32 @@
 <body>
 	<div class="top-navbar">
 		<ul>
+			<!--Be sure to set the currpage class to the correct link that the page currently is-->
 			<li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
 			<li><a href="index.html" class="currpage">Home</a></li>
 			<li class="has-dropdown">
 				<a href="academics/index.html">Academics<img src="assets/images/chevron-down.svg"
 						alt="Dropdown Icon"></a>
 				<ul class="dropdown">
-					<li><a href="academics/index.html" class="list-item">My academic progress</a></li>
-					<li><a href="academics/index.html" class="list-item">School projects</a></li>
-					<li><a href="academics/index.html" class="list-item">Employers/Job info</a></li>
+					<li class="list-item"><a href="academics/progress.html">My academic progress</a></li>
+					<li class="list-item"><a href="academics/projects/index.html">School projects</a></li>
+					<li class="list-item"><a href="academics/employment.html">Employers/Job info</a></li>
 				</ul>
 			</li>
 			<li class="has-dropdown">
 				<a href="genealogy/index.html">Genealogy<img src="assets/images/chevron-down.svg"
 						alt="Dropdown Icon"></a>
 				<ul class="dropdown">
-					<li><a href="genealogy/index.html" class="list-item">My Ancestry progress</a></li>
-					<li><a href="genealogy/index.html" class="list-item">How far back does it go?</a></li>
-					<li><a href="genealogy/index.html" class="list-item">Recent Discoveries</a></li>
+					<li class="list-item"><a href="genealogy/progress.html">My Ancestry progress</a></li>
+					<li class="list-item"><a href="genealogy/earlydates.html">How far back does it go?</a></li>
+					<li class="list-item"><a href="genealogy/recent.html">Recent Discoveries</a></li>
 				</ul>
 			</li>
 			<li class="has-dropdown">
-				<a href="projecteulersolutions.html">Programming<img src="assets/images/chevron-down.svg"
-						alt="Dropdown Icon"></a>
+				<a href="programming.html">Programming<img src="assets/images/chevron-down.svg" alt="Dropdown Icon"></a>
+				<ul class="dropdown">
+					<li class="list-item"><a href="programming/projecteuler.html">Project Euler</a></li>
+				</ul>
 			</li>
 			<li><a href="about.html">About</a></li>
 			<li><a href="contact.html">Contact</a></li>
@@ -61,6 +64,7 @@
 		</nav>
 
 		<main>
+			<!--This is all filler content. Replace page-by-page -->
 			<h1>Welcome to Your Simple Website</h1>
 			<p>This is some basic filler content. You can replace this with your actual content as you continue
 				development.</p>
