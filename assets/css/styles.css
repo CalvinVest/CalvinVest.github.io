@@ -76,11 +76,6 @@ body {
     margin-right: 20px;
 }
 
-.currpage {
-    color: var(--light-red);
-    font-weight: bold;
-}
-
 .top-navbar a {
     text-decoration: none;
     font-size: 24px;
@@ -91,12 +86,14 @@ body {
 
 .top-navbar img.logo {
     padding: 0px;
+    margin-top: -5px;
     width: 60px;
     height: 36px;
 }
 
 .top-navbar a.currpage {
-    color: var(--light-blue);
+    color: var(--light-red);
+    font-weight: bold;
 }
 
 /* Style the navigation links */
@@ -136,18 +133,40 @@ body {
 .has-dropdown .dropdown {
     display: none;
     position: absolute;
+    font-size: 16px;
     background-color: var(--dark-blue-dark);
     padding: 10px;
-    top: 100%; /* Position the dropdown below the parent */
-    left: 0; /* Align the left edge of the dropdown with the parent */
-    z-index: 1; /* Ensure the dropdown appears above other content */
-    flex-direction: column; /* Stack list items vertically */
+    top: 100%;
+    /* Position the dropdown below the parent */
+    left: 0;
+    /* Align the left edge of the dropdown with the parent */
+    z-index: 1;
+    /* Ensure the dropdown appears above other content */
+    flex-direction: row;
+    /* Stack list items vertically */
+}
+
+.has-dropdown .dropdown a {
+    font-size: 20px;
+    height: 24px;
 }
 
 .has-dropdown:hover .dropdown {
-    display: flex; /* Show the dropdown as a flex container */
+    display: flex;
+    /* Show the dropdown as a flex container */
+    flex-direction: column;
 }
 
+.has-dropdown .list-item {
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px;
+    margin: 5px;
+    background-color: var(--dark-blue);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
+}
 
 .container {
     display: flex;

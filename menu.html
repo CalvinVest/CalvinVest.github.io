@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Your Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calvin Vest</title>
+	<meta name="description" content="A little website about me.">
+	<meta name="keywords" content="your, hobby, keywords, go, here">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="icon" type="image/png" href="favicon.png">
 </head>
+
 <body>
-    <header>
-        <nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
+	<div class="top-navbar">
+		<ul>
+			<!--Be sure to set the currpage class to the correct link that the page currently is-->
+			<li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
+			<li><a href="index.html">Home</a></li>
+			<li class="has-dropdown">
+				<a href="academics/index.html">Academics<img src="assets/images/chevron-down.svg"
+						alt="Dropdown Icon"></a>
+				<ul class="dropdown">
+					<li><a href="academics/progress.html" class="list-item">My academic progress</a></li>
+					<li><a href="academics/projects/index.html" class="list-item">School projects</a></li>
+					<li><a href="academics/employment.html" class="list-item">Employers/Job info</a></li>
+				</ul>
+			</li>
+			<li class="has-dropdown">
+				<a href="genealogy/index.html">Genealogy<img src="assets/images/chevron-down.svg"
+						alt="Dropdown Icon"></a>
+				<ul class="dropdown">
+					<li><a href="genealogy/progress.html" class="list-item">My Ancestry progress</a></li>
+					<li><a href="genealogy/earlydates.html" class="list-item">How far back does it go?</a></li>
+					<li><a href="genealogy/recent.html" class="list-item">Recent Discoveries</a></li>
+				</ul>
+			</li>
+			<li class="has-dropdown">
+				<a href="projecteulersolutions.html">Programming<img src="assets/images/chevron-down.svg"
+						alt="Dropdown Icon"></a>
+			</li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<nav class="sidebar">
+			<section>
+				<!--add h3 for section headers-->
+				<!--add ul with li a href links for items of section-->
+			</section>
 		</nav>
-    </header>
 
-    <div class="container">
-        <nav class="sidebar">
-            <ul>
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 2</a></li>
-				<li><a href="#">Link 3</a></li>
-				<li><a href="#">Link 4</a></li>
-				<li><a href="#">Link 5</a></li>
-				<li><a href="#">Link 6</a></li>
-				<li><a href="#">Link 7</a></li>
-				<li><a href="#">Link 8</a></li>
-			</ul>
-        </nav>
-    </div>
+		<main>
+			<!--This is all filler content. Replace page-by-page -->
+			<h1>Welcome to Your Simple Website</h1>
+			<p>This is some basic filler content. You can replace this with your actual content as you continue
+				development.</p>
+			<img src="https://cdn.shopify.com/s/files/1/2802/6064/files/cutepandafacts_1024x1024.jpg?v=1552555237"
+				alt="Cute Panda">
+		</main>
+	</div>
 
-    <footer>
-        <p>&copy; 2023 CalvinVest @ github</p>
-    </footer>
+	<footer>
+		<p>&copy; 2023 CalvinVest @ github</p>
+	</footer>
 </body>
+
 </html>

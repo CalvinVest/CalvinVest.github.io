@@ -9,35 +9,37 @@
 	<meta name="keywords" content="your, hobby, keywords, go, here">
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<link rel="icon" type="image/png" href="favicon.png">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			var path = window.location.pathname;
-			$("top-navbar a[href='" + path + "']").addClass("currpage");
-		});
-	</script>
 </head>
 
 <body>
-
 	<div class="top-navbar">
 		<ul>
 			<li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
-			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html" class="currpage">Home</a></li>
 			<li class="has-dropdown">
-				<a href="#">Services<img src="assets/images/chevron-down.svg" alt="Dropdown Icon"></a>
-
-				<div class="dropdown">
-					<ul>
-						<li><a href="#">Service 1</a></li>
-						<li><a href="#">Service 2</a></li>
-						<li><a href="#">Service 3</a></li>
-					</ul>
-				</div>
+				<a href="academics/index.html">Academics<img src="assets/images/chevron-down.svg"
+						alt="Dropdown Icon"></a>
+				<ul class="dropdown">
+					<li><a href="academics/index.html" class="list-item">My academic progress</a></li>
+					<li><a href="academics/index.html" class="list-item">School projects</a></li>
+					<li><a href="academics/index.html" class="list-item">Employers/Job info</a></li>
+				</ul>
 			</li>
-			<li><a href="projecteulersolutions.html">Project Euler</a></li>
+			<li class="has-dropdown">
+				<a href="genealogy/index.html">Genealogy<img src="assets/images/chevron-down.svg"
+						alt="Dropdown Icon"></a>
+				<ul class="dropdown">
+					<li><a href="genealogy/index.html" class="list-item">My Ancestry progress</a></li>
+					<li><a href="genealogy/index.html" class="list-item">How far back does it go?</a></li>
+					<li><a href="genealogy/index.html" class="list-item">Recent Discoveries</a></li>
+				</ul>
+			</li>
+			<li class="has-dropdown">
+				<a href="projecteulersolutions.html">Programming<img src="assets/images/chevron-down.svg"
+						alt="Dropdown Icon"></a>
+			</li>
+			<li><a href="about.html">About</a></li>
 			<li><a href="contact.html">Contact</a></li>
-			<li><a href="#">About</a></li>
 		</ul>
 	</div>
 
@@ -67,14 +69,9 @@
 		</main>
 	</div>
 
-
-
 	<footer>
 		<p>&copy; 2023 CalvinVest @ github</p>
 	</footer>
-
-
-
 </body>
 
 </html>
