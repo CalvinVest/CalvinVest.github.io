@@ -4,20 +4,29 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Your Hobby Website</title>
-	<meta name="description" content="A description of your hobby website">
+	<title>Calvin Vest</title>
+	<meta name="description" content="A little website about me.">
 	<meta name="keywords" content="your, hobby, keywords, go, here">
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<link rel="icon" type="image/png" href="favicon.png">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			var path = window.location.pathname;
+			$("top-navbar a[href='" + path + "']").addClass("currpage");
+		});
+	</script>
 </head>
 
 <body>
+
 	<div class="top-navbar">
 		<ul>
-			<li><a href="" class="logo"><img src="assets/images/logo.png"></a></li>
-			<li><a href="#" class="currPage">Home</a></li>
+			<li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
+			<li><a href="index.html">Home</a></li>
 			<li class="has-dropdown">
-				<a href="#">Services</a>
+				<a href="#">Services<img src="assets/images/chevron-down.svg" alt="Dropdown Icon"></a>
+
 				<div class="dropdown">
 					<ul>
 						<li><a href="#">Service 1</a></li>
@@ -26,38 +35,35 @@
 					</ul>
 				</div>
 			</li>
-			<li class="has-dropdown">
-				<a href="#">Products</a>
-				<div class="dropdown">
-					<ul>
-						<li><a href="#">Product 1</a></li>
-						<li><a href="#">Product 2</a></li>
-						<li><a href="#">Product 3</a></li>
-					</ul>
-				</div>
-			</li>
+			<li><a href="projecteulersolutions.html">Project Euler</a></li>
+			<li><a href="contact.html">Contact</a></li>
 			<li><a href="#">About</a></li>
 		</ul>
 	</div>
 
 	<div class="container">
 		<nav class="sidebar">
-			<ul>
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 2</a></li>
-				<li><a href="#">Link 3</a></li>
-				<li><a href="#">Link 4</a></li>
-				<li><a href="#">Link 5</a></li>
-				<li><a href="#">Link 6</a></li>
-				<li><a href="#">Link 7</a></li>
-				<li><a href="#">Link 8</a></li>
-			</ul>
+			<section>
+				<h3>Recent Projects</h3>
+				<ul>
+					<li><a href="https://github.com/CalvinVest/ProjectEulerSolutions">Project Euler Solutions</a></li>
+					<li><a href="https://github.com/CalvinVest/CalvinVest.github.io">This Website</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+					<li><a href="#">Link 5</a></li>
+					<li><a href="#">Link 6</a></li>
+					<li><a href="#">Link 7</a></li>
+					<li><a href="#">Link 8</a></li>
+				</ul>
+			</section>
 		</nav>
 
 		<main>
 			<h1>Welcome to Your Simple Website</h1>
 			<p>This is some basic filler content. You can replace this with your actual content as you continue
 				development.</p>
+			<img src="https://cdn.shopify.com/s/files/1/2802/6064/files/cutepandafacts_1024x1024.jpg?v=1552555237"
+				alt="Cute Panda">
 		</main>
 	</div>
 

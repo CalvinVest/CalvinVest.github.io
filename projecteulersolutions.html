@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Euler Solutions</title>
+    <meta name="description" content="An all-in-one solver">
+    <meta name="keywords" content="project, euler, github, project, solutions">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <div class="top-navbar">
+        <ul>
+            <li><a href="index.html" class="logo"><img src="assets/images/logo.png" width="60" height="36"></a></li>
+            <li><a href="index.html" class="currPage">Home</a></li>
+            <li class="has-dropdown">
+                <a href="#">Services<img src="assets/images/chevron-down.svg" alt="Dropdown Icon"></a>
+
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="#">Service 1</a></li>
+                        <li><a href="#">Service 2</a></li>
+                        <li><a href="#">Service 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="has-dropdown">
+                <a href="#">Products</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="#">Product 1</a></li>
+                        <li><a href="#">Product 2</a></li>
+                        <li><a href="#">Product 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+
+    <div id="markdown-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        const markdownFileURL = 'https://raw.githubusercontent.com/username/repo/branch/path/to/file.md';
+
+        fetch(markdownFileURL)
+            .then(response => response.text())
+            .then(data => {
+                const htmlContent = marked(data);
+                document.getElementById('markdown-container').innerHTML = htmlContent;
+            })
+            .catch(error => console.error('Error fetching Markdown file:', error));
+    </script>
+</body>
+
+</html>
