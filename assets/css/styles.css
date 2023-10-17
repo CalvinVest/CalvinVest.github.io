@@ -1,3 +1,5 @@
+@import url("https://css.gg/css");
+
 :root {
     --success-color: #28A745;
     --warning-color: #FFC107;
@@ -45,21 +47,18 @@ ul {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: var(--light-gray);
     color: var(--black);
 }
 
-
-
 .top-navbar {
-    background-color: var(--dark-blue);
+    background-color: var(--dark-blue-dark);
     color: var(--white);
     text-align: center;
-    padding: 10px;
     position: fixed;
     top: 0;
-    height: 30px;
+    height: 50px;
     width: 100%;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     /* Add a subtle shadow for depth */
@@ -69,19 +68,24 @@ body {
     list-style: none;
     display: flex;
     justify-content: left;
+    align-items: center;
 }
 
 .top-navbar li {
     display: inline;
     margin-right: 20px;
+    position: relative;
 }
 
 .top-navbar a {
+    float: left;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     color: var(--white);
     transition: color 0.3s;
     /* Add a smooth color transition */
+    display: flex;
+    align-items: center;
 }
 
 .top-navbar img.logo {
@@ -93,12 +97,26 @@ body {
 
 .top-navbar a.currpage {
     color: var(--light-red);
-    font-weight: bold;
 }
 
 /* Style the navigation links */
 .top-navbar a:not(.currpage):hover {
     color: var(--light-red);
+}
+
+.top-navbar .icon-container {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-navbar .nav-button {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Add a subtle gradient background to the header */
@@ -113,28 +131,10 @@ body {
     pointer-events: none;
 }
 
-.top-navbar {
-    background-color: var(--dark-blue-dark);
-    color: var(--white);
-    padding: 10px;
-}
-
-.top-navbar li {
-    display: inline;
-    margin-right: 20px;
-    position: relative;
-}
-
-.top-navbar a {
-    text-decoration: none;
-    color: var(--white);
-}
-
 .has-dropdown .dropdown {
+    background-color: var(--dark-blue);
     display: none;
     position: absolute;
-    font-size: 16px;
-    background-color: var(--dark-blue-dark);
     padding: 10px;
     top: 100%;
     /* Position the dropdown below the parent */
@@ -147,14 +147,15 @@ body {
 }
 
 .has-dropdown .dropdown a {
-    font-size: 20px;
     height: 24px;
+    font-size: 16px;
 }
 
 .has-dropdown:hover .dropdown {
     display: flex;
     /* Show the dropdown as a flex container */
     flex-direction: column;
+    background-color: var(--dark-blue);
 }
 
 .has-dropdown .list-item {
@@ -163,9 +164,8 @@ body {
     white-space: nowrap;
     padding: 10px;
     margin: 5px;
-    background-color: var(--dark-blue);
+    background-color: var(--dark-blue-dark);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-
 }
 
 .container {
@@ -177,7 +177,9 @@ body {
     background-color: var(--dark-blue-dark);
     color: var(--white);
     padding: 60px 20px 20px 20px;
-    height: 100vh;
+    min-height: 100vh;
+    min-width: 200px;
+    height: 100%;
     overflow-y: auto;
 }
 
@@ -205,8 +207,26 @@ main {
     margin: 60px 20px 20px 20px;
     /* Add a top margin of 80px to push the main content down */
     padding: 20px;
-    background-color: var(--white);
+    background-color: var(--dark-gray);
+    color: var(--white);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: inline;
+
+}
+
+main a {
+
+    color: white;
+    font-style: italic;
+}
+
+main section {
+    padding: 5px 5px 20px 5px;
+    gap: 5px;
+}
+
+main section p {
+    padding: 10px;
 }
 
 footer {
