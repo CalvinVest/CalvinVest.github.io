@@ -7,44 +7,80 @@
 	<title>Calvin Vest</title>
 	<meta name="description" content="A little website about me.">
 	<meta name="keywords" content="your, hobby, keywords, go, here">
+	<!--Remember to set base href on each page-->
+	<base href="">
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
-	<div class="top-navbar">
+	<nav class="top-navbar">
 		<ul>
 			<!--Be sure to set the currpage class to the correct link that the page currently is-->
 			<li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
-			<li><a href="index.html" class="currpage">Home</a></li>
-			<li class="has-dropdown">
-				<a href="academics/index.html">Academics<img src="assets/images/chevron-down.svg"
-						alt="Dropdown Icon"></a>
+			<li class="nav-button">
+				<a href="index.html" class="currpage">
+					Home
+					<div class="icon-container">
+						<gg-icon class="gg-home" />
+					</div>
+				</a>
+			</li>
+			<li class="nav-button has-dropdown">
+				<a href="academics/index.html">
+					Academics
+					<div class="icon-container">
+						<gg-icon class="gg-file-document" />
+					</div>
+				</a>
 				<ul class="dropdown">
 					<li class="list-item"><a href="academics/progress.html">My academic progress</a></li>
 					<li class="list-item"><a href="academics/projects/index.html">School projects</a></li>
 					<li class="list-item"><a href="academics/employment.html">Employers/Job info</a></li>
 				</ul>
 			</li>
-			<li class="has-dropdown">
-				<a href="genealogy/index.html">Genealogy<img src="assets/images/chevron-down.svg"
-						alt="Dropdown Icon"></a>
+			<li class="nav-button has-dropdown">
+				<a href="genealogy/index.html">
+					Genealogy
+					<div class="icon-container">
+						<gg-icon class="gg-list-tree" />
+					</div>
+				</a>
 				<ul class="dropdown">
 					<li class="list-item"><a href="genealogy/progress.html">My Ancestry progress</a></li>
 					<li class="list-item"><a href="genealogy/earlydates.html">How far back does it go?</a></li>
 					<li class="list-item"><a href="genealogy/recent.html">Recent Discoveries</a></li>
 				</ul>
 			</li>
-			<li class="has-dropdown">
-				<a href="programming.html">Programming<img src="assets/images/chevron-down.svg" alt="Dropdown Icon"></a>
+			<li class="nav-button has-dropdown">
+				<a href="programming.html">
+					Programming
+					<div class="icon-container">
+						<gg-icon class="gg-code-slash" />
+					</div>
+				</a>
 				<ul class="dropdown">
 					<li class="list-item"><a href="programming/projecteuler.html">Project Euler</a></li>
 				</ul>
 			</li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="contact.html">Contact</a></li>
+			<li class="nav-button">
+				<a href="about.html">
+					About
+					<div class="icon-container">
+						<gg-icon class="gg-info" />
+					</div>
+				</a>
+			</li>
+			<li class="nav-button">
+				<a href="contact.html">
+					Contact
+					<div class="icon-container">
+						<gg-icon class="gg-mail" />
+					</div>
+				</a>
+			</li>
 		</ul>
-	</div>
+	</nav>
 
 	<div class="container">
 		<nav class="sidebar">
@@ -65,11 +101,57 @@
 
 		<main>
 			<!--This is all filler content. Replace page-by-page -->
-			<h1>Welcome to Your Simple Website</h1>
-			<p>This is some basic filler content. You can replace this with your actual content as you continue
-				development.</p>
-			<img src="https://cdn.shopify.com/s/files/1/2802/6064/files/cutepandafacts_1024x1024.jpg?v=1552555237"
-				alt="Cute Panda">
+			<section>
+				<h1>Welcome to my website!</h1>
+				<p>
+					You're probably wondering what's up with all of this non-functional website you see scattered
+					about.<br>
+					No worries, I'm getting to it. I kinda chased a rabbit and put together more than I thought I would,
+					so I've been going back to patch up some of the stuff I've thrown together and make this place look
+					a little bit nicer.<br>
+				</p>
+			</section>
+			<section>
+				<h1>What brings you here?</h1>
+				<p>There's a good chance you're here because I asked you to check out my website. If that's the case,
+					have a look around. There's not much to see just yet, but I'm trying to add features
+					regularly.<br>Much of what I plan to put here covers a wide array of interests, so this website
+					serves as somewhat of a landing page for all of my hobbes and academic interests, as well as any
+					other information I choose to plonk here in the future.</p>
+				<ul style="padding: 20px;">
+					<li>
+						<h3>For Friends</h3>
+						<p>
+							If you're just checking out what I've been working on, my recent genealogy progress can be
+							seen <a href="genealogy/recent.html">here</a>, and my programming projects are over <a
+								href="programming.html">here</a>.
+						</p>
+					</li>
+					<li>
+						<h3>For Family</h3>
+						<p>
+							If you're a relative of mine, you might just be here because of my genealogy work. If that's
+							the case, head on over to <a href="genealogy/index.html">this page</a> to see a detailed
+							breakdown of my work and some helpful links to my family history.
+						</p>
+					</li>
+					<li>
+						<h3>For Employers and Recruiters</h3>
+						<p>
+							If you've been directed to my page to see my professional and academic work, or if you'd
+							like to learn more about my professional history, visit <a href="academics/employment.html">
+								this page</a> for my employment history, and feel free to explore some of my academic
+							projects <a href="academics/projects/index.html">here</a>, or my hobby projects <a
+								href="programming.html">here</a>.
+						</p>
+					</li>
+				</ul>
+
+			</section>
+			<section>
+				<img src="https://cdn.shopify.com/s/files/1/2802/6064/files/cutepandafacts_1024x1024.jpg?v=1552555237"
+					alt="Cute Panda">
+			</section>
 		</main>
 	</div>
 

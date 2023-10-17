@@ -7,44 +7,80 @@
 	<title>About Me</title>
 	<meta name="description" content="About Calvin Vest">
 	<meta name="keywords" content="calvin, vest, about, me">
+	<!--Remember to set base href on each page-->
+	<base href="">
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
-	<div class="top-navbar">
+	<nav class="top-navbar">
 		<ul>
 			<!--Be sure to set the currpage class to the correct link that the page currently is-->
 			<li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
-			<li><a href="index.html">Home</a></li>
-			<li class="has-dropdown">
-				<a href="academics/index.html">Academics<img src="assets/images/chevron-down.svg"
-						alt="Dropdown Icon"></a>
+			<li class="nav-button">
+				<a href="index.html">
+					Home
+					<div class="icon-container">
+						<gg-icon class="gg-home" />
+					</div>
+				</a>
+			</li>
+			<li class="nav-button has-dropdown">
+				<a href="academics/index.html">
+					Academics
+					<div class="icon-container">
+						<gg-icon class="gg-file-document" />
+					</div>
+				</a>
 				<ul class="dropdown">
 					<li class="list-item"><a href="academics/progress.html">My academic progress</a></li>
 					<li class="list-item"><a href="academics/projects/index.html">School projects</a></li>
 					<li class="list-item"><a href="academics/employment.html">Employers/Job info</a></li>
 				</ul>
 			</li>
-			<li class="has-dropdown">
-				<a href="genealogy/index.html">Genealogy<img src="assets/images/chevron-down.svg"
-						alt="Dropdown Icon"></a>
+			<li class="nav-button has-dropdown">
+				<a href="genealogy/index.html">
+					Genealogy
+					<div class="icon-container">
+						<gg-icon class="gg-list-tree" />
+					</div>
+				</a>
 				<ul class="dropdown">
 					<li class="list-item"><a href="genealogy/progress.html">My Ancestry progress</a></li>
 					<li class="list-item"><a href="genealogy/earlydates.html">How far back does it go?</a></li>
 					<li class="list-item"><a href="genealogy/recent.html">Recent Discoveries</a></li>
 				</ul>
 			</li>
-			<li class="has-dropdown">
-				<a href="programming.html">Programming<img src="assets/images/chevron-down.svg" alt="Dropdown Icon"></a>
+			<li class="nav-button has-dropdown">
+				<a href="programming.html">
+					Programming
+					<div class="icon-container">
+						<gg-icon class="gg-code-slash" />
+					</div>
+				</a>
 				<ul class="dropdown">
 					<li class="list-item"><a href="programming/projecteuler.html">Project Euler</a></li>
 				</ul>
 			</li>
-			<li><a href="about.html" class="currpage">About</a></li>
-			<li><a href="contact.html">Contact</a></li>
+			<li class="nav-button">
+				<a href="about.html" class="currpage">
+					About
+					<div class="icon-container">
+						<gg-icon class="gg-info" />
+					</div>
+				</a>
+			</li>
+			<li class="nav-button">
+				<a href="contact.html">
+					Contact
+					<div class="icon-container">
+						<gg-icon class="gg-mail" />
+					</div>
+				</a>
+			</li>
 		</ul>
-	</div>
+	</nav>
 
 	<div class="container">
 		<nav class="sidebar">
