@@ -25,23 +25,25 @@
 
 .top-navbar li:hover {
     background-color: var(--nav-btn-bg-hov);
+    color: var(--nav-btn-txt-hov);
 }
 
 .top-navbar a {
     float: left;
     text-decoration: none;
     font-size: 20px;
-    transition: color 0.3s;
-    /* Add a smooth color transition */
+    min-height: 30px;
+    transition: all 0.3s;
     display: flex;
     align-items: center;
-    padding: 0px 10px 0px 10px;
+    padding: 10px;
+    justify-content: center;
 }
 
 .top-navbar img.logo {
     padding: 0px;
-    width: 60px;
-    height: 36px;
+    width: 50px;
+    height: 30px;
 }
 
 .top-navbar a.currpage {
@@ -54,13 +56,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.top-navbar .nav-button {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* Add a subtle gradient background to the header */
@@ -93,13 +88,14 @@
 }
 
 .has-dropdown:hover .dropdown {
-    display: flex;
-    flex-direction: column;
+    display:block;
     justify-content: left;
+    float: left;
+    background: linear-gradient(to top, var(--nav-bg), var(--page-bg));
 }
 
 .has-dropdown .dropdown a {
-    height: 50px;
+    min-height: 30px;
     font-size: 16px;
 }
 
@@ -109,4 +105,65 @@
     white-space: nowrap;
     background-color: var(--nav-drop-btn-bg);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+    color: var(--nav-txt);
+    border-radius: 10px;
+}
+
+.top-navbar .currpage {
+    color: var(--nav-btn-currpage);
+}
+
+.top-navbar #home-button {
+    background-color: var(--nav-btn-home-bg);
+}
+
+.top-navbar #home-button:hover {
+    background-color: var(--nav-btn-home-bg-hov);
+    color: var(--nav-btn-home-txt-hov);
+}
+
+.top-navbar #academics-button {
+    background-color: var(--nav-btn-acad-bg);
+}
+
+.top-navbar #academics-button:hover {
+    background-color: var(--nav-btn-acad-bg-hov);
+    color: var(--nav-btn-acad-txt-hov);
+}
+
+.top-navbar #genealogy-button {
+    background-color: var(--nav-btn-gene-bg);
+}
+
+.top-navbar #genealogy-button:hover {
+    background-color: var(--nav-btn-gene-bg-hov);
+    color: var(--nav-btn-gene-txt-hov);
+}
+
+.top-navbar #programming-button {
+    background-color: var(--nav-btn-prog-bg);
+}
+
+.top-navbar #programming-button:hover {
+    background-color: var(--nav-btn-prog-bg-hov);
+    color: var(--nav-btn-prog-txt-hov);
+}
+
+.top-navbar #about-button {
+    background-color: var(--nav-btn-abt-bg);
+}
+
+.top-navbar #about-button:hover {
+    background-color: var(--nav-btn-abt-bg-hov);
+    color: var(--nav-btn-abt-txt-hov);
+}
+
+.top-navbar #contact-button {
+    background-color: var(--nav-btn-cont-bg);
+}
+
+.top-navbar #contact-button:hover {
+    background-color: var(--nav-btn-cont-bg-hov);
+    color: var(--nav-btn-cont-txt-hov);
 }

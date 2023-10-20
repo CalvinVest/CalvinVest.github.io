@@ -19,16 +19,16 @@
 		<ul>
 			<!--Be sure to set the currpage class to the correct link that the page currently is-->
 			<li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
-			<li class="nav-button">
-				<a href="index.html">
+			<li>
+				<a href="index.html" id="home-button">
 					Home
 					<div class="icon-container">
 						<i class="fa-solid fa-house-chimney"></i>
 					</div>
 				</a>
 			</li>
-			<li class="nav-button has-dropdown">
-				<a href="academics/index.html">
+			<li class="has-dropdown">
+				<a href="academics/index.html" id="academics-button">
 					Academics
 					<div class="icon-container">
 						<i class="fa-solid fa-graduation-cap"></i>
@@ -40,8 +40,8 @@
 					<li class="list-item"><a href="academics/employment.html">Employers/Job info</a></li>
 				</ul>
 			</li>
-			<li class="nav-button has-dropdown">
-				<a href="genealogy/index.html" class="currpage">
+			<li class="has-dropdown">
+				<a href="genealogy/index.html" class="currpage" id="genealogy-button">
 					Genealogy
 					<div class="icon-container">
 						<i class="fa-solid fa-people-roof"></i>
@@ -53,8 +53,8 @@
 					<li class="list-item"><a href="genealogy/recent.html">Recent Discoveries</a></li>
 				</ul>
 			</li>
-			<li class="nav-button has-dropdown">
-				<a href="programming.html">
+			<li class="has-dropdown">
+				<a href="programming.html" id="programming-button">
 					Programming
 					<div class="icon-container">
 						<i class="fa-solid fa-code"></i>
@@ -64,16 +64,16 @@
 					<li class="list-item"><a href="programming/projecteuler.html">Project Euler</a></li>
 				</ul>
 			</li>
-			<li class="nav-button">
-				<a href="about.html">
+			<li>
+				<a href="about.html" id="about-button">
 					About
 					<div class="icon-container">
 						<i class="fa-regular fa-circle-question"></i>
 					</div>
 				</a>
 			</li>
-			<li class="nav-button">
-				<a href="contact.html">
+			<li>
+				<a href="contact.html" id="contact-button">
 					Contact
 					<div class="icon-container">
 						<i class="fa-solid fa-envelope"></i>
@@ -83,22 +83,51 @@
 		</ul>
 	</nav>
 
-	<div class="container">
+	<div id="page-container">
 		<nav class="sidebar">
 			<section>
 				<!--add h3 for section headers-->
 				<!--add ul with li a href links for items of section-->
+				<h3>Section Header</h3>
+				<ul>
+					<li>
+						<a href="#" class="side-btn">Example link</a>
+					</li>
+					<li>
+						<a href="#" class="side-btn">Another example</a>
+					</li>
+					<li>
+						<a href="#" class="side-btn">Yet another example with a really long title.</a>
+					</li>
+				</ul>
 			</section>
 		</nav>
 
-		<main>
+		<main id="content-wrap">
 			<!--This is filler content. Replace page-by-page -->
+			<section>
+				<h3>This is some example text.</h3>
+				<p>This is some more text.</p>
+				<p>This is even more text with a <a href="#">link</a>.</p>
+			</section>
+			<section>
+				<h3>This is a new section.</h3>
+				<p>This is some text in this new section. It's a pretty long one, so it'll probably create a new line.
+					I'm mostly putting this much text here because I want to see just how this page wraps this example
+					text on the page. It's really just a big block of text so I can make sure this page looks really
+					nice when I put a lot of actual real-world content in here. I haven't done that yet, so this is just
+					more and more and more text to fill the place in the meantime.</p>
+			</section>
 		</main>
-	</div>
 
-	<footer>
-		<p>&copy; 2023 CalvinVest @ github</p>
-	</footer>
+		<footer id="footer">
+			<p>
+				&copy; 2023 CalvinVest @ github |
+				<a target="_blank" href="https://icons8.com/icon/111021/c">Letter C</a> icon by <a target="_blank"
+					href="https://icons8.com">Icons8</a>
+			</p>
+		</footer>
+	</div>
 </body>
 
 </html>
