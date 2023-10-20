@@ -1,0 +1,68 @@
+:root {
+    --success-color: #28A745;
+    --warning-color: #FFC107;
+    --danger-color: #DC3545;
+    --info-color: #17A2B8;
+
+    /* Shades of White */
+    --white: #FBFAFA;
+    --light-gray: #9B9A9A;
+    --dark-gray: #3B3A3A;
+
+    /* Light Red */
+    --light-red: #DF8677;
+    --light-red-light: #F5A59A;
+    --light-red-dark: #B36C63;
+
+    /* Light Blue */
+    --light-blue: #04BFAD;
+    --light-blue-light: #04BFAD;
+    --light-blue-dark: #04BFAD;
+
+    /* Dark Red */
+    --dark-red: #BF4D34;
+    --dark-red-light: #D9653B;
+    --dark-red-dark: #8C3A32;
+
+    /* Dark Blue */
+    --dark-blue: #336799;
+    --dark-blue-light: #4C8CD7;
+    --dark-blue-dark: #203F59;
+
+    /* Black */
+    --black: #040505;
+
+    /* Brand Colors */
+    --linkedin-blue: #0072B1;
+    --facebook-blue: #3B5998;
+
+    --txt-white: ;
+
+    --page-bg: ;
+    --container-bg: ;
+    --container-txt: ;
+    --container-link: ;
+
+    --side-bg: ;
+    --side-txt: ;
+    --side-section-bg: ;
+    --side-btn-bg: ;
+    --side-btn-txt: ;
+    --side-btn-bg-hov: ;
+
+    --nav-bg: ;
+    --nav-txt: ;
+    --nav-grad: ;
+    --nav-btn-bg: ;
+    --nav-btn-bg-hov: ;
+    --nav-btn-txt-curr: ;
+
+    --nav-drop-bg: ;
+    --nav-drop-border: ;
+    --nav-drop-btn-bg: ;
+    --nav-drop-btn-txt: ;
+    --nav-drop-btn-bg-hov: ;
+    
+    --footer-bg: ;
+    --footer-txt: ;
+}

@@ -1,42 +1,7 @@
 @import url("https://css.gg/css");
-
-:root {
-    --success-color: #28A745;
-    --warning-color: #FFC107;
-    --danger-color: #DC3545;
-    --info-color: #17A2B8;
-
-    /* Shades of White */
-    --white: #FBFAFA;
-    --light-gray: #9B9A9A;
-    --dark-gray: #3B3A3A;
-
-    /* Light Red */
-    --light-red: #DF8677;
-    --light-red-light: #F5A59A;
-    --light-red-dark: #B36C63;
-
-    /* Light Blue */
-    --light-blue: #88B1B2;
-    --light-blue-light: #B9D7D8;
-    --light-blue-dark: #5E8C8D;
-
-    /* Dark Red */
-    --dark-red: #E55E37;
-    --dark-red-light: #FF8C66;
-    --dark-red-dark: #AC4D2A;
-
-    /* Dark Blue */
-    --dark-blue: #284548;
-    --dark-blue-light: #3E5764;
-    --dark-blue-dark: #1C2E3B;
-
-    /* Black */
-    --black: #040505;
-
-    --linkedin-blue: #0072B1;
-    --facebook-blue: #3B5998;
-}
+@import url("colors.css");
+@import url("top-navbar.css");
+@import url("sidebar.css");
 
 body,
 h1,
@@ -47,205 +12,35 @@ ul {
     padding: 0;
 }
 
+a {
+    color: var(--txt-white);
+}
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: var(--light-gray);
-    color: var(--black);
-}
-
-.top-navbar {
-    background-color: var(--dark-blue-dark);
-    color: var(--white);
-    text-align: center;
-    position: fixed;
-    top: 0;
-    height: 50px;
-    width: 100%;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    /* Add a subtle shadow for depth */
-}
-
-.top-navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.top-navbar li {
-    display: inline;
-    margin-right: 20px;
-    position: relative;
-}
-
-.top-navbar a {
-    float: left;
-    text-decoration: none;
-    font-size: 20px;
-    color: var(--white);
-    transition: color 0.3s;
-    /* Add a smooth color transition */
-    display: flex;
-    align-items: center;
-}
-
-.top-navbar img.logo {
-    padding: 0px;
-    margin-top: -5px;
-    width: 60px;
-    height: 36px;
-}
-
-.top-navbar a.currpage {
-    color: var(--light-red);
-}
-
-/* Style the navigation links */
-.top-navbar a:not(.currpage):hover {
-    color: var(--light-red);
-}
-
-.top-navbar .icon-container {
-    height: 30px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.top-navbar .nav-button {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Add a subtle gradient background to the header */
-.top-navbar::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, var(--dark-blue-dark) 0%, transparent 30%);
-    pointer-events: none;
-}
-
-.has-dropdown .dropdown {
-    background-color: var(--dark-blue);
-    display: none;
-    position: absolute;
-    padding: 10px;
-    top: 100%;
-    /* Position the dropdown below the parent */
-    left: 0;
-    /* Align the left edge of the dropdown with the parent */
-    z-index: 1;
-    /* Ensure the dropdown appears above other content */
-    flex-direction: row;
-    /* Stack list items vertically */
-}
-
-.has-dropdown .dropdown a {
-    height: 24px;
-    font-size: 16px;
-}
-
-.has-dropdown:hover .dropdown {
-    display: flex;
-    /* Show the dropdown as a flex container */
-    flex-direction: column;
-    background-color: var(--dark-blue);
-}
-
-.has-dropdown .list-item {
-    float: left;
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 10px;
-    margin: 5px;
-    background-color: var(--dark-blue-dark);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    background-color: var(--page-bg);
 }
 
 .container {
     display: flex;
 }
 
-.sidebar {
-    width: 200px;
-    background-color: var(--dark-blue-dark);
-    color: var(--white);
-    padding: 60px 20px 20px 20px;
-    min-height: 100vh;
-    min-width: 200px;
-    height: 100%;
-    overflow-y: auto;
-}
-
-.sidebar section {
-    padding: 20px;
-    border-radius: 10px;;
-    background-color: var(--dark-blue);
-}
-
-.sidebar h3 {
-    margin-block-start: 0px;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar li {
-    margin-bottom: 10px;
-}
-
-.sidebar a {
-    text-decoration: none;
-    color: var(--white);
-    align-items: center;
-    display: flex;
-}
-
-.sidebar a:hover {
-    text-decoration: underline;
-}
-
-.sidebar .icon-container {
-    height: 30px;
-    width: 30px;
-    border-radius: 5px;
-    margin-right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--dark-blue-dark);
-}
-
 main {
     flex: 1;
-    /*max-width: 1000px;*/
-    margin: 60px 20px 20px 20px;
-    /* Add a top margin of 80px to push the main content down */
     padding: 20px;
-    background-color: var(--dark-gray);
-    color: var(--white);
+    background-color: var(--container-bg);
+    color: var(--container-txt);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: inline;
-
 }
 
 main a {
-    color: white;
+    color: var(--page-content-link);
     font-style: italic;
 }
 
 main section {
-    padding: 5px 5px 20px 5px;
-    gap: 5px;
+    padding-bottom: 20px;
 }
 
 main section h1 {
@@ -256,14 +51,30 @@ main section p {
     padding: 10px 10px 10px 20px;
 }
 
-footer {
+footer p {
     font-size: 12px;
     text-align: center;
-    padding: 10px;
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--footer-bg);
+    color: var(--footer-txt);
+    padding: 5px;
 }
 
 footer a {
-    color: var(--white);
+    color: var(--footer-txt);
+}
+
+#page-container {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    margin: 60px 10px 0px 250px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
