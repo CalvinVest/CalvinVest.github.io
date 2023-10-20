@@ -1,0 +1,95 @@
+:root {
+    /* Base Colors */
+    /* Green */
+    --green-1: #F4FFF4;
+    --green-2: #D9E4D8;
+    --green-3: #BEC9BB;
+    --green-4: #A3AE9F;
+    --green-5: #879282;
+    --green-6: #6C7766;
+    --green-7: #515C49;
+    --green-8: #36412D;
+    --green-9: #1A2510;
+    /* Orange */
+    --orange-1: #FFFFF4;
+    --orange-2: #F3EAD9;
+    --orange-3: #E6D5BE;
+    --orange-4: #DAC0A3;
+    --orange-5: #CDAA87;
+    --orange-6: #C1956C;
+    --orange-7: #B48050;
+    --orange-8: #A86B35;
+    --orange-9: #9B5519;
+
+    /* Navbar Colors */
+    --nav-bg: var(--green-8);
+    --nav-txt: var(--orange-3);
+    --nav-grad: var(--green-9);
+
+    /* Navbar Dropdown Colors */
+    --nav-drop-bg: var(--green-8);
+    --nav-drop-border: var(--green-9);
+    --nav-drop-btn-bg: var(--green-7);
+    --nav-drop-btn-txt: var(--orange-1);
+    --nav-drop-btn-bg-hov: var(--green-8);
+
+    /* Navbar Button Colors */
+    --nav-btn-bg-hov: var(--green-9);
+    --nav-btn-txt-hov: var(--orange-8);
+    --nav-btn-txt-curr: var(--orange-7);
+
+    /* Home Button */
+    --nav-btn-home-bg: var(--nav-bg);
+    --nav-btn-home-bg-hov: var(--nav-btn-bg-hov);
+    --nav-btn-home-txt-hov: var(--nav-btn-txt-hov);
+
+    /* Academics Button */
+    --nav-btn-acad-bg: var(--nav-bg);
+    --nav-btn-acad-bg-hov: var(--nav-btn-bg-hov);
+    --nav-btn-acad-txt-hov: var(--nav-btn-txt-hov);
+
+    /* Genealogy Button */
+    --nav-btn-gene-bg: var(--nav-bg);
+    --nav-btn-gene-bg-hov: var(--nav-btn-bg-hov);
+    --nav-btn-gene-txt-hov: var(--nav-btn-txt-hov);
+
+    /* Programming Button */
+    --nav-btn-prog-bg: var(--nav-bg);
+    --nav-btn-prog-bg-hov: var(--nav-btn-bg-hov);
+    --nav-btn-prog-txt-hov: var(--nav-btn-txt-hov);
+
+    /* About Button */
+    --nav-btn-abt-bg: var(--nav-bg);
+    --nav-btn-abt-bg-hov: var(--nav-btn-bg-hov);
+    --nav-btn-abt-txt-hov: var(--nav-btn-txt-hov);
+
+    /* Contact Button */
+    --nav-btn-cont-bg: var(--nav-bg);
+    --nav-btn-cont-bg-hov: var(--nav-btn-bg-hov);
+    --nav-btn-cont-txt-hov: var(--nav-btn-txt-hov);
+
+    /* Page Background */
+    --page-bg: var(--green-9);
+
+    /* Container Colors */
+    --container-bg: var(--green-8);
+    --container-txt: var(--orange-3);
+    --container-link: var(--orange-5);
+
+    /* Sidebar Colors */
+    --side-bg: var(--green-8);
+    --side-txt: var(--orange-3);
+    --side-section-bg: var(--green-8);
+    --side-section-border: var(--green-7);
+    --side-btn-bg: var(--green-7);
+    --side-btn-txt: var(--orange-3);
+    --side-btn-bg-hov: var(--green-8);
+    --side-btn-txt-hov: var(--orange-8);
+
+    /* Footer Colors */
+    --footer-bg: var(--green-9);
+    --footer-txt: var(--green-7);
+
+    /* Text Colors */
+    --txt-white: var(--text-main-bg);
+}

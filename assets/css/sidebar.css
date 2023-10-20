@@ -1,0 +1,67 @@
+.sidebar {
+    width: 220px;
+    background-color: var(--side-bg);
+    background: linear-gradient(to right, var(--side-bg) 95%, var(--page-bg));
+    color: var(--side-txt);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    padding: 10px;
+    min-height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+}
+
+.sidebar section {
+    width: 180px;
+    padding: 10px;
+    background-color: var(--side-section-bg);
+    border-radius: 20px;
+    border-width: 5px;
+    border-color: var(--side-section-border);
+    border-style: solid;
+    display: block;
+    float: left;
+}
+
+.sidebar h3 {
+    margin: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 5px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: var(--side-txt);
+    align-items: center;
+    display: flex;
+    transition: all 0.3s;
+}
+
+.sidebar .icon-container {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--side-bg);
+}
+
+.sidebar .side-btn {
+    background-color: var(--side-btn-bg);
+    color: var(--side-btn-txt);
+    min-height: 30px;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.sidebar .side-btn:hover {
+    background-color: var(--side-btn-bg-hov);
+    color: var(--side-btn-txt-hov);
+}

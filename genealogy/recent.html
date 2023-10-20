@@ -15,90 +15,119 @@
 </head>
 
 <body>
-	<nav class="top-navbar">
-		<ul>
-			<!--Be sure to set the currpage class to the correct link that the page currently is-->
-			<li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
-			<li class="nav-button">
-				<a href="index.html">
-					Home
-					<div class="icon-container">
-						<i class="fa-solid fa-house-chimney"></i>
-					</div>
-				</a>
-			</li>
-			<li class="nav-button has-dropdown">
-				<a href="academics/index.html">
-					Academics
-					<div class="icon-container">
-						<i class="fa-solid fa-graduation-cap"></i>
-					</div>
-				</a>
-				<ul class="dropdown">
-					<li class="list-item"><a href="academics/progress.html">My academic progress</a></li>
-					<li class="list-item"><a href="academics/projects/index.html">School projects</a></li>
-					<li class="list-item"><a href="academics/employment.html">Employers/Job info</a></li>
-				</ul>
-			</li>
-			<li class="nav-button has-dropdown">
-				<a href="genealogy/index.html">
-					Genealogy
-					<div class="icon-container">
-						<i class="fa-solid fa-people-roof"></i>
-					</div>
-				</a>
-				<ul class="dropdown">
-					<li class="list-item"><a href="genealogy/progress.html">My Ancestry progress</a></li>
-					<li class="list-item"><a href="genealogy/earlydates.html">How far back does it go?</a></li>
-					<li class="list-item"><a href="genealogy/recent.html" class="currpage">Recent Discoveries</a></li>
-				</ul>
-			</li>
-			<li class="nav-button has-dropdown">
-				<a href="programming.html">
-					Programming
-					<div class="icon-container">
-						<i class="fa-solid fa-code"></i>
-					</div>
-				</a>
-				<ul class="dropdown">
-					<li class="list-item"><a href="programming/projecteuler.html">Project Euler</a></li>
-				</ul>
-			</li>
-			<li class="nav-button">
-				<a href="about.html">
-					About
-					<div class="icon-container">
-						<i class="fa-regular fa-circle-question"></i>
-					</div>
-				</a>
-			</li>
-			<li class="nav-button">
-				<a href="contact.html">
-					Contact
-					<div class="icon-container">
-						<i class="fa-solid fa-envelope"></i>
-					</div>
-				</a>
-			</li>
-		</ul>
-	</nav>
+    <nav class="top-navbar">
+        <ul>
+            <!--Be sure to set the currpage class to the correct link that the page currently is-->
+            <li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
+            <li>
+                <a href="index.html" id="home-button">
+                    Home
+                    <div class="icon-container">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                </a>
+            </li>
+            <li class="has-dropdown">
+                <a href="academics/index.html" id="academics-button">
+                    Academics
+                    <div class="icon-container">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                </a>
+                <ul class="dropdown">
+                    <li class="list-item"><a href="academics/progress.html">My academic progress</a></li>
+                    <li class="list-item"><a href="academics/projects/index.html">School projects</a></li>
+                    <li class="list-item"><a href="academics/employment.html">Employers/Job info</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="genealogy/index.html" id="genealogy-button">
+                    Genealogy
+                    <div class="icon-container">
+                        <i class="fa-solid fa-people-roof"></i>
+                    </div>
+                </a>
+                <ul class="dropdown">
+                    <li class="list-item"><a href="genealogy/progress.html">My Ancestry progress</a></li>
+                    <li class="list-item"><a href="genealogy/earlydates.html">How far back does it go?</a></li>
+                    <li class="list-item"><a href="genealogy/recent.html" class="currpage">Recent Discoveries</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="programming.html" id="programming-button">
+                    Programming
+                    <div class="icon-container">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                </a>
+                <ul class="dropdown">
+                    <li class="list-item"><a href="programming/projecteuler.html">Project Euler</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="about.html" id="about-button">
+                    About
+                    <div class="icon-container">
+                        <i class="fa-regular fa-circle-question"></i>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html" id="contact-button">
+                    Contact
+                    <div class="icon-container">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
-	<div class="container">
-		<nav class="sidebar">
-			<section>
-				<!--add h3 for section headers-->
-				<!--add ul with li a href links for items of section-->
-			</section>
-		</nav>
+    <div id="page-container">
+        <nav class="sidebar">
+            <section>
+                <!--add h3 for section headers-->
+                <!--add ul with li a href links for items of section-->
+                <h3>Section Header</h3>
+                <ul>
+                    <li>
+                        <a href="#" class="side-btn">Example link</a>
+                    </li>
+                    <li>
+                        <a href="#" class="side-btn">Another example</a>
+                    </li>
+                    <li>
+                        <a href="#" class="side-btn">Yet another example with a really long title.</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
 
-		<main>
-			<!--This is filler content. Replace page-by-page -->
-		</main>
-	</div>
+        <main id="content-wrap">
+            <!--This is filler content. Replace page-by-page -->
+            <section>
+                <h3>This is some example text.</h3>
+                <p>This is some more text.</p>
+                <p>This is even more text with a <a href="#">link</a>.</p>
+            </section>
+            <section>
+                <h3>This is a new section.</h3>
+                <p>This is some text in this new section. It's a pretty long one, so it'll probably create a new line.
+                    I'm mostly putting this much text here because I want to see just how this page wraps this example
+                    text on the page. It's really just a big block of text so I can make sure this page looks really
+                    nice when I put a lot of actual real-world content in here. I haven't done that yet, so this is just
+                    more and more and more text to fill the place in the meantime.</p>
+            </section>
+        </main>
 
-	<footer>
-		<p>&copy; 2023 CalvinVest @ github</p>
-	</footer>
+        <footer id="footer">
+            <p>
+                &copy; 2023 CalvinVest @ github |
+                <a target="_blank" href="https://icons8.com/icon/111021/c">Letter C</a> icon by <a target="_blank"
+                    href="https://icons8.com">Icons8</a>
+            </p>
+        </footer>
+    </div>
 </body>
 
 </html>
