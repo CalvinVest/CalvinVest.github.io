@@ -13,6 +13,20 @@ ul {
     padding: 0;
 }
 
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 22px;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 18px;
+    font-style: italic;
+}
+
 a {
     color: var(--txt-white);
 }
@@ -43,6 +57,7 @@ main section {
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
+    display: block;
 }
 
 main section h1,
@@ -75,15 +90,10 @@ main section img {
 main section table,
 main section th,
 main section td {
-    border: 1px solid var(--container-txt);
-}
-
-main section table {
-    margin: 20px;
+    border: 2px solid var(--container-link);
 }
 
 main section th {
-    color: var(--container-link);
     padding: 10px;
 }
 
@@ -118,9 +128,10 @@ footer a {
 #page-container .btn {
     display: flex;
     height: 30px;
-    padding: 10px;
     margin: 10px;
+    padding: 0px 10px 0px 10px;
     border-radius: 10px;
+    border: 2px solid var(--container-btn-border);
     background-color: var(--container-btn-bg);
     text-decoration: none;
     font-style: normal;
@@ -148,4 +159,17 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hidden-toggle {
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.hidden-content {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
 }

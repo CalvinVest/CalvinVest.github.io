@@ -75,8 +75,12 @@
     --container-bg: var(--green-8);
     --container-txt: var(--orange-3);
     --container-link: var(--orange-5);
+
     --container-btn-bg: var(--green-7);
     --container-btn-bg-hov: var(--green-8);
+    --container-btn-border: var(--green-6);
+
+    --hidden-content-bg: var(--green-8);
 
     /* Sidebar Colors */
     --side-bg: var(--green-8);

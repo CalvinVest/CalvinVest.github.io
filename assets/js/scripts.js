@@ -1,11 +1,27 @@
-window.addEventListener('scroll', function () {
-    // Get the scroll position
-    var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+document.addEventListener("DOMContentLoaded", function () {
+    var buttons = document.querySelectorAll(".hidden-toggle");
+    var contents = document.querySelectorAll(".hidden-content");
+    var originalHeights = []; // Store original heights
 
-    // Get the sidebar and main content elements
-    var sidebar = document.querySelector('.sidebar');
-    var mainContent = document.querySelector('.main-content');
+    // Initialize original heights and set initial styles
+    contents.forEach(function (content) {
+        originalHeights.push(content.scrollHeight);
+        content.style.maxHeight = "0";
+        content.style.overflow = "hidden";
+    });
 
-    // Adjust the position of the sidebar based on scroll
-    sidebar.style.top = scrollPosition + 'px';
+    buttons.forEach(function (button, index) {
+        button.addEventListener("click", function () {
+            if (contents[index].style.maxHeight === "0px" || contents[index].style.maxHeight === "") {
+                contents[index].style.maxHeight = originalHeights[index] + "px";
+                contents[index].style.padding = "10px";
+                button.textContent = "Collapse";
+            } else {
+                contents[index].style.maxHeight = "0px";
+                contents[index].style.padding = "0px";
+                button.textContent = "Expand";
+            }
+
+        });
+    });
 });
