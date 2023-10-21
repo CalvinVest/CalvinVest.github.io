@@ -92,4 +92,5 @@
 
     /* Text Colors */
     --txt-white: var(--text-main-bg);
+    --txt-credit: var(--footer-txt);
 }

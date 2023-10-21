@@ -51,8 +51,30 @@ main section h3 {
     padding: 10px;
 }
 
+main section ul {
+    list-style: none;
+    padding: 10px;
+}
+
+main section li {
+    padding: 10px;
+    border-width: 0;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: var(--container-link);
+}
+
 main section p {
     padding: 10px 10px 10px 20px;
+}
+
+main section .credit {
+    color: var(--txt-credit);
+    font-size: 11px;
+}
+
+main section .credit a {
+    color: var(--txt-credit);
 }
 
 footer p {

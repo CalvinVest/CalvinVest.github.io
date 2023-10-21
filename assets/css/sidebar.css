@@ -19,6 +19,7 @@
     border-width: 5px;
     border-color: var(--side-section-border);
     border-style: solid;
+    margin-bottom: 15px;
     display: block;
     float: left;
 }
