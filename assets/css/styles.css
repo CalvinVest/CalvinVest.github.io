@@ -186,19 +186,19 @@ footer a {
 .collapse-section {
     max-height: 100vh;
     overflow: auto;
-    transition: max-height 0.5s;
+    transition: max-height 0.5s, padding 0.5s;
+    padding: 10px;
 }
 
 .collapse-section-header {
-    height: 50px;
+    display: flex;
+    min-height: 50px;
     width: 100%;
+    align-items: center;
 }
 
-.collapse-section-header h1 {
-    float: left;
-}
-
-.collapse-section-toggle {
-    width: 30px;
-    float: right;
+.collapse-section-header h1,
+.collapse-section-header h2,
+.collapse-section-header h3 {
+    margin-right: auto;
 }

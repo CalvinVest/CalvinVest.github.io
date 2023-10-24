@@ -35,10 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (targetContent.style.maxHeight == "0px") {
                 targetContent.style.maxHeight = targetContent.scrollHeight + "px";
+                targetContent.style.padding = "10px";
                 buttonImg.classList.toggle("fa-up-right-and-down-left-from-center");
                 buttonImg.classList.toggle("fa-down-left-and-up-right-to-center");
             } else {
                 targetContent.style.maxHeight = "0px";
+                targetContent.style.padding = "0px";
                 buttonImg.classList.toggle("fa-down-left-and-up-right-to-center");
                 buttonImg.classList.toggle("fa-up-right-and-down-left-from-center");
             }
