@@ -1,27 +1,47 @@
 document.addEventListener("DOMContentLoaded", function () {
     var buttons = document.querySelectorAll(".hidden-toggle");
-    var contents = document.querySelectorAll(".hidden-content");
-    var originalHeights = []; // Store original heights
 
-    // Initialize original heights and set initial styles
-    contents.forEach(function (content) {
-        originalHeights.push(content.scrollHeight);
-        content.style.maxHeight = "0";
-        content.style.overflow = "hidden";
-    });
-
-    buttons.forEach(function (button, index) {
+    buttons.forEach(function (button) {
         button.addEventListener("click", function () {
-            if (contents[index].style.maxHeight === "0px" || contents[index].style.maxHeight === "") {
-                contents[index].style.maxHeight = originalHeights[index] + "px";
-                contents[index].style.padding = "10px";
-                button.textContent = "Collapse";
-            } else {
-                contents[index].style.maxHeight = "0px";
-                contents[index].style.padding = "0px";
-                button.textContent = "Expand";
-            }
+            var targetId = button.getAttribute("data-target");
+            var targetContent = document.querySelector('[data-content="' + targetId + '"]');
 
+            if (targetContent.style.maxHeight) {
+                targetContent.style.overflow = "hidden";
+                targetContent.style.maxHeight = null;
+                targetContent.style.padding = "0";
+                button.textContent = "Expand";
+            } else {
+                var scrollHeight = targetContent.scrollHeight;
+                var transitionDuration = Math.min(scrollHeight * 0.002, 1.0); // Adjust the multiplier as needed
+                targetContent.style.overflow = "auto";
+                targetContent.style.maxHeight = scrollHeight + 50 + "px"; // Set max height
+                targetContent.style.padding = "10px"; // Set padding
+                targetContent.style.transition = "max-height " + transitionDuration + "s," + "padding " + transitionDuration + "s"; // Set transition duration
+                button.textContent = "Collapse";
+            }
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    var buttons = document.querySelectorAll(".collapse-section-toggle");
+
+    buttons.forEach(function (button) {
+        var buttonImg = button.querySelector("i");
+        button.addEventListener("click", function () {
+            var targetId = button.getAttribute("data-target");
+            var targetContent = document.querySelector('[data-content="' + targetId + '"]');
+
+            if (targetContent.style.maxHeight == "0px") {
+                targetContent.style.maxHeight = targetContent.scrollHeight + "px";
+                buttonImg.classList.toggle("fa-up-right-and-down-left-from-center");
+                buttonImg.classList.toggle("fa-down-left-and-up-right-to-center");
+            } else {
+                targetContent.style.maxHeight = "0px";
+                buttonImg.classList.toggle("fa-down-left-and-up-right-to-center");
+                buttonImg.classList.toggle("fa-up-right-and-down-left-from-center");
+            }
         });
     });
 });

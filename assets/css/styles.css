@@ -40,6 +40,15 @@ body {
     display: flex;
 }
 
+.icon-container {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
 main {
     flex: 1;
     color: var(--container-txt);
@@ -99,6 +108,7 @@ main section th {
 
 main section td {
     justify-content: left;
+    padding: 5px 10px 5px 10px;
 }
 
 main section .credit {
@@ -129,7 +139,6 @@ footer a {
     display: flex;
     height: 30px;
     margin: 10px;
-    padding: 0px 10px 0px 10px;
     border-radius: 10px;
     border: 2px solid var(--container-btn-border);
     background-color: var(--container-btn-bg);
@@ -172,4 +181,24 @@ footer a {
     padding: 0;
     overflow: hidden;
     transition: max-height 0.5s, padding 0.5s;
+}
+
+.collapse-section {
+    max-height: 100vh;
+    overflow: auto;
+    transition: max-height 0.5s;
+}
+
+.collapse-section-header {
+    height: 50px;
+    width: 100%;
+}
+
+.collapse-section-header h1 {
+    float: left;
+}
+
+.collapse-section-toggle {
+    width: 30px;
+    float: right;
 }

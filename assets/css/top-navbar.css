@@ -50,14 +50,6 @@
     color: var(--nav-btn-txt-curr);
 }
 
-.top-navbar .icon-container {
-    height: 30px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* Add a subtle gradient background to the header */
 .top-navbar::after {
     content: '';
@@ -88,7 +80,7 @@
 }
 
 .has-dropdown:hover .dropdown {
-    display:block;
+    display: block;
     justify-content: left;
     float: left;
     background: linear-gradient(to top, var(--nav-bg), var(--page-bg));
