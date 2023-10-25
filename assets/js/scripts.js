@@ -1,49 +1,45 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var buttons = document.querySelectorAll(".hidden-toggle");
-
-    buttons.forEach(function (button) {
-        button.addEventListener("click", function () {
-            var targetId = button.getAttribute("data-target");
-            var targetContent = document.querySelector('[data-content="' + targetId + '"]');
-
-            if (targetContent.style.maxHeight) {
-                targetContent.style.overflow = "hidden";
-                targetContent.style.maxHeight = null;
-                targetContent.style.padding = "0";
-                button.textContent = "Expand";
-            } else {
-                var scrollHeight = targetContent.scrollHeight;
-                var transitionDuration = Math.min(scrollHeight * 0.002, 1.0); // Adjust the multiplier as needed
-                targetContent.style.overflow = "auto";
-                targetContent.style.maxHeight = scrollHeight + 50 + "px"; // Set max height
-                targetContent.style.padding = "10px"; // Set padding
-                targetContent.style.transition = "max-height " + transitionDuration + "s," + "padding " + transitionDuration + "s"; // Set transition duration
-                button.textContent = "Collapse";
-            }
-        });
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
     var buttons = document.querySelectorAll(".collapse-section-toggle");
 
     buttons.forEach(function (button) {
+        var targetId = button.getAttribute("data-target");
+        var targetContent = document.querySelector('[data-content="' + targetId + '"]');
         var buttonImg = button.querySelector("i");
-        button.addEventListener("click", function () {
-            var targetId = button.getAttribute("data-target");
-            var targetContent = document.querySelector('[data-content="' + targetId + '"]');
+        var initScrollHeight = targetContent.scrollHeight;
 
-            if (targetContent.style.maxHeight == "0px") {
-                targetContent.style.maxHeight = targetContent.scrollHeight + "px";
-                targetContent.style.padding = "10px";
-                buttonImg.classList.toggle("fa-up-right-and-down-left-from-center");
-                buttonImg.classList.toggle("fa-down-left-and-up-right-to-center");
+        // Check if the section should start collapsed
+        if (targetContent.parentElement.classList.contains("expanded")) {
+            targetContent.style.overflow = "auto";
+            targetContent.style.maxHeight = initScrollHeight + "px";
+        } else {
+            targetContent.style.maxHeight = 0;
+            targetContent.style.margin = 0;
+            targetContent.style.padding = 0;
+            targetContent.style.overflow = "hidden";
+            targetContent.style.display = "none";
+        }
+
+        button.addEventListener("click", function () {
+            if (targetContent.style.maxHeight != "0px") {
+                targetContent.style.margin = 0;
+                targetContent.style.padding = 0;
+                targetContent.style.maxHeight = 0;
+                targetContent.style.overflow = "hidden";
+                setTimeout(function () {
+                    targetContent.style.display = "none";
+                }, 300);
             } else {
-                targetContent.style.maxHeight = "0px";
-                targetContent.style.padding = "0px";
-                buttonImg.classList.toggle("fa-down-left-and-up-right-to-center");
-                buttonImg.classList.toggle("fa-up-right-and-down-left-from-center");
+                targetContent.style.display = "inline-block";
+                targetContent.style.overflow = "auto";
+                setTimeout(function () {
+                    targetContent.style.margin = "10px";
+                    targetContent.style.padding = "10px";
+                    targetContent.style.maxHeight = initScrollHeight + "px";
+                }, 1);
+
             }
+            buttonImg.classList.toggle("fa-chevron-down");
+            buttonImg.classList.toggle("fa-chevron-up");
         });
     });
 });

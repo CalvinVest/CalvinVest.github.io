@@ -3,6 +3,18 @@
 @import url("top-navbar.css");
 @import url("sidebar.css");
 
+@font-face {
+    font-family: 'Alegreya';
+    src: url('../fonts/Alegreya/Alegreya-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'Alegreya SC';
+    src: url('../fonts/Alegreya_SC/AlegreyaSC-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body,
 h1,
 h2,
@@ -13,17 +25,24 @@ ul {
     padding: 0;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Alegreya SC', 'Georgia', serif;
+    font-weight: normal;
+}
+
 h1 {
-    font-size: 24px;
+    font-size: 36px;
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 30px;
     font-style: italic;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 20px;
     font-style: italic;
 }
 
@@ -32,7 +51,7 @@ a {
 }
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Alegreya', serif;
     background-color: var(--page-bg);
 }
 
@@ -67,6 +86,7 @@ main section {
     padding: 20px;
     border-radius: 20px;
     display: block;
+    font-size: 20px;
 }
 
 main section h1,
@@ -93,7 +113,7 @@ main section p {
 }
 
 main section img {
-    max-width: 800px;
+    max-width: 75%;
 }
 
 main section table,
@@ -113,7 +133,7 @@ main section td {
 
 main section .credit {
     color: var(--txt-credit);
-    font-size: 11px;
+    font-size: 12px;
 }
 
 main section .credit a {
@@ -121,7 +141,7 @@ main section .credit a {
 }
 
 footer p {
-    font-size: 11px;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -154,6 +174,26 @@ footer a {
     background-color: var(--container-btn-bg-hov);
 }
 
+#page-container button {
+    display: flex;
+    margin: 10px;
+    padding: 0;
+    border-radius: 10px;
+    border: 2px solid var(--container-btn-border);
+    background-color: var(--container-btn-bg);
+    color: var(--container-link);
+    text-decoration: none;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#page-container button:hover {
+    background-color: var(--container-btn-bg-hov);
+}
+
 #content-wrap {
     margin: 60px 10px 20px 250px;
 }
@@ -170,26 +210,6 @@ footer a {
     justify-content: center;
 }
 
-.hidden-toggle {
-    height: 30px;
-    width: 100px;
-    cursor: pointer;
-}
-
-.hidden-content {
-    max-height: 0;
-    padding: 0;
-    overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
-}
-
-.collapse-section {
-    max-height: 100vh;
-    overflow: auto;
-    transition: max-height 0.5s, padding 0.5s;
-    padding: 10px;
-}
-
 .collapse-section-header {
     display: flex;
     min-height: 50px;
@@ -201,4 +221,23 @@ footer a {
 .collapse-section-header h2,
 .collapse-section-header h3 {
     margin-right: auto;
+}
+
+.collapse-section-content {
+    margin: 0;
+    padding: 0;
+    transition:
+        max-height 0.3s ease,
+        margin 0.3s ease,
+        padding 0.3s ease;
+
+    border-radius: 20px;
+    background: linear-gradient(165deg, var(--collapse-section-content-bg), transparent 66%);
+}
+
+.expanded .collapse-section-content {
+    display: inline-block;
+    max-height: 100%;
+    margin: 10px;
+    padding: 10px;
 }

@@ -1,4 +1,12 @@
+@font-face {
+    font-family: 'Alegreya SC';
+    src: url('../fonts/Alegreya_SC/AlegreyaSC-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .top-navbar {
+    font-family: 'Alegreya SC', 'Georgia', serif;
     background-color: var(--nav-bg);
     color: var(--nav-txt);
     text-align: center;

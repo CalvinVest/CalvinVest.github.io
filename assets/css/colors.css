@@ -1,15 +1,15 @@
 :root {
     /* Base Colors */
     /* Green */
-    --green-1: #F4FFF4;
-    --green-2: #D9E4D8;
-    --green-3: #BEC9BB;
-    --green-4: #A3AE9F;
-    --green-5: #879282;
-    --green-6: #6C7766;
-    --green-7: #515C49;
-    --green-8: #36412D;
-    --green-9: #1A2510;
+    --green-1: #567045;
+    --green-2: #4F673F;
+    --green-3: #475D39;
+    --green-4: #405433;
+    --green-5: #384A2C;
+    --green-6: #314126;
+    --green-7: #293720;
+    --green-8: #222E1A;
+    --green-9: #1A2413;
     /* Orange */
     --orange-1: #FFFFF4;
     --orange-2: #F3EAD9;
@@ -80,7 +80,7 @@
     --container-btn-bg-hov: var(--green-8);
     --container-btn-border: var(--green-6);
 
-    --hidden-content-bg: var(--green-8);
+    --collapse-section-content-bg: var(--green-7);
 
     /* Sidebar Colors */
     --side-bg: var(--green-8);

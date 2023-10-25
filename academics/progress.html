@@ -93,8 +93,6 @@
     <div id="page-container">
         <nav class="sidebar">
             <section>
-                <!--add h3 for section headers-->
-                <!--add ul with li a href links for items of section-->
                 <h3>Section Header</h3>
                 <ul>
                     <li>
@@ -111,11 +109,24 @@
         </nav>
 
         <main id="content-wrap">
-            <!--This is filler content. Replace page-by-page -->
-            <section>
-                <h1>I'm a Computer Science major.</h1>
-                <p>I've been a student at Western Governor's University since 2021, earning my BSCS.</p>
+
+            <section class="expanded">
+
+                <div class="collapse-section-header">
+                    <h1>I'm a Computer Science major.</h1>
+                    <button class="collapse-section-toggle" data-target="cs-major">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="collapse-section-content" data-content="cs-major">
+                    <p>I've been a student at Western Governor's University since 2021, earning my BSCS.</p>
+                </div>
+
             </section>
+
             <section>
                 <h1>I've moved schools a couple times.</h1>
                 <p>I first started college courses in the fall of 2014, as a dual-credit high school student. I started
@@ -125,53 +136,77 @@
                     science. I changed my major and transferred to Western Governor's University, and I've been there
                     since.</p>
             </section>
-            <section>
+
+            <section class="expanded">
+
                 <div class="collapse-section-header">
                     <h1>Schooling History</h1>
-                    <a class="collapse-section-toggle btn" data-target="history">
+                    <button class="collapse-section-toggle" data-target="history">
                         <div class="icon-container">
-                            <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+                            <i class="fa-solid fa-chevron-up"></i>
                         </div>
-                    </a>
+                    </button>
                 </div>
-                <div class="collapse-section" data-content="history">
-                    <ul>
-                        <li>
-                            <h3>Illinois Central College</h3>
-                            <p><em>Attended from August 2014 to December 2017</em></p>
-                            <p>At ICC, I started as a dual-credit high school student and completed courses for the
-                                Associates of Engineering degree. I completed projects in a variety of engineering
-                                disciplines, including computer-aided design (CAD), software development, and electrical
-                                engineering and circuit design.</p>
-                        </li>
-                        <li>
-                            <h3>Southern Illinois University - Edwardsville</h3>
-                            <p><em>Attended from January 2018 to December 2020</em></p>
-                            <p>At SIUE, I specialized my degree program to Electrical Engineering, and later specialized
-                                further to Electrical and Computer Engineering. I completed more program-relevant
-                                courses,
-                                including advanced circuit analysis and electromagnetism.</p>
-                        </li>
-                        <li>
-                            <h3>Western Governors University</h3>
-                            <p><em>Attending from August 2021 to present</em></p>
-                            <p>Leading into the 2020 Covid-19 pandemic, I realized that I wanted to change my degree. I
-                                transferred my academic progress and began taking online, asynchronous classes with WGU.
-                                I
-                                began my progress in the university's BS in Computer Science program as a fully-remote
-                                student. I've pretty well completed all of my general education courses by this point,
-                                so
-                                much of my coursework with WGU has been specialized technical content, including
-                                advanced
-                                software development, networking, project management, and program-relevant courses like
-                                discrete mathematics and source control.</p>
-                        </li>
-                    </ul>
+
+                <div class="collapse-section-content" data-content="history">
+                    <div>
+                        <ul>
+                            <li>
+                                <h3>Illinois Central College</h3>
+                                <p><em>Attended from August 2014 to December 2017</em></p>
+                                <p>At ICC, I started as a dual-credit high school student and completed courses for the
+                                    Associates of Engineering degree. I completed projects in a variety of engineering
+                                    disciplines, including computer-aided design (CAD), software development, and
+                                    electrical
+                                    engineering and circuit design.</p>
+                            </li>
+                            <li>
+                                <h3>Southern Illinois University - Edwardsville</h3>
+                                <p><em>Attended from January 2018 to December 2020</em></p>
+                                <p>At SIUE, I specialized my degree program to Electrical Engineering, and later
+                                    specialized
+                                    further to Electrical and Computer Engineering. I completed more program-relevant
+                                    courses,
+                                    including advanced circuit analysis and electromagnetism.</p>
+                            </li>
+                            <li>
+                                <h3>Western Governors University</h3>
+                                <p><em>Attending from August 2021 to present</em></p>
+                                <p>Leading into the 2020 Covid-19 pandemic, I realized that I wanted to change my
+                                    degree. I
+                                    transferred my academic progress and began taking online, asynchronous classes with
+                                    WGU.
+                                    I
+                                    began my progress in the university's BS in Computer Science program as a
+                                    fully-remote
+                                    student. I've pretty well completed all of my general education courses by this
+                                    point,
+                                    so
+                                    much of my coursework with WGU has been specialized technical content, including
+                                    advanced
+                                    software development, networking, project management, and program-relevant courses
+                                    like
+                                    discrete mathematics and source control.</p>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
+
             </section>
+
             <section>
-                <h3>Illinois Central College / Class Records</h3>
-                <div class="hidden-content" data-content="icc">
+
+                <div class="collapse-section-header">
+                    <h3>Illinois Central College / Class Records</h3>
+                    <button class="collapse-section-toggle" data-target="icc-record">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="collapse-section-content" data-content="icc-record">
                     <table style="width:100%">
                         <tr>
                             <th colspan="4">Mathematics</th>
@@ -274,15 +309,26 @@
                         </tr>
                     </table>
                 </div>
-                <a class="hidden-toggle btn" data-target="icc">Expand</a>
+
             </section>
+
             <section>
-                <h3>Southern Illinois University - Edwardsville / Class Records</h3>
-                <a class="hidden-toggle btn" data-target="siue">Expand</a>
-                <div class="hidden-content" data-content="siue">
+
+                <div class="collapse-section-header">
+                    <h3>Southern Illinois University - Edwardsville / Class Records</h3>
+                    <button class="collapse-section-toggle" data-target="siue-record">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="collapse-section-content" data-content="siue-record">
                     <table style="width:100%">
                         <tr>
-                            <th colspan="4">Electrical and Computer Engineering</th>
+                            <th colspan="4">
+                                <h3>Electrical and Computer Engineering</h3>
+                            </th>
                         </tr>
                         <tr>
                             <th>Class</th>
@@ -340,73 +386,7 @@
                         </tr>
                     </table>
                 </div>
-            </section>
-            <section>
-                <h1>My notable classes</h1>
-                <ul>
-                    <li>
-                        <h2>Illinois Central College</h2>
-                        <h3>The Other Stuff</h3>
-                        <div class="hidden-content">
-                            <table style="width:100%">
-                                <tr>
-                                    <th style="width: 10%">Class</th>
-                                    <th style="width: 20%">Title</th>
-                                    <th style="width: 20%">Description</th>
-                                    <th style="width: 50%">Notes</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>MUS148</p>
-                                    </td>
-                                    <td>
-                                        <p>Music</p>
-                                    </td>
-                                    <td>
-                                        <p>Jazz</p>
-                                    </td>
-                                    <td>
-                                        <p>Larry Harms was bar-none one of the best professors I've ever had.</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>CMPSC135
-                                    </td>
-                                    <td>
-                                        <p>Java Programming I</p>
-                                    </td>
-                                    <td>
-                                        <p>Introduction to Java</p>
-                                    </td>
-                                    <td>
-                                        <p>Dr. Rafeeq Al-Hashemi was a great teacher for one of my first programming
-                                            courses. He demonstrated and expected foundational clean code practices in
-                                            his
-                                            courses, and this introduction-level course was a well-constructed
-                                            foundational
-                                            program for my computer science course material.</p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <a class="hidden-toggle btn">Expand</a>
-                    </li>
-                    <li>
-                        <h2>Southern Illinois University - Edwardsville</h2>
-                        <div class="hidden-content">
-                            <p>This is additional content 2 that will be hidden initially.</p>
-                        </div>
-                        <a class="hidden-toggle btn">Expand</a>
-                    </li>
-                    <li>
-                        <h2>Western Governor's University</h2>
-                        <div class="hidden-content">
-                            <p>Additional content.</p>
-                        </div>
-                        <a class="hidden-toggle btn">Expand</a>
-                    </li>
-                </ul>
+
             </section>
         </main>
 
