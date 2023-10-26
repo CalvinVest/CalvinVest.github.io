@@ -20,7 +20,7 @@
     </style>
 </head>
 
-<body>
+<body id="teal-page">
     <nav class="top-navbar">
         <ul>
             <!--Be sure to set the currpage class to the correct link that the page currently is-->
@@ -127,14 +127,30 @@
 
             </section>
 
-            <section>
-                <h1>I've moved schools a couple times.</h1>
-                <p>I first started college courses in the fall of 2014, as a dual-credit high school student. I started
-                    as an Engineering major. Since then, I've transferred to Southern Illinois University as an
-                    Electrical Engineering, than an Electrical and Computer Engineering student. Around the time of the
-                    start of the COVID-19 pandemic, I chose to change direction, and start pursuing a degree in computer
-                    science. I changed my major and transferred to Western Governor's University, and I've been there
-                    since.</p>
+            <section class="expanded">
+
+                <div class="collapse-section-header">
+                    <h1>I've moved schools a couple times.</h1>
+                    <button class="collapse-section-toggle" data-target="moved-schools">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="collapse-section-content" data-content="moved-schools">
+                    <p>I first started college courses in the fall of 2014, as a dual-credit high school student. I
+                        started
+                        as an Engineering major. Since then, I've transferred to Southern Illinois University as an
+                        Electrical Engineering, than an Electrical and Computer Engineering student. Around the time of
+                        the
+                        start of the COVID-19 pandemic, I chose to change direction, and start pursuing a degree in
+                        computer
+                        science. I changed my major and transferred to Western Governor's University, and I've been
+                        there
+                        since.</p>
+                </div>
+
             </section>
 
             <section class="expanded">
@@ -198,7 +214,7 @@
             <section>
 
                 <div class="collapse-section-header">
-                    <h3>Illinois Central College / Class Records</h3>
+                    <h2>Illinois Central College / Class Records</h2>
                     <button class="collapse-section-toggle" data-target="icc-record">
                         <div class="icon-container">
                             <i class="fa-solid fa-chevron-down"></i>
@@ -315,7 +331,7 @@
             <section>
 
                 <div class="collapse-section-header">
-                    <h3>Southern Illinois University - Edwardsville / Class Records</h3>
+                    <h2>Southern Illinois University - Edwardsville / Class Records</h2>
                     <button class="collapse-section-toggle" data-target="siue-record">
                         <div class="icon-container">
                             <i class="fa-solid fa-chevron-down"></i>

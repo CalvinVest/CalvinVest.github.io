@@ -14,12 +14,12 @@
 	<script src="assets/js/scripts.js"></script>
 </head>
 
-<body>
+<body id="green-page"> 
 	<nav class="top-navbar">
 		<ul>
 			<!--Be sure to set the currpage class to the correct link that the page currently is-->
 			<li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
-			<li class="nav-button">
+			<li class="nav-button" id="home-button">
 				<a href="index.html" class="currpage">
 					Home
 					<div class="icon-container">
@@ -28,7 +28,7 @@
 				</a>
 			</li>
 			<li class="nav-button has-dropdown">
-				<a href="academics/index.html">
+				<a href="academics/index.html" id="academics-button">
 					Academics
 					<div class="icon-container">
 						<i class="fa-solid fa-graduation-cap"></i>
@@ -41,7 +41,7 @@
 				</ul>
 			</li>
 			<li class="nav-button has-dropdown">
-				<a href="genealogy/index.html">
+				<a href="genealogy/index.html" id="genealogy-button">
 					Genealogy
 					<div class="icon-container">
 						<i class="fa-solid fa-people-roof"></i>
@@ -54,7 +54,7 @@
 				</ul>
 			</li>
 			<li class="nav-button has-dropdown">
-				<a href="programming.html">
+				<a href="programming.html" id="programming-button">
 					Programming
 					<div class="icon-container">
 						<i class="fa-solid fa-code"></i>
@@ -65,7 +65,7 @@
 				</ul>
 			</li>
 			<li class="nav-button">
-				<a href="about.html">
+				<a href="about.html" id="about-button">
 					About
 					<div class="icon-container">
 						<i class="fa-regular fa-circle-question"></i>
@@ -73,7 +73,7 @@
 				</a>
 			</li>
 			<li class="nav-button">
-				<a href="contact.html">
+				<a href="contact.html" id="contact-button">
 					Contact
 					<div class="icon-container">
 						<i class="fa-solid fa-envelope"></i>
@@ -191,16 +191,19 @@
 					</button>
 				</div>
 				<div class="collapse-section-content" data-content="panda">
-					<img src="https://cdn.shopify.com/s/files/1/2802/6064/files/cutepandafacts_1024x1024.jpg?v=1552555237"
-						alt="Cute Panda" />
-					<p class="attribution credit">
-						"<a target="_blank" rel="noopener noreferrer"
-							href="https://www.flickr.com/photos/91501748@N07/25893202952">panda</a>" by <a
-							target="_blank" rel="noopener noreferrer"
-							href="https://www.flickr.com/photos/91501748@N07">Mathias Appel</a> is marked with <a
-							target="_blank" rel="noopener noreferrer"
-							href="https://creativecommons.org/publicdomain/zero/1.0/?ref=openverse">CC0 1.0</a>.
-					</p>
+					<div class="imgbox">
+						<img src="https://cdn.shopify.com/s/files/1/2802/6064/files/cutepandafacts_1024x1024.jpg?v=1552555237"
+							alt="Cute Panda" />
+						<p class="credit">
+							"<a target="_blank" rel="noopener noreferrer"
+								href="https://www.flickr.com/photos/91501748@N07/25893202952">panda</a>" by <a
+								target="_blank" rel="noopener noreferrer"
+								href="https://www.flickr.com/photos/91501748@N07">Mathias Appel</a> is marked with <a
+								target="_blank" rel="noopener noreferrer"
+								href="https://creativecommons.org/publicdomain/zero/1.0/?ref=openverse">CC0 1.0</a>.
+						</p>
+					</div>
+
 				</div>
 			</section>
 
