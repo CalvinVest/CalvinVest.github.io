@@ -1,7 +1,7 @@
 :root {
     /* ========================= */
-    /* Naming convention for colors: */
     /* Base Colors */
+    /* Red Colors */
     --red-lightest: #7A4D4D;
     --red-lighter: #6B3D3D;
     --red-light: #5C2F2F;
@@ -10,6 +10,7 @@
     --red-darker: #2E1212;
     --red-darkest: #1F0505;
 
+    /* Yellow Colors */
     --yellow-lightest: #7A7A4D;
     --yellow-lighter: #6B6B3D;
     --yellow-light: #5C5C2F;
@@ -18,6 +19,7 @@
     --yellow-darker: #2E2E12;
     --yellow-darkest: #1F1F05;
 
+    /* Green Colors */
     --green-lightest: #4D7A4D;
     --green-lighter: #3D6B3D;
     --green-light: #2F5C2F;
@@ -26,6 +28,7 @@
     --green-darker: #122E12;
     --green-darkest: #051F05;
 
+    /* Teal Colors */
     --teal-lightest: #4D7A7A;
     --teal-lighter: #3D6B6B;
     --teal-light: #2F5C5C;
@@ -34,6 +37,7 @@
     --teal-darker: #122E2E;
     --teal-darkest: #051F1F;
 
+    /* Blue Colors */
     --blue-lightest: #4D4D7A;
     --blue-lighter: #3D3D6B;
     --blue-light: #2F2F5C;
@@ -42,6 +46,7 @@
     --blue-darker: #12122E;
     --blue-darkest: #05051F;
 
+    /* Purple Colors */
     --purple-lightest: #7A4D7A;
     --purple-lighter: #6B3D6B;
     --purple-light: #5C2F5C;
@@ -50,6 +55,7 @@
     --purple-darker: #2E122E;
     --purple-darkest: #1F051F;
 
+    /* Page colors default to gray, overwritten on pages with <body id="[insert color]-page> */
     --page-lightest: #7A7A7A;
     --page-lighter: #6B6B6B;
     --page-light: #5C5C5C;
@@ -58,37 +64,20 @@
     --page-darker: #2E2E2E;
     --page-darkest: #1F1F1F;
 
-    /* Green */
-    --green-1: #567045;
-    --green-2: #4F673F;
-    --green-3: #475D39;
-    --green-4: #405433;
-    --green-5: #384A2C;
-    --green-6: #314126;
-    --green-7: #293720;
-    --green-8: #222E1A;
-    --green-9: #1A2413;
-    /* Orange */
-    --orange-1: #FFFFF4;
-    --orange-2: #F3EAD9;
-    --orange-3: #E6D5BE;
-    --orange-4: #DAC0A3;
-    --orange-5: #CDAA87;
-    --orange-6: #C1956C;
-    --orange-7: #B48050;
-    --orange-8: #A86B35;
-    --orange-9: #9B5519;
-
-
+    /* Orange, for all instances of text. */
+    --orange-lightest: #FFFFF4;
+    --orange-lighter: #E6D5BE;
+    --orange-light: #CDAA87;
+    --orange-neutral: #B48050;
     /* ========================= */
 
     /* ========================= */
     /* Text Colors */
-    --txt-white: var(--orange-1);
-    --txt-all: var(--orange-3);
-    --txt-link: var(--orange-5);
-    --txt-link-hov: var(--orange-7);
-    --txt-link-curr: var(--orange-7);
+    --txt-white: var(--orange-lightest);
+    --txt-all: var(--orange-lighter);
+    --txt-link: var(--orange-light);
+    --txt-link-hov: var(--orange-neutral);
+    --txt-link-curr: var(--orange-neutral);
     --txt-credit: var(--footer-txt);
     /* ========================= */
 
@@ -111,38 +100,48 @@
     --nav-drop-border: var(--page-darkest);
     --nav-drop-btn-bg: var(--page-dark);
     --nav-drop-btn-bg-hov: var(--page-darker);
-    --nav-drop-btn-txt: var(--orange-1);
+    --nav-drop-btn-txt: var(--orange-lightest);
 
     /* Navbar Button Colors */
     --nav-btn-bg: var(--nav-bg);
     --nav-btn-txt: var(--nav-link);
     --nav-btn-txt-hov: var(--nav-link-hov);
-    --nav-btn-txt-curr: var(--orange-7);
+    --nav-btn-txt-curr: var(--orange-neutral);
 
     /* Home Button */
-    --nav-btn-home-bg: linear-gradient(to bottom, var(--green-darker) 70%, var(--green-darkest));;
+    --nav-btn-home-bg: var(--green-darker);
     --nav-btn-home-bg-hov: var(--green-darkest);
 
     /* Academics Button */
-    --nav-btn-acad-bg: linear-gradient(to bottom, var(--teal-darker) 70%, var(--teal-darkest));
+    --nav-btn-acad-bg: var(--teal-darker);
     --nav-btn-acad-bg-hov: var(--teal-darkest);
+
     --nav-btn-acad-drop-bg: linear-gradient(to bottom, var(--teal-darker), var(--teal-darkest));
+    --nav-btn-acad-drop-btn-bg: var(--teal-darker);
+    --nav-btn-acad-drop-btn-bg-hov: var(--teal-darkest);
 
     /* Genealogy Button */
-    --nav-btn-gene-bg: linear-gradient(to bottom, var(--blue-darker) 70%, var(--blue-darkest));
+    --nav-btn-gene-bg: var(--blue-darker);
     --nav-btn-gene-bg-hov: var(--blue-darkest);
+
     --nav-btn-gene-drop-bg: linear-gradient(to bottom, var(--blue-darker), var(--blue-darkest));
+    --nav-btn-gene-drop-btn-bg: var(--blue-darker);
+    --nav-btn-gene-drop-btn-bg-hov: var(--blue-darkest);
 
     /* Programming Button */
-    --nav-btn-prog-bg: linear-gradient(to bottom, var(--purple-darker) 70%, var(--purple-darkest));
+    --nav-btn-prog-bg: var(--purple-darker);
     --nav-btn-prog-bg-hov: var(--purple-darkest);
 
+    --nav-btn-prog-drop-bg: linear-gradient(to bottom, var(--purple-darker), var(--purple-darkest));
+    --nav-btn-prog-drop-btn-bg: var(--purple-darker);
+    --nav-btn-prog-drop-btn-bg-hov: var(--purple-darkest);
+
     /* About Button */
-    --nav-btn-abt-bg: linear-gradient(to bottom, var(--red-darker) 70%, var(--red-darkest));
+    --nav-btn-abt-bg: var(--red-darker);
     --nav-btn-abt-bg-hov: var(--red-darkest);
 
     /* Contact Button */
-    --nav-btn-cont-bg: linear-gradient(to bottom, var(--yellow-darker) 70%, var(--yellow-darkest));
+    --nav-btn-cont-bg: var(--yellow-darker);
     --nav-btn-cont-bg-hov: var(--yellow-darkest);
 
     /* Page Background */
@@ -150,8 +149,8 @@
 
     /* Container Colors */
     --container-bg: var(--page-darker);
-    --container-txt: var(--orange-3);
-    --container-link: var(--orange-5);
+    --container-txt: var(--orange-lighter);
+    --container-link: var(--orange-light);
 
     --container-btn-bg: var(--page-dark);
     --container-btn-bg-hov: var(--page-darker);
@@ -161,14 +160,14 @@
 
     /* Sidebar Colors */
     --side-bg: var(--page-darker);
-    --side-txt: var(--orange-3);
+    --side-txt: var(--orange-lighter);
     --side-section-bg: var(--page-darker);
     --side-section-border: var(--page-dark);
 
     --side-btn-bg: var(--page-dark);
-    --side-btn-txt: var(--orange-3);
+    --side-btn-txt: var(--orange-lighter);
     --side-btn-bg-hov: var(--page-darker);
-    --side-btn-txt-hov: var(--orange-8);
+    --side-btn-txt-hov: var(--orange-neutral);
 
     /* Footer Colors */
     --footer-bg: var(--page-darkest);

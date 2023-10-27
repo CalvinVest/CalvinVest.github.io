@@ -20,7 +20,11 @@ The css and js are imported with their respective links.
     <script src="assets/js/scripts.js"></script>
 </head>
 
-<body id="color-page"></body>
+<!--Remember to replace "color" below with the right color for the page.-->
+
+<!--
+<body id="color-page">
+-->
 
 <!----------------------------------------
 This section includes a header, and content that can be hidden with the included
@@ -32,7 +36,7 @@ Add class="expanded" to the section if you'd like the content to initiate expand
         <h1>Here's a header.</h1>
         <button class="collapse-section-toggle" data-target="example">
             <div class="icon-container">
-                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-up"></i>
             </div>
         </button>
     </div>
@@ -49,7 +53,9 @@ This should be used in tangent with the page container for best results, and the
 <nav class="top-navbar">
     <ul>
         <!--Be sure to set the currpage class to the correct link that the page currently is-->
-        <li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
+        <li>
+            <a href="index.html"><img src="assets/images/logo.png" class="logo"></a>
+        </li>
         <li>
             <a href="index.html" id="home-button">
                 Home
