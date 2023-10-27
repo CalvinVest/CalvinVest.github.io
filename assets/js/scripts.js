@@ -7,8 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
         var buttonImg = button.querySelector("i");
         var initScrollHeight = targetContent.scrollHeight + 100;
 
+        targetContent.style.display = "none";
+
         // Check if the section should start collapsed
         if (targetContent.parentElement.classList.contains("expanded")) {
+            targetContent.style.display = "flex";
             targetContent.style.overflow = "auto";
             targetContent.style.maxHeight = initScrollHeight + "px";
         } else {
@@ -100,21 +103,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const academicsButton = document.getElementById("academics-button");
     const academicsDropdown = academicsButton.nextElementSibling;
 
-    if(academicsDropdown) {
+    if (academicsDropdown) {
         academicsDropdown.classList.add("academics-drop");
     }
 
     const genealogyButton = document.getElementById("genealogy-button");
     const genealogyDropdown = genealogyButton.nextElementSibling;
 
-    if(genealogyDropdown) {
+    if (genealogyDropdown) {
         genealogyDropdown.classList.add("genealogy-drop");
     }
 
     const programmingButton = document.getElementById("programming-button");
     const programmingDropdown = programmingButton.nextElementSibling;
 
-    if(programmingDropdown) {
+    if (programmingDropdown) {
         programmingDropdown.classList.add("programming-drop");
     }
 });

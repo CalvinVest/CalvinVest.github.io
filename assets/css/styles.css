@@ -61,8 +61,8 @@ body {
 }
 
 .icon-container {
-    height: 30px;
-    width: 30px;
+    min-height: 30px;
+    min-width: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,6 +219,7 @@ footer a {
 }
 
 .collapse-section-content {
+    display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
@@ -232,17 +233,15 @@ footer a {
 }
 
 .expanded .collapse-section-content {
-    display: flex;
     margin: 10px;
     padding: 10px;
 }
 
 .imgbox {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 75%;
+    max-width: 100%;
 }
 
 .imgbox img {
