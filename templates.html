@@ -1,0 +1,121 @@
+<!----------------------------------------
+This is the default header for webpages on this site.
+It includes the base href to be updated per site.
+The css and js are imported with their respective links.
+----------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calvin Vest</title>
+    <meta name="description" content="page description">
+    <meta name="keywords" content="your, seo, keywords, go, here">
+    <!--Remember to set base href on each page-->
+    <base href="">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
+    <script src="https://kit.fontawesome.com/082c5f5bcb.js" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+</head>
+
+<!--Remember to replace "color" below with the right color for the page.-->
+
+<!--
+<body id="color-page">
+-->
+
+<!----------------------------------------
+This section includes a header, and content that can be hidden with the included
+button. All functionality is contained in scripts.js, so that should be included too.
+Add class="expanded" to the section if you'd like the content to initiate expanded.
+----------------------------------------->
+<section class="expanded">
+    <div class="collapse-section-header">
+        <h1>Here's a header.</h1>
+        <button class="collapse-section-toggle" data-target="example">
+            <div class="icon-container">
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+        </button>
+    </div>
+    <div class="collapse-section-content" data-content="example">
+
+    </div>
+</section>
+
+<!----------------------------------------
+This navbar is the default top navbar for the website.
+It includes all of the main page links and has dropdowns on several of the options that contain more specific links.
+This should be used in tangent with the page container for best results, and the base href should be set appropriately.
+----------------------------------------->
+<nav class="top-navbar">
+    <ul>
+        <!--Be sure to set the currpage class to the correct link that the page currently is-->
+        <li>
+            <a href="index.html"><img src="assets/images/logo.png" class="logo"></a>
+        </li>
+        <li>
+            <a href="index.html" id="home-button">
+                Home
+                <div class="icon-container">
+                    <i class="fa-solid fa-house-chimney"></i>
+                </div>
+            </a>
+        </li>
+        <li class="has-dropdown">
+            <a href="academics/index.html" id="academics-button">
+                Academics
+                <div class="icon-container">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+            </a>
+            <ul class="dropdown">
+                <li class="list-item"><a href="academics/progress.html">My academic progress</a></li>
+                <li class="list-item"><a href="academics/projects/index.html">School projects</a></li>
+                <li class="list-item"><a href="academics/employment.html">Employers/Job info</a></li>
+            </ul>
+        </li>
+        <li class="has-dropdown">
+            <a href="genealogy/index.html" id="genealogy-button">
+                Genealogy
+                <div class="icon-container">
+                    <i class="fa-solid fa-people-roof"></i>
+                </div>
+            </a>
+            <ul class="dropdown">
+                <li class="list-item"><a href="genealogy/progress.html">My Ancestry progress</a></li>
+                <li class="list-item"><a href="genealogy/earlydates.html">How far back does it go?</a></li>
+                <li class="list-item"><a href="genealogy/recent.html">Recent Discoveries</a></li>
+            </ul>
+        </li>
+        <li class="has-dropdown">
+            <a href="programming.html" id="programming-button">
+                Programming
+                <div class="icon-container">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+            </a>
+            <ul class="dropdown">
+                <li class="list-item"><a href="programming/projecteuler.html">Project Euler</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="about.html" id="about-button">
+                About
+                <div class="icon-container">
+                    <i class="fa-regular fa-circle-question"></i>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="contact.html" id="contact-button">
+                Contact
+                <div class="icon-container">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+            </a>
+        </li>
+    </ul>
+</nav>

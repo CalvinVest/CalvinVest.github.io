@@ -35,6 +35,7 @@
 
 .sidebar a {
     text-decoration: none;
+    font-style: normal;
     color: var(--side-txt);
     align-items: center;
     display: flex;

@@ -3,6 +3,18 @@
 @import url("top-navbar.css");
 @import url("sidebar.css");
 
+@font-face {
+    font-family: 'Alegreya';
+    src: url('../fonts/Alegreya/Alegreya-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'Alegreya SC';
+    src: url('../fonts/Alegreya_SC/AlegreyaSC-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body,
 h1,
 h2,
@@ -13,17 +25,48 @@ ul {
     padding: 0;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Alegreya SC', 'Georgia', serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 20px;
+    font-style: italic;
+}
+
 a {
-    color: var(--txt-white);
+    color: var(--container-link);
+    font-style: italic;
 }
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Alegreya', serif;
     background-color: var(--page-bg);
 }
 
 .container {
     display: flex;
+}
+
+.icon-container {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
 
 main {
@@ -33,16 +76,13 @@ main {
     display: inline;
 }
 
-main a {
-    color: var(--container-link);
-    font-style: italic;
-}
-
 main section {
     background: linear-gradient(165deg, var(--container-bg), var(--page-bg) 66%);
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
+    display: block;
+    font-size: 20px;
 }
 
 main section h1,
@@ -53,7 +93,6 @@ main section h3 {
 
 main section ul {
     list-style: none;
-    padding: 10px;
 }
 
 main section li {
@@ -68,32 +107,28 @@ main section p {
     padding: 10px;
 }
 
-main section img {
-    max-width: 800px;
+main section iframe {
+    padding: 10px;
 }
 
 main section table,
 main section th,
 main section td {
-    border: 1px solid var(--container-txt);
-}
-
-main section table {
-    margin: 20px;
+    border: 2px solid var(--container-link);
 }
 
 main section th {
-    color: var(--container-link);
     padding: 10px;
 }
 
 main section td {
     justify-content: left;
+    padding: 5px 10px 5px 10px;
 }
 
 main section .credit {
     color: var(--txt-credit);
-    font-size: 11px;
+    font-size: 12px;
 }
 
 main section .credit a {
@@ -101,7 +136,7 @@ main section .credit a {
 }
 
 footer p {
-    font-size: 11px;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -118,9 +153,9 @@ footer a {
 #page-container .btn {
     display: flex;
     height: 30px;
-    padding: 10px;
     margin: 10px;
     border-radius: 10px;
+    border: 2px solid var(--container-btn-border);
     background-color: var(--container-btn-bg);
     text-decoration: none;
     font-style: normal;
@@ -134,8 +169,28 @@ footer a {
     background-color: var(--container-btn-bg-hov);
 }
 
+#page-container button {
+    display: flex;
+    margin: 10px;
+    padding: 0;
+    border-radius: 10px;
+    border: 2px solid var(--container-btn-border);
+    background-color: var(--container-btn-bg);
+    color: var(--container-link);
+    text-decoration: none;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#page-container button:hover {
+    background-color: var(--container-btn-bg-hov);
+}
+
 #content-wrap {
-    margin: 60px 10px 20px 250px;
+    margin: 60px 10px 30px 240px;
 }
 
 #footer {
@@ -148,4 +203,48 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.collapse-section-header {
+    display: flex;
+    min-height: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+.collapse-section-header h1,
+.collapse-section-header h2,
+.collapse-section-header h3 {
+    margin-right: auto;
+}
+
+.collapse-section-content {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    transition:
+        max-height 0.3s ease,
+        margin 0.3s ease,
+        padding 0.3s ease;
+
+    border-radius: 20px;
+    background: var(--collapse-section-content-bg);
+}
+
+.expanded .collapse-section-content {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+
+.imgbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 75%;
+}
+
+.imgbox img {
+    max-width: 100%;
 }

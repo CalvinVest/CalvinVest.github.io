@@ -6,20 +6,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Calvin Vest</title>
 	<meta name="description" content="A little website about me.">
-	<meta name="keywords" content="your, hobby, keywords, go, here">
-	<!--Remember to set base href on each page-->
+	<meta name="keywords" content="calvin, vest, calvinvest">
 	<base href="">
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<link rel="icon" type="image/png" href="assets/images/icon.png">
 	<script src="https://kit.fontawesome.com/082c5f5bcb.js" crossorigin="anonymous"></script>
+	<script src="assets/js/scripts.js"></script>
 </head>
 
-<body>
+<body id="green-page"> 
 	<nav class="top-navbar">
 		<ul>
 			<!--Be sure to set the currpage class to the correct link that the page currently is-->
 			<li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
-			<li class="nav-button">
+			<li class="nav-button" id="home-button">
 				<a href="index.html" class="currpage">
 					Home
 					<div class="icon-container">
@@ -28,7 +28,7 @@
 				</a>
 			</li>
 			<li class="nav-button has-dropdown">
-				<a href="academics/index.html">
+				<a href="academics/index.html" id="academics-button">
 					Academics
 					<div class="icon-container">
 						<i class="fa-solid fa-graduation-cap"></i>
@@ -41,7 +41,7 @@
 				</ul>
 			</li>
 			<li class="nav-button has-dropdown">
-				<a href="genealogy/index.html">
+				<a href="genealogy/index.html" id="genealogy-button">
 					Genealogy
 					<div class="icon-container">
 						<i class="fa-solid fa-people-roof"></i>
@@ -54,7 +54,7 @@
 				</ul>
 			</li>
 			<li class="nav-button has-dropdown">
-				<a href="programming.html">
+				<a href="programming.html" id="programming-button">
 					Programming
 					<div class="icon-container">
 						<i class="fa-solid fa-code"></i>
@@ -65,7 +65,7 @@
 				</ul>
 			</li>
 			<li class="nav-button">
-				<a href="about.html">
+				<a href="about.html" id="about-button">
 					About
 					<div class="icon-container">
 						<i class="fa-regular fa-circle-question"></i>
@@ -73,7 +73,7 @@
 				</a>
 			</li>
 			<li class="nav-button">
-				<a href="contact.html">
+				<a href="contact.html" id="contact-button">
 					Contact
 					<div class="icon-container">
 						<i class="fa-solid fa-envelope"></i>
@@ -129,74 +129,117 @@
 					a little bit nicer.<br>
 				</p>
 			</section>
-			<section>
-				<h1>What brings you here?</h1>
-				<p>There's a good chance you're here because I asked you to check out my website. If that's the
-					case,
-					have a look around. There's not much to see just yet, but I'm trying to add features
-					regularly.<br>Much of what I plan to put here covers a wide array of interests, so this website
-					serves as somewhat of a landing page for all of my hobbes and academic interests, as well as any
-					other information I choose to plonk here in the future.</p>
-				<ul>
-					<li>
-						<h3>For Friends</h3>
-						<p>
-							If you're just checking out what I've been working on, my recent genealogy progress can
-							be
-							seen <a href="genealogy/recent.html">here</a>, and my programming projects are over <a
-								href="programming.html">here</a>.
-						</p>
-					</li>
-					<li>
-						<h3>For Family</h3>
-						<p>
-							If you're a relative of mine, you might just be here because of my genealogy work. If
-							that's
-							the case, head on over to <a href="genealogy/index.html">this page</a> to see a detailed
-							breakdown of my work and some helpful links to my family history.
-						</p>
-					</li>
-					<li>
-						<h3>For Employers and Recruiters</h3>
-						<p>
-							If you've been directed to my page to see my professional and academic work, or if you'd
-							like to learn more about my professional history, visit <a href="academics/employment.html">
-								this page</a> for my employment history, and feel free to explore some of my
-							academic
-							projects <a href="academics/projects/index.html">here</a>, or my hobby projects <a
-								href="programming.html">here</a>.
-						</p>
-					</li>
-				</ul>
+
+			<section class="expanded">
+				<div class="collapse-section-header">
+					<h1>What brings you here?</h1>
+					<button class="collapse-section-toggle" data-target="roadmap">
+						<div class="icon-container">
+							<i class="fa-solid fa-chevron-up"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse-section-content" data-content="roadmap">
+					<p>There's a good chance you're here because I asked you to check out my website. If that's the
+						case,
+						have a look around. There's not much to see just yet, but I'm trying to add features
+						regularly.<br>Much of what I plan to put here covers a wide array of interests, so this website
+						serves as somewhat of a landing page for all of my hobbes and academic interests, as well as any
+						other information I choose to plonk here in the future.</p>
+					<ul>
+						<li>
+							<h3>For Friends</h3>
+							<p>
+								If you're just checking out what I've been working on, my recent genealogy progress can
+								be
+								seen <a href="genealogy/recent.html">here</a>, and my programming projects are over <a
+									href="programming.html">here</a>.
+							</p>
+						</li>
+						<li>
+							<h3>For Family</h3>
+							<p>
+								If you're a relative of mine, you might just be here because of my genealogy work. If
+								that's
+								the case, head on over to <a href="genealogy/index.html">this page</a> to see a detailed
+								breakdown of my work and some helpful links to my family history.
+							</p>
+						</li>
+						<li>
+							<h3>For Employers and Recruiters</h3>
+							<p>
+								If you've been directed to my page to see my professional and academic work, or if you'd
+								like to learn more about my professional history, visit
+								<a href="academics/employment.html">this page</a>
+								for my employment history, and feel free to explore some of my academic projects
+								<a href="academics/projects/index.html">here</a>,
+								or my hobby projects
+								<a href="programming.html">here</a>.
+							</p>
+						</li>
+					</ul>
+				</div>
 			</section>
 
 			<section>
-				<img src="https://cdn.shopify.com/s/files/1/2802/6064/files/cutepandafacts_1024x1024.jpg?v=1552555237"
-					alt="Cute Panda" />
-				<p class="attribution credit">"<a target="_blank" rel="noopener noreferrer"
-						href="https://www.flickr.com/photos/91501748@N07/25893202952">panda</a>" by <a target="_blank"
-						rel="noopener noreferrer" href="https://www.flickr.com/photos/91501748@N07">Mathias Appel</a> is
-					marked with <a target="_blank" rel="noopener noreferrer"
-						href="https://creativecommons.org/publicdomain/zero/1.0/?ref=openverse">CC0 1.0</a>. </p>
+				<div class="collapse-section-header">
+					<h1>Here's a panda.</h1>
+					<button class="collapse-section-toggle" data-target="panda">
+						<div class="icon-container">
+							<i class="fa-solid fa-chevron-down"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse-section-content" data-content="panda">
+					<div class="imgbox">
+						<img src="https://cdn.shopify.com/s/files/1/2802/6064/files/cutepandafacts_1024x1024.jpg?v=1552555237"
+							alt="Cute Panda" />
+						<p class="credit">
+							"<a target="_blank" rel="noopener noreferrer"
+								href="https://www.flickr.com/photos/91501748@N07/25893202952">panda</a>" by <a
+								target="_blank" rel="noopener noreferrer"
+								href="https://www.flickr.com/photos/91501748@N07">Mathias Appel</a> is marked with <a
+								target="_blank" rel="noopener noreferrer"
+								href="https://creativecommons.org/publicdomain/zero/1.0/?ref=openverse">CC0 1.0</a>.
+						</p>
+					</div>
+
+				</div>
 			</section>
 
-			<section>
-				<h1>Here's a cool video</h1>
-				<p>I've watched this guy for a while, and I think his programming and AI content is a great watch if
-					you've ever got some time.</p>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/os4DcbpL0Nc?si=p6rXdH2_pUoxfFpV"
-					title="YouTube video player" frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					allowfullscreen></iframe>
+			<section class="expanded">
+				<div class="collapse-section-header">
+					<h1>Here's a cool video.</h1>
+					<button class="collapse-section-toggle" data-target="codebullet">
+						<div class="icon-container">
+							<i class="fa-solid fa-chevron-up"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse-section-content" data-content="codebullet">
+					<p>I've watched this guy for a while, and I think his programming and AI content is a great watch if
+						you've ever got some time.</p>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/os4DcbpL0Nc?si=p6rXdH2_pUoxfFpV"
+						title="YouTube video player" frameborder="0" allowfullscreen
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+				</div>
 			</section>
 
-			<section>
-				<h1>Want to share this page?</h1>
-				<p>Maybe not, but I'd appreciate it! You can reach me with your feedback on the <a
-						href="contact.html">Contact</a> page</p>
-				<p>You can use this handy-dandy QR Code to share this website with others.</p>
-				<p><img src="assets/images/qr-code.png" height="200px" /></p>
-
+			<section class="expanded">
+				<div class="collapse-section-header">
+					<h1>Want to share this page?</h1>
+					<button class="collapse-section-toggle" data-target="qr-code">
+						<div class="icon-container">
+							<i class="fa-solid fa-chevron-up"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse-section-content" data-content="qr-code">
+					<p>Maybe not, but I'd appreciate it! You can reach me with your feedback on the <a
+							href="contact.html">Contact</a> page</p>
+					<p>You can use this handy-dandy QR Code to share this website with others.</p>
+					<p><img src="assets/images/qr-code.png" height="200px" /></p>
+				</div>
 			</section>
 		</main>
 		<footer id="footer">

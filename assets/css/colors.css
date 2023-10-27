@@ -1,98 +1,176 @@
 :root {
+    /* ========================= */
     /* Base Colors */
-    /* Green */
-    --green-1: #F4FFF4;
-    --green-2: #D9E4D8;
-    --green-3: #BEC9BB;
-    --green-4: #A3AE9F;
-    --green-5: #879282;
-    --green-6: #6C7766;
-    --green-7: #515C49;
-    --green-8: #36412D;
-    --green-9: #1A2510;
-    /* Orange */
-    --orange-1: #FFFFF4;
-    --orange-2: #F3EAD9;
-    --orange-3: #E6D5BE;
-    --orange-4: #DAC0A3;
-    --orange-5: #CDAA87;
-    --orange-6: #C1956C;
-    --orange-7: #B48050;
-    --orange-8: #A86B35;
-    --orange-9: #9B5519;
+    /* Red Colors */
+    --red-lightest: #7A4D4D;
+    --red-lighter: #6B3D3D;
+    --red-light: #5C2F2F;
+    --red-neutral: #4D2424;
+    --red-dark: #3D1A1A;
+    --red-darker: #2E1212;
+    --red-darkest: #1F0505;
 
-    /* Navbar Colors */
-    --nav-bg: var(--green-8);
-    --nav-txt: var(--orange-3);
-    --nav-grad: var(--green-9);
+    /* Yellow Colors */
+    --yellow-lightest: #7A7A4D;
+    --yellow-lighter: #6B6B3D;
+    --yellow-light: #5C5C2F;
+    --yellow-neutral: #4D4D24;
+    --yellow-dark: #3D3D1A;
+    --yellow-darker: #2E2E12;
+    --yellow-darkest: #1F1F05;
+
+    /* Green Colors */
+    --green-lightest: #4D7A4D;
+    --green-lighter: #3D6B3D;
+    --green-light: #2F5C2F;
+    --green-neutral: #244D24;
+    --green-dark: #1A3D1A;
+    --green-darker: #122E12;
+    --green-darkest: #051F05;
+
+    /* Teal Colors */
+    --teal-lightest: #4D7A7A;
+    --teal-lighter: #3D6B6B;
+    --teal-light: #2F5C5C;
+    --teal-neutral: #244D4D;
+    --teal-dark: #1A3D3D;
+    --teal-darker: #122E2E;
+    --teal-darkest: #051F1F;
+
+    /* Blue Colors */
+    --blue-lightest: #4D4D7A;
+    --blue-lighter: #3D3D6B;
+    --blue-light: #2F2F5C;
+    --blue-neutral: #24244D;
+    --blue-dark: #1A1A3D;
+    --blue-darker: #12122E;
+    --blue-darkest: #05051F;
+
+    /* Purple Colors */
+    --purple-lightest: #7A4D7A;
+    --purple-lighter: #6B3D6B;
+    --purple-light: #5C2F5C;
+    --purple-neutral: #4D244D;
+    --purple-dark: #3D1A3D;
+    --purple-darker: #2E122E;
+    --purple-darkest: #1F051F;
+
+    /* Page colors default to gray, overwritten on pages with <body id="[insert color]-page> */
+    --page-lightest: #7A7A7A;
+    --page-lighter: #6B6B6B;
+    --page-light: #5C5C5C;
+    --page-neutral: #4D4D4D;
+    --page-dark: #3D3D3D;
+    --page-darker: #2E2E2E;
+    --page-darkest: #1F1F1F;
+
+    /* Orange, for all instances of text. */
+    --orange-lightest: #FFFFF4;
+    --orange-lighter: #E6D5BE;
+    --orange-light: #CDAA87;
+    --orange-neutral: #B48050;
+    /* ========================= */
+
+    /* ========================= */
+    /* Text Colors */
+    --txt-white: var(--orange-lightest);
+    --txt-all: var(--orange-lighter);
+    --txt-link: var(--orange-light);
+    --txt-link-hov: var(--orange-neutral);
+    --txt-link-curr: var(--orange-neutral);
+    --txt-credit: var(--footer-txt);
+    /* ========================= */
+
+    /* ================================================== */
+    /* ========================= */
+    /* Navbar */
+    /* ========================= */
+
+    /* ========================= */
+    /* Base Navbar Colors
+    /* ========================= */
+    --nav-bg: var(--page-darker);
+    --nav-grad: var(--page-darkest);
+    --nav-txt: var(--txt-all);
+    --nav-link: var(--txt-link);
+    --nav-link-hov: var(--txt-link-hov);
 
     /* Navbar Dropdown Colors */
-    --nav-drop-bg: var(--green-8);
-    --nav-drop-border: var(--green-9);
-    --nav-drop-btn-bg: var(--green-7);
-    --nav-drop-btn-txt: var(--orange-1);
-    --nav-drop-btn-bg-hov: var(--green-8);
+    --nav-drop-bg: var(--purple-darker);
+    --nav-drop-border: var(--page-darkest);
+    --nav-drop-btn-bg: var(--page-dark);
+    --nav-drop-btn-bg-hov: var(--page-darker);
+    --nav-drop-btn-txt: var(--orange-lightest);
 
     /* Navbar Button Colors */
-    --nav-btn-bg-hov: var(--green-9);
-    --nav-btn-txt-hov: var(--orange-8);
-    --nav-btn-txt-curr: var(--orange-7);
+    --nav-btn-bg: var(--nav-bg);
+    --nav-btn-txt: var(--nav-link);
+    --nav-btn-txt-hov: var(--nav-link-hov);
+    --nav-btn-txt-curr: var(--orange-neutral);
 
     /* Home Button */
-    --nav-btn-home-bg: var(--nav-bg);
-    --nav-btn-home-bg-hov: var(--nav-btn-bg-hov);
-    --nav-btn-home-txt-hov: var(--nav-btn-txt-hov);
+    --nav-btn-home-bg: var(--green-darker);
+    --nav-btn-home-bg-hov: var(--green-darkest);
 
     /* Academics Button */
-    --nav-btn-acad-bg: var(--nav-bg);
-    --nav-btn-acad-bg-hov: var(--nav-btn-bg-hov);
-    --nav-btn-acad-txt-hov: var(--nav-btn-txt-hov);
+    --nav-btn-acad-bg: var(--teal-darker);
+    --nav-btn-acad-bg-hov: var(--teal-darkest);
+
+    --nav-btn-acad-drop-bg: linear-gradient(to bottom, var(--teal-darker), var(--teal-darkest));
+    --nav-btn-acad-drop-btn-bg: var(--teal-darker);
+    --nav-btn-acad-drop-btn-bg-hov: var(--teal-darkest);
 
     /* Genealogy Button */
-    --nav-btn-gene-bg: var(--nav-bg);
-    --nav-btn-gene-bg-hov: var(--nav-btn-bg-hov);
-    --nav-btn-gene-txt-hov: var(--nav-btn-txt-hov);
+    --nav-btn-gene-bg: var(--blue-darker);
+    --nav-btn-gene-bg-hov: var(--blue-darkest);
+
+    --nav-btn-gene-drop-bg: linear-gradient(to bottom, var(--blue-darker), var(--blue-darkest));
+    --nav-btn-gene-drop-btn-bg: var(--blue-darker);
+    --nav-btn-gene-drop-btn-bg-hov: var(--blue-darkest);
 
     /* Programming Button */
-    --nav-btn-prog-bg: var(--nav-bg);
-    --nav-btn-prog-bg-hov: var(--nav-btn-bg-hov);
-    --nav-btn-prog-txt-hov: var(--nav-btn-txt-hov);
+    --nav-btn-prog-bg: var(--purple-darker);
+    --nav-btn-prog-bg-hov: var(--purple-darkest);
+
+    --nav-btn-prog-drop-bg: linear-gradient(to bottom, var(--purple-darker), var(--purple-darkest));
+    --nav-btn-prog-drop-btn-bg: var(--purple-darker);
+    --nav-btn-prog-drop-btn-bg-hov: var(--purple-darkest);
 
     /* About Button */
-    --nav-btn-abt-bg: var(--nav-bg);
-    --nav-btn-abt-bg-hov: var(--nav-btn-bg-hov);
-    --nav-btn-abt-txt-hov: var(--nav-btn-txt-hov);
+    --nav-btn-abt-bg: var(--red-darker);
+    --nav-btn-abt-bg-hov: var(--red-darkest);
 
     /* Contact Button */
-    --nav-btn-cont-bg: var(--nav-bg);
-    --nav-btn-cont-bg-hov: var(--nav-btn-bg-hov);
-    --nav-btn-cont-txt-hov: var(--nav-btn-txt-hov);
+    --nav-btn-cont-bg: var(--yellow-darker);
+    --nav-btn-cont-bg-hov: var(--yellow-darkest);
 
     /* Page Background */
-    --page-bg: var(--green-9);
+    --page-bg: var(--page-darkest);
 
     /* Container Colors */
-    --container-bg: var(--green-8);
-    --container-txt: var(--orange-3);
-    --container-link: var(--orange-5);
-    --container-btn-bg: var(--green-7);
-    --container-btn-bg-hov: var(--green-8);
+    --container-bg: var(--page-darker);
+    --container-txt: var(--orange-lighter);
+    --container-link: var(--orange-light);
+
+    --container-btn-bg: var(--page-dark);
+    --container-btn-bg-hov: var(--page-darker);
+    --container-btn-border: var(--page-neutral);
+
+    --collapse-section-content-bg: linear-gradient(165deg, var(--page-neutral), transparent 66%);
 
     /* Sidebar Colors */
-    --side-bg: var(--green-8);
-    --side-txt: var(--orange-3);
-    --side-section-bg: var(--green-8);
-    --side-section-border: var(--green-7);
-    --side-btn-bg: var(--green-7);
-    --side-btn-txt: var(--orange-3);
-    --side-btn-bg-hov: var(--green-8);
-    --side-btn-txt-hov: var(--orange-8);
+    --side-bg: var(--page-darker);
+    --side-txt: var(--orange-lighter);
+    --side-section-bg: var(--page-darker);
+    --side-section-border: var(--page-dark);
+
+    --side-btn-bg: var(--page-dark);
+    --side-btn-txt: var(--orange-lighter);
+    --side-btn-bg-hov: var(--page-darker);
+    --side-btn-txt-hov: var(--orange-neutral);
 
     /* Footer Colors */
-    --footer-bg: var(--green-9);
-    --footer-txt: var(--green-7);
+    --footer-bg: var(--page-darkest);
+    --footer-txt: var(--page-lightest);
 
-    /* Text Colors */
-    --txt-white: var(--text-main-bg);
-    --txt-credit: var(--footer-txt);
 }

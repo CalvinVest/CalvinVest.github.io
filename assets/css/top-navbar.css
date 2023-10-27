@@ -1,4 +1,12 @@
+@font-face {
+    font-family: 'Alegreya SC';
+    src: url('../fonts/Alegreya_SC/AlegreyaSC-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .top-navbar {
+    font-family: 'Alegreya SC', 'Georgia', serif;
     background-color: var(--nav-bg);
     color: var(--nav-txt);
     text-align: center;
@@ -7,8 +15,8 @@
     height: 50px;
     width: 100%;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    /* Add a subtle shadow for depth */
     z-index: 1;
+    transition: all 0.3s;
 }
 
 .top-navbar ul {
@@ -18,19 +26,20 @@
 }
 
 .top-navbar li {
+    z-index: 1;
     display: inline;
     position: relative;
     transition: background-color 0.3s;
 }
 
 .top-navbar li:hover {
-    background-color: var(--nav-btn-bg-hov);
     color: var(--nav-btn-txt-hov);
 }
 
 .top-navbar a {
     float: left;
     text-decoration: none;
+    font-style: normal;
     font-size: 20px;
     min-height: 30px;
     transition: all 0.3s;
@@ -46,19 +55,18 @@
     height: 30px;
 }
 
+.top-navbar a:hover {
+    color: var(--nav-btn-txt-hov);
+}
+
 .top-navbar a.currpage {
     color: var(--nav-btn-txt-curr);
 }
 
-.top-navbar .icon-container {
-    height: 30px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Add a subtle gradient background to the header */
+/*
+Adds top navbar as a floating navbar attached to top of screen,
+page contents display below navbar.
+*/
 .top-navbar::after {
     content: '';
     position: absolute;
@@ -66,7 +74,18 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, var(--nav-grad) 0%, transparent 30%);
+    pointer-events: none;
+}
+
+.top-navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 50%, var(--page-darkest));
+    z-index: 1;
     pointer-events: none;
 }
 
@@ -88,10 +107,9 @@
 }
 
 .has-dropdown:hover .dropdown {
-    display:block;
+    display: block;
     justify-content: left;
     float: left;
-    background: linear-gradient(to top, var(--nav-bg), var(--page-bg));
 }
 
 .has-dropdown .dropdown a {
@@ -114,6 +132,9 @@
     color: var(--nav-btn-currpage);
 }
 
+/* ========================= */
+/* Home */
+/* ========================= */
 .top-navbar #home-button {
     background-color: var(--nav-btn-home-bg);
 }
@@ -123,6 +144,21 @@
     color: var(--nav-btn-home-txt-hov);
 }
 
+.top-navbar #home-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 50%, var(--green-darkest));
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* ========================= */
+/* Academics */
+/* ========================= */
 .top-navbar #academics-button {
     background-color: var(--nav-btn-acad-bg);
 }
@@ -132,6 +168,33 @@
     color: var(--nav-btn-acad-txt-hov);
 }
 
+.top-navbar .academics-drop {
+    background: var(--nav-btn-acad-drop-bg);
+}
+
+.top-navbar .academics-drop li {
+    background-color: var(--nav-btn-acad-drop-btn-bg);
+}
+
+.top-navbar .academics-drop li:hover {
+    background-color: var(--nav-btn-acad-drop-btn-bg-hov);
+}
+
+.top-navbar #academics-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 50%, var(--teal-darkest));
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* ========================= */
+/* Genealogy */
+/* ========================= */
 .top-navbar #genealogy-button {
     background-color: var(--nav-btn-gene-bg);
 }
@@ -141,6 +204,33 @@
     color: var(--nav-btn-gene-txt-hov);
 }
 
+.top-navbar .genealogy-drop {
+    background: var(--nav-btn-gene-drop-bg);
+}
+
+.top-navbar .genealogy-drop li {
+    background-color: var(--nav-btn-gene-drop-btn-bg);
+}
+
+.top-navbar .genealogy-drop li:hover {
+    background-color: var(--nav-btn-gene-drop-btn-bg-hov);
+}
+
+.top-navbar #genealogy-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 50%, var(--blue-darkest));
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* ========================= */
+/* Programming */
+/* ========================= */
 .top-navbar #programming-button {
     background-color: var(--nav-btn-prog-bg);
 }
@@ -150,6 +240,33 @@
     color: var(--nav-btn-prog-txt-hov);
 }
 
+.top-navbar .programming-drop {
+    background: var(--nav-btn-prog-drop-bg);
+}
+
+.top-navbar .programming-drop li {
+    background-color: var(--nav-btn-prog-drop-btn-bg);
+}
+
+.top-navbar .programming-drop li:hover {
+    background-color: var(--nav-btn-prog-drop-btn-bg-hov);
+}
+
+.top-navbar #programming-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 50%, var(--purple-darkest));
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* ========================= */
+/* About */
+/* ========================= */
 .top-navbar #about-button {
     background-color: var(--nav-btn-abt-bg);
 }
@@ -159,6 +276,21 @@
     color: var(--nav-btn-abt-txt-hov);
 }
 
+.top-navbar #about-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 50%, var(--red-darkest));
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* ========================= */
+/* Contact */
+/* ========================= */
 .top-navbar #contact-button {
     background-color: var(--nav-btn-cont-bg);
 }
@@ -166,4 +298,16 @@
 .top-navbar #contact-button:hover {
     background-color: var(--nav-btn-cont-bg-hov);
     color: var(--nav-btn-cont-txt-hov);
+}
+
+.top-navbar #contact-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 50%, var(--yellow-darkest));
+    z-index: 2;
+    pointer-events: none;
 }
