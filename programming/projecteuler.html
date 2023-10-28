@@ -18,7 +18,6 @@
 <body id="purple-page">
 	<nav class="top-navbar">
 		<ul>
-			<!--Be sure to set the currpage class to the correct link that the page currently is-->
 			<li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
 			<li>
 				<a href="index.html" id="home-button">
@@ -88,37 +87,219 @@
 	<div id="page-container">
 		<nav class="sidebar">
 			<section>
-				<!--add h3 for section headers-->
-				<!--add ul with li a href links for items of section-->
 				<h3>Section Header</h3>
 				<ul>
 					<li>
-						<a href="#" class="side-btn">Example link</a>
+						<a href="https://github.com/CalvinVest/ProjectEulerSolutions" class="side-btn" target="_blank"
+							rel="noopener noreferrer">
+							<div class="icon-container">
+								<i class="fa-brands fa-github"></i>
+							</div>
+							GitHub Page
+						</a>
 					</li>
 					<li>
-						<a href="#" class="side-btn">Another example</a>
-					</li>
-					<li>
-						<a href="#" class="side-btn">Yet another example with a really long title.</a>
+						<a target="_blank" rel="noopener noreferrer" href="https://projecteuler.net/" class="side-btn">
+							<div class="icon-container">
+								<i class="fa-brands fa-github"></i>
+							</div>
+							Project Euler
+						</a>
 					</li>
 				</ul>
 			</section>
 		</nav>
 
 		<main id="content-wrap">
-			<!--This is filler content. Replace page-by-page -->
-			<section>
-				<h3>This is some example text.</h3>
-				<p>This is some more text.</p>
-				<p>This is even more text with a <a href="#">link</a>.</p>
+			<section class="expanded">
+				<div class="collapse-section-header">
+					<h1>This is my favorite hobby program.</h1>
+					<button class="collapse-section-toggle" data-target="intro">
+						<div class="icon-container">
+							<i class="fa-solid fa-chevron-up"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse-section-content" data-content="intro">
+					<h3>Project Euler</h3>
+					<p>
+						From <a href="https://projecteuler.net/" target="_blank" ref="noopener noreferrer">their
+							website,</a>
+					</p>
+				</div>
+
 			</section>
+
 			<section>
-				<h3>This is a new section.</h3>
-				<p>This is some text in this new section. It's a pretty long one, so it'll probably create a new line.
-					I'm mostly putting this much text here because I want to see just how this page wraps this example
-					text on the page. It's really just a big block of text so I can make sure this page looks really
-					nice when I put a lot of actual real-world content in here. I haven't done that yet, so this is just
-					more and more and more text to fill the place in the meantime.</p>
+				<div class="collapse-section-header">
+					<h1>Solution Progress</h1>
+					<button class="collapse-section-toggle" data-target="progress">
+						<div class="icon-container">
+							<i class="fa-solid fa-chevron-down"></i>
+						</div>
+					</button>
+				</div>
+
+				<div class="collapse-section-content" data-content="progress">
+					<table>
+						<tr>
+							<th>Problem #</th>
+							<th>Name</th>
+							<th>Status</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td>Problem 1</td>
+							<td>Multiples of 3 or 5</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 2</td>
+							<td>Even Fibonacci Numbers</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 3</td>
+							<td>Largest Prime Factor</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 4</td>
+							<td>Largest Palindrome Product</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 5</td>
+							<td>Smallest Multiple</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 6</td>
+							<td>Sum Square Difference</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 7</td>
+							<td>10001st Prime</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 8</td>
+							<td>Largest Product in a Series</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 9</td>
+							<td>Special Pythagorean Triplet</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 10</td>
+							<td>Summation of Primes</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 11</td>
+							<td>Largest Product in a Grid</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 12</td>
+							<td>Highly Divisible Triangular Number</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 13</td>
+							<td>Large Sum</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 14</td>
+							<td>Longest Collatz Sequence</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 15</td>
+							<td>Lattice Paths</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 16</td>
+							<td>Power Digit Sum</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 17</td>
+							<td>Number Letter Counts</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 18</td>
+							<td>Maximum Path Sum I</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 19</td>
+							<td>Counting Sundays</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 20</td>
+							<td>Factorial Digit Sum</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 21</td>
+							<td>Amicable Numbers</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 22</td>
+							<td>Names Scores</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 23</td>
+							<td>Non-Abundant Sums</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 24</td>
+							<td>Lexicographic Permutations</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Problem 25</td>
+							<td>1000-digit Fibonacci Number</td>
+							<td>Complete</td>
+							<td>Description</td>
+						</tr>
+					</table>
+				</div>
 			</section>
 		</main>
 

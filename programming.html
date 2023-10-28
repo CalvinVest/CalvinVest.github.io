@@ -87,69 +87,93 @@
     <div id="page-container">
         <nav class="sidebar">
             <section>
-                <!--add h3 for section headers-->
-                <!--add ul with li a href links for items of section-->
-                <h3>Section Header</h3>
+                <h3>Programming Projects</h3>
                 <ul>
                     <li>
-                        <a href="#" class="side-btn">Example link</a>
+                        <a href="https://github.com/CalvinVest/ProjectEulerSolutions" class="side-btn" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="icon-container">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            Project Euler Solutions
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="side-btn">Another example</a>
+                        <a href="https://github.com/CalvinVest/CalvinVest.github.io" class="side-btn" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="icon-container">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            My Website
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="side-btn">Yet another example with a really long title.</a>
+                        <p>I'll be adding links to more of my projects in the future, too!</p>
                     </li>
                 </ul>
             </section>
         </nav>
 
         <main id="content-wrap">
-            <section>
-                <h1>Want to explore?</h1>
-                <h3>Here's some links to set you on your way.</h3>
-                <p>These are some links to projects I'm either involved or interested in.</p>
-                <table style="width:100%">
-                    <tr>
-                        <th style="min-width: 200px;">Project</th>
-                        <th>Links</th>
-                        <th>Notes</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Project Euler Solutions</p>
-                        </td>
-                        <td>
-                            <a href="programming/projecteuler.html" class="btn">Webpage Link</a>
-                            <a target="_blank" rel="noopener noreferrer"
-                                href="https://github.com/CalvinVest/ProjectEulerSolutions" class="btn">Github Repo</a>
-                            <a target="_blank" rel="noopener noreferrer" href="https://projecteuler.net/"
-                                class="btn">Project Euler</a>
-                        </td>
-                        <td>
-                            <p>My own repository of solutions to Project Euler problems. I really love solving these
-                                problems and this project gave me a reason to keep doing them regularly.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Kuzma Self-Playing Guitars</p>
-                        </td>
-                        <td>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.selfplayingguitars.com/"
-                                class="btn">Michael's Website</a>
-                            <a target="_blank" rel="noopener noreferrer"
-                                href="https://www.youtube.com/channel/UCsKnlsRFvdiatBB4bP1TnZA" class="btn">Michael's
-                                YouTube</a>
-                        </td>
-                        <td>
-                            <p>I had the chance to meet and work with Michael Kuzma for a short time in the very early
-                                stages of his self-playing guitar project, but I had to step away before things really
-                                had a chance to take off. Since then, he's expanded his project into an amazing
-                                demonstration of technical skill and dedication.</p>
-                        </td>
-                    </tr>
-                </table>
+            <section class="expanded">
+                <div class="collapse-section-header">
+                    <h1>Want to explore?</h1>
+                    <button class="collapse-section-toggle" data-target="explore">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </button>
+                </div>
+                <div class="collapse-section-content" data-content="explore">
+                    <h3>Here's some links to set you on your way.</h3>
+                    <p>These are some links to projects I'm either involved or interested in.</p>
+
+                    <table style="width:100%">
+                        <tr>
+                            <th style="min-width: 200px;">Project</th>
+                            <th>Links</th>
+                            <th>Notes</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Project Euler Solutions</p>
+                            </td>
+                            <td>
+                                <a href="programming/projecteuler.html" class="btn">Webpage Link</a>
+                                <a target="_blank" rel="noopener noreferrer"
+                                    href="https://github.com/CalvinVest/ProjectEulerSolutions" class="btn">Github
+                                    Repo</a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://projecteuler.net/"
+                                    class="btn">Project Euler</a>
+                            </td>
+                            <td>
+                                <p>My own repository of solutions to Project Euler problems. I really love solving these
+                                    problems and this project gave me a reason to keep doing them regularly.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Kuzma Self-Playing Guitars</p>
+                            </td>
+                            <td>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.selfplayingguitars.com/"
+                                    class="btn">Michael's Website</a>
+                                <a target="_blank" rel="noopener noreferrer"
+                                    href="https://www.youtube.com/channel/UCsKnlsRFvdiatBB4bP1TnZA"
+                                    class="btn">Michael's
+                                    YouTube</a>
+                            </td>
+                            <td>
+                                <p>I had the chance to meet and work with Michael Kuzma for a short time in the very
+                                    early
+                                    stages of his self-playing guitar project, but I had to step away before things
+                                    really
+                                    had a chance to take off. Since then, he's expanded his project into an amazing
+                                    demonstration of technical skill and dedication.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </section>
         </main>
 
