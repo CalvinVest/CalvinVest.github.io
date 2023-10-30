@@ -2,56 +2,26 @@
     /* ========================= */
     /* Base Colors */
     /* Red Colors */
-    --red-lightest: #7A4D4D;
-    --red-lighter: #6B3D3D;
-    --red-light: #5C2F2F;
-    --red-neutral: #4D2424;
-    --red-dark: #3D1A1A;
     --red-darker: #2E1212;
     --red-darkest: #1F0505;
 
     /* Yellow Colors */
-    --yellow-lightest: #7A7A4D;
-    --yellow-lighter: #6B6B3D;
-    --yellow-light: #5C5C2F;
-    --yellow-neutral: #4D4D24;
-    --yellow-dark: #3D3D1A;
     --yellow-darker: #2E2E12;
     --yellow-darkest: #1F1F05;
 
     /* Green Colors */
-    --green-lightest: #4D7A4D;
-    --green-lighter: #3D6B3D;
-    --green-light: #2F5C2F;
-    --green-neutral: #244D24;
-    --green-dark: #1A3D1A;
     --green-darker: #122E12;
     --green-darkest: #051F05;
 
     /* Teal Colors */
-    --teal-lightest: #4D7A7A;
-    --teal-lighter: #3D6B6B;
-    --teal-light: #2F5C5C;
-    --teal-neutral: #244D4D;
-    --teal-dark: #1A3D3D;
     --teal-darker: #122E2E;
     --teal-darkest: #051F1F;
 
     /* Blue Colors */
-    --blue-lightest: #4D4D7A;
-    --blue-lighter: #3D3D6B;
-    --blue-light: #2F2F5C;
-    --blue-neutral: #24244D;
-    --blue-dark: #1A1A3D;
     --blue-darker: #12122E;
     --blue-darkest: #05051F;
 
     /* Purple Colors */
-    --purple-lightest: #7A4D7A;
-    --purple-lighter: #6B3D6B;
-    --purple-light: #5C2F5C;
-    --purple-neutral: #4D244D;
-    --purple-dark: #3D1A3D;
     --purple-darker: #2E122E;
     --purple-darkest: #1F051F;
 

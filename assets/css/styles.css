@@ -56,6 +56,15 @@ body {
     background-color: var(--page-bg);
 }
 
+code {
+    font-family: Consolas, "courier new";
+    color: #fff;
+    background-color: #000;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
 .container {
     display: flex;
 }
@@ -82,7 +91,7 @@ main section {
     padding: 20px;
     border-radius: 20px;
     display: block;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 main section h1,
@@ -114,16 +123,33 @@ main section iframe {
 main section table,
 main section th,
 main section td {
-    border: 2px solid var(--container-link);
+    border: 2px solid var(--page-lightest);
+}
+
+main section table {
+    background-color: var(--page-darker);
 }
 
 main section th {
     padding: 10px;
+    white-space: nowrap;
 }
 
 main section td {
     justify-content: left;
-    padding: 5px 10px 5px 10px;
+    padding: 5px;
+}
+
+td .btn {
+    margin: 0;
+    padding: 0px 5px 0px 5px;
+    background-color: var(--page-darker);
+    border: none;
+    border-radius: 0;
+}
+
+td .btn:hover {
+    background-color: var(--page-darkest);
 }
 
 main section .credit {
@@ -150,10 +176,11 @@ footer a {
     min-height: 100vh;
 }
 
-#page-container .btn {
+.btn {
     display: flex;
     height: 30px;
-    margin: 10px;
+    padding: 5px;
+    margin: 5px;
     border-radius: 10px;
     border: 2px solid var(--container-btn-border);
     background-color: var(--container-btn-bg);
@@ -165,7 +192,7 @@ footer a {
     transition: color 0.3s, background-color 0.3s;
 }
 
-#page-container .btn:hover {
+.btn:hover {
     background-color: var(--container-btn-bg-hov);
 }
 
