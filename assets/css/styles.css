@@ -138,6 +138,10 @@ main section td {
     white-space: nowrap;
 }
 
+.centertext {
+    text-align: center;
+}
+
 td .btn {
     margin: 0;
     padding: 0px 5px 0px 5px;
