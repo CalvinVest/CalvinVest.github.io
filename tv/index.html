@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeMo</title>
+    <meta name="description" content="VeMo TV Landing Page">
+    <meta name="keywords" content="tv, television, landing page, landing, stream, streaming">
+    <base href="../">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
+    <script src="https://kit.fontawesome.com/082c5f5bcb.js" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+</head>
+
+<body>
+    <nav class="top-navbar">
+        <ul>
+            <!--Be sure to set the currpage class to the correct link that the page currently is-->
+            <li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
+            <li>
+                <a href="index.html" id="home-button">
+                    Home
+                    <div class="icon-container">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="page-container">
+        <nav class="sidebar">
+            <section>
+                <!--add h3 for section headers-->
+                <!--add ul with li a href links for items of section-->
+                <h3>Section Header</h3>
+                <ul>
+                    <li>
+                        <a href="#" class="side-btn">Example link</a>
+                    </li>
+                    <li>
+                        <a href="#" class="side-btn">Another example</a>
+                    </li>
+                    <li>
+                        <a href="#" class="side-btn">Yet another example with a really long title.</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <main id="content-wrap">
+            <section class="expanded">
+                <div class="collapse-section-header">
+                    <h1>Welcome to my website</h1>
+                    <button class="collapse-section-toggle" data-target="intro">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </button>
+                </div>
+                <div class="collapse-section-content" data-content="intro">
+                    
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <p>
+                &copy; 2023 CalvinVest @ github |
+                <a target="_blank" href="https://icons8.com/icon/111021/c">Letter C</a> icon by <a target="_blank"
+                    href="https://icons8.com">Icons8</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
