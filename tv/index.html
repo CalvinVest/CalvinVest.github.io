@@ -11,16 +11,40 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" type="image/png" href="assets/images/icon.png">
     <script src="https://kit.fontawesome.com/082c5f5bcb.js" crossorigin="anonymous"></script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/scripts-tv.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Segoe UI', sans-serif;
+            font-style: normal;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-gap: 10px;
+            /* Space between items */
+            grid-template-columns: repeat(auto-fill, minmax(225px, 10%));
+            padding: 10px;
+        }
+
+        .grid-item {
+            display: flex;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 
-<body>
+<body id="tv-page">
     <nav class="top-navbar">
         <ul>
-            <!--Be sure to set the currpage class to the correct link that the page currently is-->
-            <li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
             <li>
-                <a href="index.html" id="home-button">
+                <a href="index.html"><!--id="home-button"-->
                     Home
                     <div class="icon-container">
                         <i class="fa-solid fa-house-chimney"></i>
@@ -32,19 +56,39 @@
 
     <div id="page-container">
         <nav class="sidebar">
-            <section>
+            <section style="border-color: #6441a5">
                 <!--add h3 for section headers-->
                 <!--add ul with li a href links for items of section-->
-                <h3>Section Header</h3>
+                <h3>Twitch Streams</h3>
                 <ul>
                     <li>
-                        <a href="#" class="side-btn">Example link</a>
+                        <a href="https://www.twitch.tv/zbradshaw73" class="side-btn">
+                            <div class="icon-container">
+                                <i class="fa-brands fa-twitch"></i>
+                            </div>
+                            ZBradshaw73
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="side-btn">Another example</a>
+                        <a href="https://www.twitch.tv/xmshredder" class="side-btn">
+                            <div class="icon-container">
+                                <i class="fa-brands fa-twitch"></i>
+                            </div>
+                            xMshredder
+                        </a>
                     </li>
+                </ul>
+            </section>
+            <section style="border-color: #f00">
+                <h3>Youtube Channels</h3>
+                <ul>
                     <li>
-                        <a href="#" class="side-btn">Yet another example with a really long title.</a>
+                        <a href="https://www.youtube.com/@JellesMarbleRuns" class="side-btn">
+                            <div class="icon-container">
+                                <img src="assets/images/tv/yt/jellesmarbleruns.png" alt="Jelle's Marble Runs" />
+                            </div>
+                            Marbles
+                        </a>
                     </li>
                 </ul>
             </section>
@@ -53,15 +97,147 @@
         <main id="content-wrap">
             <section class="expanded">
                 <div class="collapse-section-header">
-                    <h1>Welcome to my website</h1>
-                    <button class="collapse-section-toggle" data-target="intro">
+                    <h1>Streaming Services</h1>
+                    <button class="collapse-section-toggle" data-target="streaming">
                         <div class="icon-container">
                             <i class="fa-solid fa-chevron-up"></i>
                         </div>
                     </button>
                 </div>
-                <div class="collapse-section-content" data-content="intro">
-                    
+                <div class="collapse-section-content" data-content="streaming">
+                    <div class="grid-container">
+                        <!-- HBO Max Button -->
+                        <div class="grid-item">
+                            <a class="tv-btn" href="https://play.max.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/tv/max.png" alt="HBO Max" />
+                            </a>
+                        </div>
+
+                        <!-- Netflix Button -->
+                        <div class="grid-item">
+                            <a class="tv-btn" href="https://www.netflix.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/tv/netflix.png" alt="Netflix" />
+                            </a>
+                        </div>
+
+                        <!-- Disney Plus Button -->
+                        <div class="grid-item">
+                            <a class="tv-btn" href="https://www.disneyplus.com/" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="assets/images/tv/disneyplus.png" alt="Disney Plus" />
+                            </a>
+                        </div>
+
+                        <!-- ESPN Plus Button -->
+                        <div class="grid-item">
+                            <a class="tv-btn" href="https://plus.espn.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/tv/espnplus.png" alt="ESPN Plus" />
+                            </a>
+                        </div>
+
+                        <!-- Hulu Button -->
+                        <div class="grid-item">
+                            <a class="tv-btn" href="https://www.hulu.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/tv/hulu.png" alt="Hulu" />
+                            </a>
+                        </div>
+
+                        <!-- Paramount Plus Button -->
+                        <div class="grid-item">
+                            <a class="tv-btn" href="https://www.paramountplus.com/" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="assets/images/tv/paramountplus.png" alt="Paramount Plus" />
+                            </a>
+                        </div>
+
+                        <!-- NHL Network Button -->
+                        <div class="grid-item">
+                            <a class="tv-btn" href="https://www.nhl.com/tv" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/tv/nhlnetwork.png" alt="NHL Network" />
+                            </a>
+                        </div>
+
+                        <!-- Add more items here -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="expanded">
+                <div class="collapse-section-header">
+                    <h1>Sports</h1>
+                    <button class="collapse-section-toggle" data-target="sports">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </button>
+                </div>
+                <div class="collapse-section-content" data-content="sports">
+                    <div>
+                        <ul>
+                            <li>
+                                <h2>Hockey</h2>
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <a class="tv-btn" href="https://www.espn.com/nhl/team/_/name/stl/st-louis-blues"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <img src="assets/images/tv/sports/stlouisblues.png" alt="St Louis Blues" />
+                                        </a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="tv-btn"
+                                            href="https://www.espn.com/nhl/team/_/name/nj/new-jersey-devils"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <img src="assets/images/tv/sports/newjerseydevils.png"
+                                                alt="New Jersey Devils" />
+                                        </a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="tv-btn"
+                                            href="https://www.espn.com/nhl/team/_/name/nsh/nashville-predators"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <img src="assets/images/tv/sports/nashvillepredators.png"
+                                                alt="Nashville Predators" />
+                                        </a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="tv-btn"
+                                            href="https://www.espn.com/nhl/team/_/name/tor/toronto-maple-leafs"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <img src="assets/images/tv/sports/torontomapleleafs.png"
+                                                alt="Toronto Maple Leafs" />
+                                        </a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="tv-btn"
+                                            href="https://www.espn.com/nhl/team/_/name/car/carolina-hurricanes"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <img src="assets/images/tv/sports/carolinahurricanes.png"
+                                                alt="Carolina Hurricanes" />
+                                        </a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="tv-btn" href="https://www.espn.com/nhl/team/_/name/buf/buffalo-sabres"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <img src="assets/images/tv/sports/buffalosabres.png" alt="Buffalo Sabres" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a class="twitter-timeline" data-theme="dark"
+                                        href="https://twitter.com/StLouisBlues?ref_src=twsrc%5Etfw">Tweets by
+                                        StLouisBlues</a>
+                                    <script async src="https://platform.twitter.com/widgets.js"
+                                        charset="utf-8"></script>
+                                </div>
+                            </li>
+                            <li>
+                                <h2>Football</h2>
+                            </li>
+                            <li>
+                                <h2>Baseball</h2>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </main>

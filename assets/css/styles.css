@@ -74,6 +74,11 @@ code {
     font-size: 20px;
 }
 
+.icon-container img {
+    max-width: 30px;
+    max-height: 30px
+}
+
 main {
     flex: 1;
     color: var(--container-txt);
@@ -256,7 +261,6 @@ footer a {
         max-height 0.3s ease,
         margin 0.3s ease,
         padding 0.3s ease;
-
     border-radius: 20px;
     background: var(--collapse-section-content-bg);
 }
@@ -275,4 +279,40 @@ footer a {
 
 .imgbox img {
     max-width: 100%;
+}
+
+.tv-btn {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 0px solid var(--container-btn-border);
+    background-color: var(--container-btn-bg);
+    text-decoration: none;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.tv-btn:hover {
+    background-color: var(--container-btn-bg-hov);
+}
+
+.tv-btn img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+    /* Smooth transition for the opacity change */
+    opacity: 1;
+    /* Fully opaque initially */
+}
+
+.tv-btn:hover img {
+    opacity: 0.5;
+    /* 50% transparent on hover */
 }

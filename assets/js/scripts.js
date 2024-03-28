@@ -89,6 +89,12 @@ document.addEventListener("DOMContentLoaded", function () {
             step = "#0F0D0F";
             break;
         }
+        case 'black-page': {
+            document.documentElement.style.setProperty('--page-darkest', 'var(--black-darkest)');
+            document.documentElement.style.setProperty('--page-darker', 'var(--black-darker)');
+            step = "#0F0F0F";
+            break;
+        }
     }
 
     var darkest = getComputedStyle(document.documentElement).getPropertyValue('--page-darkest');

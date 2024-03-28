@@ -25,6 +25,15 @@
     --purple-darker: #2E122E;
     --purple-darkest: #1F051F;
 
+    /* Black Colors */
+    --tv-darkest: #0F0F0F;
+    --tv-darker: #440000;
+    --tv-dark: #333;
+    --tv-neutral: #222;
+    --tv-light: #044;
+    --tv-lighter: #909;
+    --tv-lightest: #f22;
+
     /* Page colors default to gray, overwritten on pages with <body id="[insert color]-page> */
     --page-lightest: #7A7A7A;
     --page-lighter: #6B6B6B;
