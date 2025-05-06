@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 1</title>
+    <meta name="description" content="Project Euler Solution Problem 1">
+    <meta name="keywords" content="calvin, vest, project, euler, projecteuler, solution, problem, 1">
+    <base href="../../">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
+    <script src="https://kit.fontawesome.com/082c5f5bcb.js" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+</head>
+
+<body id="purple-page">
+    <nav class="top-navbar">
+        <ul>
+            <li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
+            <li>
+                <a href="programming/projecteuler.html" id="programming-button">
+                    Programming
+                    <div class="icon-container">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="page-container">
+        <nav class="sidebar">
+            <section>
+                <h3>Problem Links</h3>
+                <ul>
+                    <li>
+                        <a href="https://projecteuler.net/problem=1" class="side-btn" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="icon-container">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            Project Euler Page
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/CalvinVest/ProjectEulerSolutions/blob/main/src/projecteulersolutions/Problem0001.java"
+                            class="side-btn" target="_blank" rel="noopener noreferrer">
+                            <div class="icon-container">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            GitHub Project File
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <main id="content-wrap">
+            <section class="expanded">
+                <div class="collapse-section-header">
+                    <h1>Problem 1 - Description</h1>
+                    <button class="collapse-section-toggle" data-target="intro">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="collapse-section-content" data-content="intro">
+                    <p>If we list all the natural numbers below <b>10</b> that are multiples of <b>3</b> or <b>5</b>, we
+                        get <b>3</b>, <b>5</b>, <b>6</b>, and <b>9</b>. The sum of these multiples is
+                        <b>23</b><br><br>Find the sum of all the multiples of <b>3</b> or <b>5</b> below
+                        <b>1000</b>.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <div class="collapse-section-header">
+                    <h1>Problem 1 - Code</h1>
+                    <button class="collapse-section-toggle" data-target="code">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="collapse-section-content" data-content="code">
+                    <code>
+                        package projecteulersolutions;
+                        <br>
+                        <br>public class Problem0001 extends Problem {
+                        <br>
+                        <br>&nbsp;&nbsp;@Override
+                        <br>&nbsp;&nbsp;public boolean isSolved() {
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;return true;
+                        <br>&nbsp;&nbsp;}
+                        <br>
+                        <br>&nbsp;&nbsp;/*
+                        <br>&nbsp;&nbsp;The goal of problem 1 is to find the sum of all
+                        <br>&nbsp;&nbsp;natural numbers divisible by 3 or 5 below 1000
+                        <br>&nbsp;&nbsp;&nbsp;*/
+                        <br>&nbsp;&nbsp;@Override
+                        <br>&nbsp;&nbsp;public void printSolution() {
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;int sum = 0; // solution variable, sum of all qualifying values
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 1; i &lt; 1000; i++) // all nat numbers below 1000
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;{
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (i % 3 == 0 || i % 5 == 0) // any multiples of 3 or 5 qualify
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum += i; // adds qualifying values to the sum
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                        <br>&nbsp;&nbsp;}
+                        <br>&nbsp;&nbsp;System.out.println("The sum of all numbers divisible by 3 or 5 below 1000 is: " + sum);
+                        <br>&nbsp;&nbsp;}
+                        <br>}
+                    </code>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

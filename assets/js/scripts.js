@@ -7,8 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
         var buttonImg = button.querySelector("i");
         var initScrollHeight = targetContent.scrollHeight + 100;
 
+        targetContent.style.display = "none";
+
         // Check if the section should start collapsed
         if (targetContent.parentElement.classList.contains("expanded")) {
+            targetContent.style.display = "flex";
             targetContent.style.overflow = "auto";
             targetContent.style.maxHeight = initScrollHeight + "px";
         } else {
@@ -47,74 +50,121 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const bodyId = document.body.id;
 
-    if (bodyId === 'red-page') {
-        document.documentElement.style.setProperty('--page-lightest', 'var(--red-lightest)');
-        document.documentElement.style.setProperty('--page-lighter', 'var(--red-lighter)');
-        document.documentElement.style.setProperty('--page-light', 'var(--red-light)');
-        document.documentElement.style.setProperty('--page-neutral', 'var(--red-neutral)');
-        document.documentElement.style.setProperty('--page-dark', 'var(--red-dark)');
-        document.documentElement.style.setProperty('--page-darker', 'var(--red-darker)');
-        document.documentElement.style.setProperty('--page-darkest', 'var(--red-darkest)');
-    } else if (bodyId === 'yellow-page') {
-        document.documentElement.style.setProperty('--page-lightest', 'var(--yellow-lightest)');
-        document.documentElement.style.setProperty('--page-lighter', 'var(--yellow-lighter)');
-        document.documentElement.style.setProperty('--page-light', 'var(--yellow-light)');
-        document.documentElement.style.setProperty('--page-neutral', 'var(--yellow-neutral)');
-        document.documentElement.style.setProperty('--page-dark', 'var(--yellow-dark)');
-        document.documentElement.style.setProperty('--page-darker', 'var(--yellow-darker)');
-        document.documentElement.style.setProperty('--page-darkest', 'var(--yellow-darkest)');
-    } else if (bodyId === 'green-page') {
-        document.documentElement.style.setProperty('--page-lightest', 'var(--green-lightest)');
-        document.documentElement.style.setProperty('--page-lighter', 'var(--green-lighter)');
-        document.documentElement.style.setProperty('--page-light', 'var(--green-light)');
-        document.documentElement.style.setProperty('--page-neutral', 'var(--green-neutral)');
-        document.documentElement.style.setProperty('--page-dark', 'var(--green-dark)');
-        document.documentElement.style.setProperty('--page-darker', 'var(--green-darker)');
-        document.documentElement.style.setProperty('--page-darkest', 'var(--green-darkest)');
-    } else if (bodyId === 'teal-page') {
-        document.documentElement.style.setProperty('--page-lightest', 'var(--teal-lightest)');
-        document.documentElement.style.setProperty('--page-lighter', 'var(--teal-lighter)');
-        document.documentElement.style.setProperty('--page-light', 'var(--teal-light)');
-        document.documentElement.style.setProperty('--page-neutral', 'var(--teal-neutral)');
-        document.documentElement.style.setProperty('--page-dark', 'var(--teal-dark)');
-        document.documentElement.style.setProperty('--page-darker', 'var(--teal-darker)');
-        document.documentElement.style.setProperty('--page-darkest', 'var(--teal-darkest)');
-    } else if (bodyId === 'blue-page') {
-        document.documentElement.style.setProperty('--page-lightest', 'var(--blue-lightest)');
-        document.documentElement.style.setProperty('--page-lighter', 'var(--blue-lighter)');
-        document.documentElement.style.setProperty('--page-light', 'var(--blue-light)');
-        document.documentElement.style.setProperty('--page-neutral', 'var(--blue-neutral)');
-        document.documentElement.style.setProperty('--page-dark', 'var(--blue-dark)');
-        document.documentElement.style.setProperty('--page-darker', 'var(--blue-darker)');
-        document.documentElement.style.setProperty('--page-darkest', 'var(--blue-darkest)');
-    } else if (bodyId === 'purple-page') {
-        document.documentElement.style.setProperty('--page-lightest', 'var(--purple-lightest)');
-        document.documentElement.style.setProperty('--page-lighter', 'var(--purple-lighter)');
-        document.documentElement.style.setProperty('--page-light', 'var(--purple-light)');
-        document.documentElement.style.setProperty('--page-neutral', 'var(--purple-neutral)');
-        document.documentElement.style.setProperty('--page-dark', 'var(--purple-dark)');
-        document.documentElement.style.setProperty('--page-darker', 'var(--purple-darker)');
-        document.documentElement.style.setProperty('--page-darkest', 'var(--purple-darkest)');
+    var step = "#0F0F0F";
+
+    switch (bodyId) {
+        case 'red-page': {
+            document.documentElement.style.setProperty('--page-darkest', 'var(--red-darkest)');
+            document.documentElement.style.setProperty('--page-darker', 'var(--red-darker)');
+            step = "#0F0D0D";
+            break;
+        }
+        case 'yellow-page': {
+            document.documentElement.style.setProperty('--page-darkest', 'var(--yellow-darkest)');
+            document.documentElement.style.setProperty('--page-darker', 'var(--yellow-darker)');
+            step = "#0F0F0D";
+            break;
+        }
+        case 'green-page': {
+            document.documentElement.style.setProperty('--page-darkest', 'var(--green-darkest)');
+            document.documentElement.style.setProperty('--page-darker', 'var(--green-darker)');
+            step = "#0D0F0D";
+            break;
+        }
+        case 'teal-page': {
+            document.documentElement.style.setProperty('--page-darkest', 'var(--teal-darkest)');
+            document.documentElement.style.setProperty('--page-darker', 'var(--teal-darker)');
+            step = "#0D0F0F";
+            break;
+        }
+        case 'blue-page': {
+            document.documentElement.style.setProperty('--page-darkest', 'var(--blue-darkest)');
+            document.documentElement.style.setProperty('--page-darker', 'var(--blue-darker)');
+            step = "#0D0D0F";
+            break;
+        }
+        case 'purple-page': {
+            document.documentElement.style.setProperty('--page-darkest', 'var(--purple-darkest)');
+            document.documentElement.style.setProperty('--page-darker', 'var(--purple-darker)');
+            step = "#0F0D0F";
+            break;
+        }
+        case 'black-page': {
+            document.documentElement.style.setProperty('--page-darkest', 'var(--black-darkest)');
+            document.documentElement.style.setProperty('--page-darker', 'var(--black-darker)');
+            step = "#0F0F0F";
+            break;
+        }
     }
+
+    var darkest = getComputedStyle(document.documentElement).getPropertyValue('--page-darkest');
+    var darker = getComputedStyle(document.documentElement).getPropertyValue('--page-darker');
+    var nextColors = extrapolatePageColors(darkest, darker);
+    document.documentElement.style.setProperty('--page-dark', nextColors[0]);
+    document.documentElement.style.setProperty('--page-neutral', nextColors[1]);
+    document.documentElement.style.setProperty('--page-light', nextColors[2]);
+    document.documentElement.style.setProperty('--page-lighter', nextColors[3]);
+    document.documentElement.style.setProperty('--page-lightest', nextColors[4]);
 
     const academicsButton = document.getElementById("academics-button");
-    const academicsDropdown = academicsButton.nextElementSibling;
-
-    if(academicsDropdown) {
-        academicsDropdown.classList.add("academics-drop");
+    if (academicsButton) {
+        const academicsDropdown = academicsButton.nextElementSibling;
+        if (academicsDropdown) {
+            academicsDropdown.classList.add("academics-drop");
+        }
     }
-
     const genealogyButton = document.getElementById("genealogy-button");
-    const genealogyDropdown = genealogyButton.nextElementSibling;
-
-    if(genealogyDropdown) {
-        genealogyDropdown.classList.add("genealogy-drop");
+    if (genealogyButton) {
+        const genealogyDropdown = genealogyButton.nextElementSibling;
+        if (genealogyDropdown) {
+            genealogyDropdown.classList.add("genealogy-drop");
+        }
     }
-
     const programmingButton = document.getElementById("programming-button");
-    const programmingDropdown = programmingButton.nextElementSibling;
-
-    if(programmingDropdown) {
-        programmingDropdown.classList.add("programming-drop");
+    if (programmingButton) {
+        const programmingDropdown = programmingButton.nextElementSibling;
+        if (programmingDropdown) {
+            programmingDropdown.classList.add("programming-drop");
+        }
     }
 });
+
+function extrapolatePageColors(first, second) {
+    var firstR = parseInt(first.slice(1, 3), 16);
+    var firstG = parseInt(first.slice(3, 5), 16);
+    var firstB = parseInt(first.slice(5, 7), 16);
+    var secondR = parseInt(second.slice(1, 3), 16);
+    var secondG = parseInt(second.slice(3, 5), 16);
+    var secondB = parseInt(second.slice(5, 7), 16);
+    var deltaR = secondR - firstR;
+    var deltaG = secondG - firstG;
+    var deltaB = secondB - firstB;
+
+    var thirdR = Math.round(secondR + deltaR);
+    var thirdG = Math.round(secondG + deltaG);
+    var thirdB = Math.round(secondB + deltaB);
+
+    var fourthR = Math.round(thirdR + deltaR);
+    var fourthG = Math.round(thirdG + deltaG);
+    var fourthB = Math.round(thirdB + deltaB);
+
+    var fifthR = Math.round(fourthR + deltaR);
+    var fifthG = Math.round(fourthG + deltaG);
+    var fifthB = Math.round(fourthB + deltaB);
+
+    var sixthR = Math.round(fifthR + deltaR);
+    var sixthG = Math.round(fifthG + deltaG);
+    var sixthB = Math.round(fifthB + deltaB);
+
+    var seventhR = Math.round(sixthR + deltaR);
+    var seventhG = Math.round(sixthG + deltaG);
+    var seventhB = Math.round(sixthB + deltaB);
+
+    var third = "#" + (1 << 24 | thirdR << 16 | thirdG << 8 | thirdB).toString(16).slice(1).toUpperCase();
+    var fourth = "#" + (1 << 24 | fourthR << 16 | fourthG << 8 | fourthB).toString(16).slice(1).toUpperCase();
+    var fifth = "#" + (1 << 24 | fifthR << 16 | fifthG << 8 | fifthB).toString(16).slice(1).toUpperCase();
+    var sixth = "#" + (1 << 24 | sixthR << 16 | sixthG << 8 | sixthB).toString(16).slice(1).toUpperCase();
+    var seventh = "#" + (1 << 24 | seventhR << 16 | seventhG << 8 | seventhB).toString(16).slice(1).toUpperCase();
+
+    return [third, fourth, fifth, sixth, seventh];
+}

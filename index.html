@@ -14,7 +14,7 @@
 	<script src="assets/js/scripts.js"></script>
 </head>
 
-<body id="green-page"> 
+<body id="green-page">
 	<nav class="top-navbar">
 		<ul>
 			<!--Be sure to set the currpage class to the correct link that the page currently is-->
@@ -83,51 +83,110 @@
 		</ul>
 	</nav>
 
-	<div class="container" id="page-container">
+	<div id="page-container">
 		<nav class="sidebar">
 			<section>
-				<h3>Recent Projects</h3>
+				<h3>Recent Programming Projects</h3>
 				<ul>
 					<li>
 						<a href="https://github.com/CalvinVest/ProjectEulerSolutions" class="side-btn" target="_blank"
-							rel="noopener noreferrer">Project Euler
-							Solutions</a>
+							rel="noopener noreferrer">
+							<div class="icon-container">
+								<i class="fa-brands fa-github"></i>
+							</div>
+							Project Euler Solutions
+						</a>
 					</li>
 					<li>
 						<a href="https://github.com/CalvinVest/CalvinVest.github.io" class="side-btn" target="_blank"
-							rel="noopener noreferrer">This Website</a>
+							rel="noopener noreferrer">
+							<div class="icon-container">
+								<i class="fa-brands fa-github"></i>
+							</div>
+							This Website
+						</a>
 					</li>
 				</ul>
 			</section>
 			<section>
-				<h3>Some Genealogy Links</h3>
+				<h3>Interesting Ancestors</h3>
 				<ul>
 					<li>
-						<a href="https://www.ancestry.com/profile/0224c00e-0006-0000-0000-000000000000" class="side-btn"
-							target="_blank" rel="noopener noreferrer">My Ancestry profile</a>
+						<a href="https://www.familysearch.org/tree/person/details/L2MN-PL7" class="side-btn"
+							target="_blank" rel="noopener noreferrer">
+							<div class="icon-container">
+								<i class="fa-solid fa-m"></i>
+							</div>
+							Jacob Morden (1826-1905)
+						</a>
 					</li>
 					<li>
-						<a href="https://www.familysearch.org/tree/person/details/G31D-D1T" class="side-btn"
-							target="_blank" rel="noopener noreferrer">My
-							FamilySearch page</a>
+						<a href="https://www.familysearch.org/tree/person/details/LN74-VQZ" class="side-btn"
+							target="_blank" rel="noopener noreferrer">
+							<div class="icon-container">
+								<i class="fa-solid fa-h"></i>
+							</div>
+							Barnabas Horton (1600-1680)
+						</a>
+					</li>
+					<li>
+						<a href="https://www.familysearch.org/tree/person/details/MCZF-SCM" class="side-btn"
+							target="_blank" rel="noopener noreferrer">
+							<div class="icon-container">
+								<i class="fa-solid fa-s"></i>
+							</div>
+							John Scranton (1610-1671)
+						</a>
+					</li>
+					<li>
+						<a href="https://www.familysearch.org/tree/person/details/L5NV-PY3" class="side-btn"
+							target="_blank" rel="noopener noreferrer">
+							<div class="icon-container">
+								<i class="fa-solid fa-s"></i>
+							</div>
+							Claus Stauffer III (1555-1615)
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h3>TV Landing Page</h3>
+				<ul>
+					<li>
+						<a href="tv/index.html" class="side-btn">
+							<div class="icon-container">
+								<i class="fa-solid fa-tv"></i>
+							</div>
+							Launch TV
+						</a>
 					</li>
 				</ul>
 			</section>
 		</nav>
 
 		<main id="content-wrap">
-			<!--This is all filler content. Replace page-by-page -->
-			<section>
-				<h1>Welcome to my website!</h1>
-				<p>
-					You're probably wondering what's up with all of this non-functional website you see scattered
-					about.<br>
-					No worries, I'm getting to it. I kinda chased a rabbit and put together more than I thought I
-					would,
-					so I've been going back to patch up some of the stuff I've thrown together and make this place
-					look
-					a little bit nicer.<br>
-				</p>
+			<section class="expanded">
+				<div class="collapse-section-header">
+					<h1>Welcome to my website</h1>
+					<button class="collapse-section-toggle" data-target="intro">
+						<div class="icon-container">
+							<i class="fa-solid fa-chevron-up"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse-section-content" data-content="intro">
+					<p>Welcome to my website!</p>
+					<p>My name is Calvin Vest, and I'm a computer science student. This is my website, that I put
+						together largely because I wanted a way to collect and display my projects across my different
+						hobbies and skills. I'm a hobby genealogist and programmer, and I've transferred universities a
+						couple times. All of this information and more is available on my <a href="about.html">About</a>
+						page.</p>
+					<p>For now, take a look around! I've always wanted a central convenient way to show off my hobbies
+						and accomplishments, and I think I've done pretty well in organizing things. Take a look at the
+						next section if you'd like some suggestions on where to go from here.</p>
+					<p>If you've got some suggestions or concerns about the site or the content in it, please reach out
+						to me. My contact information can be found <a href=contact.html">here</a>.</p>
+				</div>
 			</section>
 
 			<section class="expanded">
@@ -140,29 +199,26 @@
 					</button>
 				</div>
 				<div class="collapse-section-content" data-content="roadmap">
-					<p>There's a good chance you're here because I asked you to check out my website. If that's the
-						case,
-						have a look around. There's not much to see just yet, but I'm trying to add features
-						regularly.<br>Much of what I plan to put here covers a wide array of interests, so this website
-						serves as somewhat of a landing page for all of my hobbes and academic interests, as well as any
-						other information I choose to plonk here in the future.</p>
 					<ul>
+						<li>
+							<h3>This website is my one-stop shop.</h3>
+							<p>As I mentioned, this website has a lot of different subjects to explore. Depending on why
+								you're here, you might enjoy this quick map I've put together to get you started.</p>
+						</li>
 						<li>
 							<h3>For Friends</h3>
 							<p>
 								If you're just checking out what I've been working on, my recent genealogy progress can
-								be
-								seen <a href="genealogy/recent.html">here</a>, and my programming projects are over <a
-									href="programming.html">here</a>.
+								be seen <a href="genealogy/recent.html">here</a>, and my programming projects are over
+								<a href="programming.html">here</a>.
 							</p>
 						</li>
 						<li>
 							<h3>For Family</h3>
 							<p>
 								If you're a relative of mine, you might just be here because of my genealogy work. If
-								that's
-								the case, head on over to <a href="genealogy/index.html">this page</a> to see a detailed
-								breakdown of my work and some helpful links to my family history.
+								that's the case, head on over to <a href="genealogy/index.html">this page</a> to see a
+								detailed breakdown of my work and some helpful links to my family history.
 							</p>
 						</li>
 						<li>
@@ -170,10 +226,9 @@
 							<p>
 								If you've been directed to my page to see my professional and academic work, or if you'd
 								like to learn more about my professional history, visit
-								<a href="academics/employment.html">this page</a>
-								for my employment history, and feel free to explore some of my academic projects
-								<a href="academics/projects/index.html">here</a>,
-								or my hobby projects
+								<a href="academics/employment.html">this page</a> for my employment history, and feel
+								free to explore some of my academic projects
+								<a href="academics/projects/index.html">here</a>, or my hobby projects
 								<a href="programming.html">here</a>.
 							</p>
 						</li>
@@ -181,49 +236,7 @@
 				</div>
 			</section>
 
-			<section>
-				<div class="collapse-section-header">
-					<h1>Here's a panda.</h1>
-					<button class="collapse-section-toggle" data-target="panda">
-						<div class="icon-container">
-							<i class="fa-solid fa-chevron-down"></i>
-						</div>
-					</button>
-				</div>
-				<div class="collapse-section-content" data-content="panda">
-					<div class="imgbox">
-						<img src="https://cdn.shopify.com/s/files/1/2802/6064/files/cutepandafacts_1024x1024.jpg?v=1552555237"
-							alt="Cute Panda" />
-						<p class="credit">
-							"<a target="_blank" rel="noopener noreferrer"
-								href="https://www.flickr.com/photos/91501748@N07/25893202952">panda</a>" by <a
-								target="_blank" rel="noopener noreferrer"
-								href="https://www.flickr.com/photos/91501748@N07">Mathias Appel</a> is marked with <a
-								target="_blank" rel="noopener noreferrer"
-								href="https://creativecommons.org/publicdomain/zero/1.0/?ref=openverse">CC0 1.0</a>.
-						</p>
-					</div>
 
-				</div>
-			</section>
-
-			<section class="expanded">
-				<div class="collapse-section-header">
-					<h1>Here's a cool video.</h1>
-					<button class="collapse-section-toggle" data-target="codebullet">
-						<div class="icon-container">
-							<i class="fa-solid fa-chevron-up"></i>
-						</div>
-					</button>
-				</div>
-				<div class="collapse-section-content" data-content="codebullet">
-					<p>I've watched this guy for a while, and I think his programming and AI content is a great watch if
-						you've ever got some time.</p>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/os4DcbpL0Nc?si=p6rXdH2_pUoxfFpV"
-						title="YouTube video player" frameborder="0" allowfullscreen
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-				</div>
-			</section>
 
 			<section class="expanded">
 				<div class="collapse-section-header">
@@ -237,7 +250,7 @@
 				<div class="collapse-section-content" data-content="qr-code">
 					<p>Maybe not, but I'd appreciate it! You can reach me with your feedback on the <a
 							href="contact.html">Contact</a> page</p>
-					<p>You can use this handy-dandy QR Code to share this website with others.</p>
+					<p>You can also use this handy-dandy QR Code to share this website with others.</p>
 					<p><img src="assets/images/qr-code.png" height="200px" /></p>
 				</div>
 			</section>

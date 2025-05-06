@@ -13,12 +13,23 @@
 	<link rel="icon" type="image/png" href="assets/images/icon.png">
 	<script src="https://kit.fontawesome.com/082c5f5bcb.js" crossorigin="anonymous"></script>
 	<script src="assets/js/scripts.js"></script>
+	<style>
+		td.problem-num,
+		td.problem-status,
+		td.problem-link {
+			white-space: nowrap;
+		}
+
+		td.problem-num,
+		td.problem-link {
+			padding: 0;
+		}
+	</style>
 </head>
 
 <body id="purple-page">
 	<nav class="top-navbar">
 		<ul>
-			<!--Be sure to set the currpage class to the correct link that the page currently is-->
 			<li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
 			<li>
 				<a href="index.html" id="home-button">
@@ -88,37 +99,619 @@
 	<div id="page-container">
 		<nav class="sidebar">
 			<section>
-				<!--add h3 for section headers-->
-				<!--add ul with li a href links for items of section-->
 				<h3>Section Header</h3>
 				<ul>
 					<li>
-						<a href="#" class="side-btn">Example link</a>
+						<a href="https://github.com/CalvinVest/ProjectEulerSolutions" class="side-btn" target="_blank"
+							rel="noopener noreferrer">
+							<div class="icon-container">
+								<i class="fa-brands fa-github"></i>
+							</div>
+							GitHub Page
+						</a>
 					</li>
 					<li>
-						<a href="#" class="side-btn">Another example</a>
-					</li>
-					<li>
-						<a href="#" class="side-btn">Yet another example with a really long title.</a>
+						<a href="https://projecteuler.net/" target="_blank" rel="noopener noreferrer" class="side-btn">
+							<div class="icon-container">
+								<i class="fa-brands fa-github"></i>
+							</div>
+							Project Euler
+						</a>
 					</li>
 				</ul>
 			</section>
 		</nav>
 
 		<main id="content-wrap">
-			<!--This is filler content. Replace page-by-page -->
-			<section>
-				<h3>This is some example text.</h3>
-				<p>This is some more text.</p>
-				<p>This is even more text with a <a href="#">link</a>.</p>
+			<section class="expanded">
+				<div class="collapse-section-header">
+					<h1>This is my favorite hobby program.</h1>
+					<button class="collapse-section-toggle" data-target="intro">
+						<div class="icon-container">
+							<i class="fa-solid fa-chevron-up"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse-section-content" data-content="intro">
+					<h3>Project Euler</h3>
+					<p>
+						From <a href="https://projecteuler.net/" target="_blank" ref="noopener noreferrer">their
+							website,</a>
+					</p>
+				</div>
+
 			</section>
+
 			<section>
-				<h3>This is a new section.</h3>
-				<p>This is some text in this new section. It's a pretty long one, so it'll probably create a new line.
-					I'm mostly putting this much text here because I want to see just how this page wraps this example
-					text on the page. It's really just a big block of text so I can make sure this page looks really
-					nice when I put a lot of actual real-world content in here. I haven't done that yet, so this is just
-					more and more and more text to fill the place in the meantime.</p>
+				<div class="collapse-section-header">
+					<h1>Solution Progress</h1>
+					<button class="collapse-section-toggle" data-target="progress">
+						<div class="icon-container">
+							<i class="fa-solid fa-chevron-down"></i>
+						</div>
+					</button>
+				</div>
+
+				<div class="collapse-section-content" data-content="progress">
+					<table>
+						<tr>
+							<th style="width: 1%;">Problem #</th>
+							<th>Name</th>
+							<th style="width: 1%;">Status</th>
+							<th style="width: 1%;">Page Link</th>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=1" target="_blank"
+									rel="nooper noreferrer">Problem 1</a>
+							</td>
+							<td>Multiples of 3 or 5</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=2" target="_blank"
+									rel="nooper noreferrer">Problem 2</a>
+							</td>
+							<td>Even Fibonacci Numbers</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=3" target="_blank"
+									rel="nooper noreferrer">Problem 3</a>
+							</td>
+							<td>Largest Prime Factor</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=4" target="_blank"
+									rel="nooper noreferrer">Problem 4</a>
+							</td>
+							<td>Largest Palindrome Product</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=5" target="_blank"
+									rel="nooper noreferrer">Problem 5</a>
+							</td>
+							<td>Smallest Multiple</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=6" target="_blank"
+									rel="nooper noreferrer">Problem 6</a>
+							</td>
+							<td>Sum Square Difference</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=7" target="_blank"
+									rel="nooper noreferrer">Problem 7</a>
+							</td>
+							<td>10001st Prime</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=8" target="_blank"
+									rel="nooper noreferrer">Problem 8</a>
+							</td>
+							<td>Largest Product in a Series</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=9" target="_blank"
+									rel="nooper noreferrer">Problem 9</a>
+							</td>
+							<td>Special Pythagorean Triplet</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=10" target="_blank"
+									rel="nooper noreferrer">Problem 10</a>
+							</td>
+							<td>Summation of Primes</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=11" target="_blank"
+									rel="nooper noreferrer">Problem 11</a>
+							</td>
+							<td>Largest Product in a Grid</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=12" target="_blank"
+									rel="nooper noreferrer">Problem 12</a>
+							</td>
+							<td>Highly Divisible Triangular Number</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=13" target="_blank"
+									rel="nooper noreferrer">Problem 13</a>
+							</td>
+							<td>Large Sum</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=14" target="_blank"
+									rel="nooper noreferrer">Problem 14</a>
+							</td>
+							<td>Longest Collatz Sequence</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=15" target="_blank"
+									rel="nooper noreferrer">Problem 15</a>
+							</td>
+							<td>Lattice Paths</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=16" target="_blank"
+									rel="nooper noreferrer">Problem 16</a>
+							</td>
+							<td>Power Digit Sum</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=17" target="_blank"
+									rel="nooper noreferrer">Problem 17</a>
+							</td>
+							<td>Number Letter Counts</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=18" target="_blank"
+									rel="nooper noreferrer">Problem 18</a>
+							</td>
+							<td>Maximum Path Sum I</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=19" target="_blank"
+									rel="nooper noreferrer">Problem 19</a>
+							</td>
+							<td>Counting Sundays</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=20" target="_blank"
+									rel="nooper noreferrer">Problem 20</a>
+							</td>
+							<td>Factorial Digit Sum</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=21" target="_blank"
+									rel="nooper noreferrer">Problem 21</a>
+							</td>
+							<td>Amicable Numbers</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=22" target="_blank"
+									rel="nooper noreferrer">Problem 22</a>
+							</td>
+							<td>Names Scores</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=23" target="_blank"
+									rel="nooper noreferrer">Problem 23</a>
+							</td>
+							<td>Non-Abundant Sums</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=24" target="_blank"
+									rel="nooper noreferrer">Problem 24</a>
+							</td>
+							<td>Lexicographic Permutations</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=25" target="_blank"
+									rel="nooper noreferrer">Problem 25</a>
+							</td>
+							<td>1000-digit Fibonacci Number</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=26" target="_blank"
+									rel="nooper noreferrer">Problem 26</a>
+							</td>
+							<td>Reciprocal Cycles</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=27" target="_blank"
+									rel="nooper noreferrer">Problem 27</a>
+							</td>
+							<td>Quadratic Primes</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=29" target="_blank"
+									rel="nooper noreferrer">Problem 29</a>
+							</td>
+							<td>Distinct Powers</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=30" target="_blank"
+									rel="nooper noreferrer">Problem 30</a>
+							</td>
+							<td>Digit Fifth Powers</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=31" target="_blank"
+									rel="nooper noreferrer">Problem 31</a>
+							</td>
+							<td>Coin Sums</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=32" target="_blank"
+									rel="nooper noreferrer">Problem 32</a>
+							</td>
+							<td>Pandigital Products</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=34" target="_blank"
+									rel="nooper noreferrer">Problem 34</a>
+							</td>
+							<td>Digit Factorials</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=35" target="_blank"
+									rel="nooper noreferrer">Problem 35</a>
+							</td>
+							<td>Circular Primes</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=37" target="_blank"
+									rel="nooper noreferrer">Problem 37</a>
+							</td>
+							<td>Truncatable Primes</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=39" target="_blank"
+									rel="nooper noreferrer">Problem 39</a>
+							</td>
+							<td>Integer Right Triangles</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=40" target="_blank"
+									rel="nooper noreferrer">Problem 40</a>
+							</td>
+							<td>Champernowne's Constant</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=41" target="_blank"
+									rel="nooper noreferrer">Problem 41</a>
+							</td>
+							<td>Pandigital Prime</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=44" target="_blank"
+									rel="nooper noreferrer">Problem 44</a>
+							</td>
+							<td>Pentagon Numbers</td>
+							<td class="problem-status">In Progress</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=45" target="_blank"
+									rel="nooper noreferrer">Problem 45</a>
+							</td>
+							<td>Triangular, Pentagonal, and Hexagonal</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=48" target="_blank"
+									rel="nooper noreferrer">Problem 48</a>
+							</td>
+							<td>Self Powers</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=49" target="_blank"
+									rel="nooper noreferrer">Problem 49</a>
+							</td>
+							<td>Prime Permutations</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=50" target="_blank"
+									rel="nooper noreferrer">Problem 50</a>
+							</td>
+							<td>Consecutive Prime Sum</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=56" target="_blank"
+									rel="nooper noreferrer">Problem 56</a>
+							</td>
+							<td>Powerful Digit Sum</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=67" target="_blank"
+									rel="nooper noreferrer">Problem 67</a>
+							</td>
+							<td>Maximum Path Sum II</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=72" target="_blank"
+									rel="nooper noreferrer">Problem 72</a>
+							</td>
+							<td>Counting Fractions</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=89" target="_blank"
+									rel="nooper noreferrer">Problem 89</a>
+							</td>
+							<td>Roman Numerals</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=92" target="_blank"
+									rel="nooper noreferrer">Problem 92</a>
+							</td>
+							<td>Square Digit Chains</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=100" target="_blank"
+									rel="nooper noreferrer">Problem 100</a>
+							</td>
+							<td>Arranged Probability</td>
+							<td class="problem-status">In Progress</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=357" target="_blank"
+									rel="nooper noreferrer">Problem 357</a>
+							</td>
+							<td>Prime Generating Integers</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="problem-num">
+								<a class="btn" href="https://projecteuler.net/problem=461" target="_blank"
+									rel="nooper noreferrer">Problem 461</a>
+							</td>
+							<td>Almost Pi</td>
+							<td class="problem-status">Complete</td>
+							<td class="problem-link">
+								<a class="btn" href="programming/projecteuler/problem0001.html">Link</a>
+							</td>
+						</tr>
+					</table>
+				</div>
 			</section>
 		</main>
 
