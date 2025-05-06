@@ -31,7 +31,7 @@ jobs:
           destination: ./_site
 
       - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
 
   deploy:
     environment:
