@@ -87,37 +87,78 @@
 	<div id="page-container">
 		<nav class="sidebar">
 			<section>
-				<!--add h3 for section headers-->
-				<!--add ul with li a href links for items of section-->
-				<h3>Section Header</h3>
+				<h3>Quick Links</h3>
 				<ul>
 					<li>
-						<a href="#" class="side-btn">Example link</a>
+						<a href="genealogy/surnameindex.html" class="side-btn">
+							<div class="icon-container">
+								<i class="fa-solid fa-list"></i>
+							</div>
+							Surname Index
+						</a>
 					</li>
+				</ul>
+			</section>
+			<section>
+				<h3>My Root Ancestors</h3>
+				<ul>
 					<li>
-						<a href="#" class="side-btn">Another example</a>
+						<a href="genealogy/subject/vest/vescha00.html" class="side-btn">
+							<div class="icon-container">
+								<i class="fa-solid fa-v"></i>
+							</div>
+							Charles F Vest
+						</a>
 					</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Hannah's Genealogy</h3>
+				<ul>
 					<li>
-						<a href="#" class="side-btn">Yet another example with a really long title.</a>
+						<a href="genealogy/hannah/index.html" class="side-btn">
+							<div class="icon-container">
+								<i class="fa-solid fa-h"></i>
+							</div>
+							Hannah's Homepage
+						</a>
 					</li>
 				</ul>
 			</section>
 		</nav>
 
 		<main id="content-wrap">
-			<!--This is filler content. Replace page-by-page -->
-			<section>
-				<h3>This is some example text.</h3>
-				<p>This is some more text.</p>
-				<p>This is even more text with a <a href="#">link</a>.</p>
-			</section>
-			<section>
-				<h3>This is a new section.</h3>
-				<p>This is some text in this new section. It's a pretty long one, so it'll probably create a new line.
-					I'm mostly putting this much text here because I want to see just how this page wraps this example
-					text on the page. It's really just a big block of text so I can make sure this page looks really
-					nice when I put a lot of actual real-world content in here. I haven't done that yet, so this is just
-					more and more and more text to fill the place in the meantime.</p>
+			<section class="expanded">
+				<div class="collapse-section-header">
+					<h1>Genealogy Homepage</h1>
+					<button class="collapse-section-toggle" data-target="gene-intro">
+						<div class="icon-container">
+							<i class="fa-solid fa-chevron-up"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse-section-content" data-content="gene-intro">
+					<h2>Genealogy has been a hobby of mine for over a decade.</h2>
+					<p>
+						I remember when I had a homework assignment, maybe fourth grade, to make a simple family tree of my parents and grandparents.
+						It wasn't anything sophisticated, but by the fifth grade I'd started assembling my own family tree and extending branches farther
+						and farther back. I developed a love for genealogy as a hobby, and began to spend more and more time on my own family tree, and
+						soon began to build trees for my friends and help them discover their own family histories. That's part of why I built this part
+						of the website: I want a way to share my work with the people that matter most to me. 
+					</p>
+					<h2>For friends and family</h2>
+					<p>
+						Some of you are one here because you want to
+						see the work I've done to preserve our family's history and this website is a way for me to showcase to you the most noteworthy of
+						what I've discovered, and an easy way to navigate to the rest of what my hard work has to offer.
+					</p>
+					<p>
+						You might also be here because I've dedicated time to discovering what I can of <em>your</em> family tree.
+						At the time I'm writing this, there's only one friend I've put work on this website for. So Hannah, if you're reading this, I've put
+						a link directly on the sidebar to the left for you to head to a homepage I've made specifically for your family genealogy on this site.
+						Everything else will be accessible from there. &#128578;
+					</p>
+				</div>
 			</section>
 		</main>
 
