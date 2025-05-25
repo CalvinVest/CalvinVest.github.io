@@ -31,19 +31,40 @@ This section includes a header, and content that can be hidden with the included
 button. All functionality is contained in scripts.js, so that should be included too.
 Add class="expanded" to the section if you'd like the content to initiate expanded.
 ----------------------------------------->
-<section class="expanded">
-    <div class="collapse-section-header">
-        <h1>Here's a header.</h1>
-        <button class="collapse-section-toggle" data-target="example">
-            <div class="icon-container">
-                <i class="fa-solid fa-chevron-up"></i>
-            </div>
-        </button>
-    </div>
-    <div class="collapse-section-content" data-content="example">
+<div id="page-container">
+    <nav class="sidebar">
+        <section>
+            <h3>Example Sidebar</h3>
+            <ul>
+                <li>
+                    <!-- Remember to change the href! -->
+                    <a href="" class="side-btn">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-list"></i>
+                        </div>
+                        Example Link
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </nav>
 
-    </div>
-</section>
+    <main id="content-wrap">
+        <section class="expanded">
+            <div class="collapse-section-header">
+                <h1>Example Section</h1>
+                <button class="collapse-section-toggle" data-target="example">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </button>
+            </div>
+            <div class="collapse-section-content" data-content="example">
+                
+            </div>
+        </section>
+    </main>
+</div>
 
 <!----------------------------------------
 This navbar is the default top navbar for the website.

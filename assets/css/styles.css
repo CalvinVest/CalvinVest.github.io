@@ -19,6 +19,9 @@ body,
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p,
 ul {
     margin: 0;
@@ -27,7 +30,10 @@ ul {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Alegreya SC', 'Georgia', serif;
     font-weight: normal;
 }
@@ -44,6 +50,19 @@ h2 {
 h3 {
     font-size: 20px;
     font-style: italic;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 15px;
+    font-style: italic;
+}
+
+h6 {
+    font-size: 12px;
 }
 
 a {
@@ -99,20 +118,28 @@ main section h1,
 main section h2,
 main section h3,
 main section p,
+main section li,
 main section iframe {
     padding: 10px;
+}
+
+main section h4,
+main section h5,
+main section h6 {
+    padding: 5px 20px 5px 20px;
 }
 
 main section ul {
     list-style: none;
 }
 
-main section li {
-    padding: 10px;
-    border-width: 0;
-    border-top-width: 1px;
-    border-style: solid;
-    border-color: var(--container-link);
+main section ol {
+    background: linear-gradient(165deg, var(--page-dark), var(--page-bg) 66%);
+    border-radius: 20px;
+}
+
+main section li li {
+    padding-left: 20px;
 }
 
 main section table,
@@ -133,6 +160,25 @@ main section th {
 main section td {
     justify-content: left;
     padding: 5px;
+}
+
+main section .line-br {
+    border-width: 0px;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: var(--container-link);
+}
+
+main section .header-block {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+main section .entry-block {
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
 }
 
 .nopadding {
@@ -248,7 +294,10 @@ footer a {
 
 .collapse-section-header h1,
 .collapse-section-header h2,
-.collapse-section-header h3 {
+.collapse-section-header h3,
+.collapse-section-header h4,
+.collapse-section-header h5,
+.collapse-section-header h6 {
     margin-right: auto;
 }
 
@@ -263,6 +312,12 @@ footer a {
         padding 0.3s ease;
     border-radius: 20px;
     background: var(--collapse-section-content-bg);
+}
+
+.collapse-section-content h1,
+.collapse-section-content h2,
+.collapse-section-content h3 {
+    scroll-margin-top: 50px;
 }
 
 .expanded .collapse-section-content {

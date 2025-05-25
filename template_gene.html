@@ -1,0 +1,100 @@
+<!-- This is the base header for all genealogy profile pages. Edit it to the specific reqs. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calvin Vest</title>
+    <meta name="description" content="page description">
+    <meta name="keywords" content="your, seo, keywords, go, here">
+    <!--Remember to set base href on each page-->
+    <base href="">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
+    <script src="https://kit.fontawesome.com/082c5f5bcb.js" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+</head>
+
+<body id="blue-page">
+    <nav class="top-navbar">
+        <ul>
+            <li>
+                <a href="index.html"><img src="assets/images/logo.png" class="logo"></a>
+            </li>
+            <li class="has-dropdown">
+                <a href="genealogy/index.html" id="genealogy-button">
+                    Genealogy Home
+                    <div class="icon-container">
+                        <i class="fa-solid fa-people-roof"></i>
+                    </div>
+                </a>
+                <ul class="dropdown">
+                    <li class="list-item"><a href="genealogy/progress.html">My Ancestry progress</a></li>
+                    <li class="list-item"><a href="genealogy/earlydates.html">How far back does it go?</a></li>
+                    <li class="list-item"><a href="genealogy/recent.html">Recent Discoveries</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="about.html" id="about-button">
+                    About
+                    <div class="icon-container">
+                        <i class="fa-regular fa-circle-question"></i>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html" id="contact-button">
+                    Contact
+                    <div class="icon-container">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="page-container">
+        <nav class="sidebar">
+            <section>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>
+                        <a href="" class="side-btn" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="icon-container">
+                                <i class="fa-solid fa-x"></i>
+                            </div>
+                            Link to ancestor
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <main id="content-wrap">
+            <section class="expanded">
+                <div class="collapse-section-header">
+                    <h1>Ancestor Name</h1>
+                    <button class="collapse-section-toggle" data-target="example">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </button>
+                </div>
+                <div class="collapse-section-content" data-content="example">
+                    <ul>
+                        <li>
+                            <h2>Profile Summary</h2>
+                        </li>
+                        <li>
+                            <h2>Family Group</h2>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+<!-- Genealogy subsite navbar -->
