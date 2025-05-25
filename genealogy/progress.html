@@ -7,7 +7,6 @@
 	<title>Genealogy Progress</title>
 	<meta name="description" content="My Genealogy Progress">
 	<meta name="keywords" content="calvin, vest, genealogy, family, ancestry, progress">
-	<!--Remember to set base href on each page-->
 	<base href="../">
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<link rel="icon" type="image/png" href="assets/images/icon.png">
@@ -18,7 +17,6 @@
 <body id="blue-page">
 	<nav class="top-navbar">
 		<ul>
-			<!--Be sure to set the currpage class to the correct link that the page currently is-->
 			<li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
 			<li>
 				<a href="index.html" id="home-button">
@@ -87,8 +85,6 @@
 	<div id="page-container">
 		<nav class="sidebar">
 			<section>
-				<!--add h3 for section headers-->
-				<!--add ul with li a href links for items of section-->
 				<h3>Section Header</h3>
 				<ul>
 					<li>
@@ -105,20 +101,225 @@
 		</nav>
 
 		<main id="content-wrap">
-			<!--This is filler content. Replace page-by-page -->
-			<section>
-				<h3>This is some example text.</h3>
-				<p>This is some more text.</p>
-				<p>This is even more text with a <a href="#">link</a>.</p>
+			<section class="expanded">
+				<div class="collapse-section-header">
+					<h1>My Genealogical Progress</h1>
+					<button class="collapse-section-toggle" data-target="progress-intro">
+						<div class="icon-container">
+							<i class="fa-solid fa-chevron-up"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse-section-content" data-content="progress-intro">
+					<h2>My favorite hobby, for a while now</h2>
+					<p>
+						Genealogy has been a passion of mine since elementary school.
+						I've spent almost fifteen years researching my family history, and learning
+						local histories, research methods, how to read 19th-century Hungarian cursive,
+						and countless other little skills and tricks to improve my family history research.
+					</p>
+				</div>
 			</section>
-			<section>
-				<h3>This is a new section.</h3>
-				<p>This is some text in this new section. It's a pretty long one, so it'll probably create a new line.
-					I'm mostly putting this much text here because I want to see just how this page wraps this example
-					text on the page. It's really just a big block of text so I can make sure this page looks really
-					nice when I put a lot of actual real-world content in here. I haven't done that yet, so this is just
-					more and more and more text to fill the place in the meantime.</p>
+			<section class="expanded">
+				<div class="collapse-section-header">
+					<h1>The all-important Record Ratio</h1>
+					<button class="collapse-section-toggle" data-target="record-ratio">
+						<div class="icon-container">
+							<i class="fa-solid fa-chevron-up"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse-section-content" data-content="record-ratio">
+					<h2>A simple metric helps keep my research thorough</h2>
+					<p>
+						I've spent a lot of time researching Ancestry hints, sifting through microfiche,
+						scanning census records, cemetery rolls, WWII draft cards, and so on. All of these
+						"hints" help to frame a clearer picture of the members of the family trees I've built.
+					</p>
+					<p>
+						Many of these "hints" are simply vital records, newspaper clippings, family Bible records,
+						or other important and reliable accounts that can provide information on the family's history
+						and ancestry. As I've committed myself to upholding a strong standard of data integrity in
+						my family trees, I set a general standard of three records per person, on average. This rough
+						guildeline isn't a perfect reflection of the tree's accuracy, rather it gives a small overview
+						of how thoroughly researched the average tree member is.
+					</p>
+					<p>
+						My first family tree turned into a giant mess. It was filled with weakly sourced profiles, unreliable
+						data, people that never existed or dates that could never have aligned. None of this was intentional -
+						it's because I didn't take enough time to make sure the data I committed to my tree was truly...true.
+					</p>
+					<p>
+						Since I've completely rebuilt the tree, I've used the record ratio as a way to make sure I'm
+						not adding things willy-nilly and that each member of the family tree is given the appropriate consideration
+						and research. That three-records-per-person threshold is what initially inspired me to restart my tree
+						and start things fresh.
+					</p>
+					<h2>There's a table below with the numbers</h2>
+					<p>
+						It's collapsed by default, but the next section has a table with the record ratios for my trees as time
+						goes on. The ratio is given as records/people, and the decimal equivalent is given as the "score".
+					</p>
+					<h3>My Trees</h3>
+					<p>
+						My first, deprecated family tree is named Old Vest. The "v2" is named Vest-Horton-Scranton.
+						It's pretty evident from the table data in July 2022 why I made the switch to the new tree.
+					</p>
+					<h3>My friends' trees</h3>
+					<p>
+						The remainder of the trees listed are trees I've compiled for my friends and their families. This is one 
+						of my favorite hobbies, and I spend enough a year on the hobby already, so I'm always happy to have a new
+						source of puzzles to solve and stories to discover.
+					</p>
+				</div>
 			</section>
+			<section class="collapsed">
+                <div class="collapse-section-header">
+                    <h1>Family Tree Record Ratio Table</h1>
+                    <button class="collapse-section-toggle" data-target="ratio-table">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </button>
+                </div>
+                <div class="collapse-section-content" data-content="ratio-table">
+                    <table>
+                        <tr>
+                            <th style="width: 1%;">Date</th>
+                            <th>Tree</th>
+                            <th style="width: 1%;">Score</th>
+                            <th style="width: 1%;">Ratio</th>
+                        </tr>
+
+                        <tr>
+                            <td class="nowrap">13 Jul 2022 12:33</td>
+                            <td>Vest-Horton-Scranton</td>
+                            <td>2.909</td>
+                            <td class="centertext">2714/933</td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">13 Jul 2022 12:33</td>
+                            <td>Stoller</td>
+                            <td>3.206</td>
+                            <td class="centertext">808/252</td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">13 Jul 2022 12:33</td>
+                            <td>Corley</td>
+                            <td>3.568</td>
+                            <td class="centertext">553/155</td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">13 Jul 2022 12:33</td>
+                            <td>Do</td>
+                            <td>1.154</td>
+                            <td class="centertext">15/13</td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">13 Jul 2022 12:33</td>
+                            <td>Old Vest</td>
+                            <td>1.467</td>
+                            <td class="centertext">3109/2119</td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">16 Jul 2022 20:49</td>
+                            <td>Vest-Horton-Scranton</td>
+                            <td>2.944</td>
+                            <td class="centertext">2803/952</td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">16 Jul 2022 20:49</td>
+                            <td>Stoller</td>
+                            <td>3.250</td>
+                            <td class="centertext">819/252</td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">16 Jul 2022 20:49</td>
+                            <td>Corley</td>
+                            <td>3.679</td>
+                            <td class="centertext">585/159</td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">16 Jul 2022 20:49</td>
+                            <td>Old Vest</td>
+                            <td>1.459</td>
+                            <td class="centertext">3002/2057</td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">24 Nov 2022 23:08</td>
+                            <td>Vest-Horton-Scranton</td>
+                            <td>3.018</td>
+                            <td class="centertext">3036/1006</td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">24 Nov 2022 23:08</td>
+                            <td>Stoller</td>
+                            <td>3.250</td>
+                            <td class="centertext">819/252</td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">24 Nov 2022 23:08</td>
+                            <td>Corley</td>
+                            <td>3.975</td>
+                            <td class="centertext">648/163</td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">24 Jan 2023 07:21</td>
+                            <td>Vest-Horton-Scranton</td>
+                            <td>3.141</td>
+                            <td class="centertext">3235/1030</td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">24 Jan 2023 12:54</td>
+                            <td>Vest-Horton-Scranton</td>
+                            <td>3.155</td>
+                            <td class="centertext">3319/1052</td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">30 Mar 2023 01:31</td>
+                            <td>Vest-Horton-Scranton</td>
+                            <td>3.181</td>
+                            <td class="centertext">3404/1070</td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">03 May 2023 15:06</td>
+                            <td>Vest-Horton-Scranton</td>
+                            <td>3.191</td>
+                            <td class="centertext">3446/1080</td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">05 Sep 2023 02:08</td>
+                            <td>Vest-Horton-Scranton</td>
+                            <td>3.191</td>
+                            <td class="centertext">3504/1098</td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">07 Nov 2023 00:30</td>
+                            <td>Vest-Horton-Scranton</td>
+                            <td>3.163</td>
+                            <td class="centertext">3558/1125</td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">07 Nov 2023 21:14</td>
+                            <td>Vest-Horton-Scranton</td>
+                            <td>3.002</td>
+                            <td class="centertext">3699/1232</td>
+                        </tr>
+						<tr>
+							<td class="nowrap">11 May 2025 00:00</td>
+							<td>Vest-Horton-Scranton</td>
+							<td>3.430</td>
+							<td class="centertext">7106/2072</td>
+						</tr>
+						<tr>
+							<td class="nowrap">11 May 2025 00:00</td>
+							<td>Corley</td>
+							<td>3.160</td>
+							<td class="centertext">1343/425</td>
+						</tr>
+                    </table>
+                </div>
+            </section>
 		</main>
 
 		<footer id="footer">
