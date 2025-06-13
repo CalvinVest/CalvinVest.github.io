@@ -2,6 +2,7 @@
 @import url("colors.css");
 @import url("top-navbar.css");
 @import url("sidebar.css");
+@import url("collapse-section.css");
 
 @font-face {
     font-family: 'Alegreya';
@@ -15,65 +16,19 @@
     font-style: normal;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
+body, h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Alegreya SC', 'Georgia', serif;
-    font-weight: normal;
-}
-
-h1 {
-    font-size: 36px;
-}
-
-h2 {
-    font-size: 30px;
-    font-style: italic;
-}
-
-h3 {
-    font-size: 20px;
-    font-style: italic;
-}
-
-h4 {
-    font-size: 18px;
-}
-
-h5 {
-    font-size: 15px;
-    font-style: italic;
-}
-
-h6 {
-    font-size: 12px;
-}
-
-a {
-    color: var(--container-link);
-    font-style: italic;
-}
-
-body {
-    font-family: 'Alegreya', serif;
-    background-color: var(--page-bg);
-}
+h1 { font-family: 'Alegreya SC', 'Georgia', serif; font-weight: normal; font-size: 36px; }
+h2 { font-family: 'Alegreya SC', 'Georgia', serif; font-weight: normal; font-size: 30px; font-style: italic; }
+h3 { font-family: 'Alegreya SC', 'Georgia', serif; font-weight: normal; font-size: 20px; font-style: italic; }
+h4 { font-family: 'Alegreya SC', 'Georgia', serif; font-weight: normal; font-size: 18px; }
+h5 { font-family: 'Alegreya SC', 'Georgia', serif; font-weight: normal; font-size: 15px; font-style: italic; }
+h6 { font-family: 'Alegreya SC', 'Georgia', serif; font-weight: normal; font-size: 12px; }
+a { color: var(--container-link); font-style: italic; }
+body { font-family: 'Alegreya', serif; background-color: var(--page-bg); }
 
 code {
     font-family: Consolas, "courier new";
@@ -117,16 +72,13 @@ main section {
 main section h1,
 main section h2,
 main section h3,
+main section h4,
+main section h5,
+main section h6,
 main section p,
 main section li,
 main section iframe {
-    padding: 10px;
-}
-
-main section h4,
-main section h5,
-main section h6 {
-    padding: 5px 20px 5px 20px;
+    padding: 5px 10px 5px 10px;
 }
 
 main section ul {
@@ -169,6 +121,13 @@ main section .line-br {
     border-color: var(--container-link);
 }
 
+main section .line-left {
+    border-width: 0px;
+    border-left-width: 1px;
+    border-style: solid;
+    border-color: var(--container-link);
+}
+
 main section .header-block {
     display: flex;
     align-items: baseline;
@@ -179,6 +138,33 @@ main section .entry-block {
     display: flex;
     align-items: baseline;
     justify-content: left;
+    padding-left: 30px;
+}
+
+main section .profile-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    padding-left: 30px;
+}
+
+main section .profile-content {
+    padding-left: 50px;
+}
+
+main section .profile-header h3,
+main section .profile-header h4,
+main section .profile-header h5,
+main section .profile-header h6 {
+    padding: 2px;
+}
+
+main section .profile-header h4,
+main section .profile-header h5,
+main section .profile-header h6,
+main section .profile-block h5,
+main section .profile-block h6 {
+    color: var(--orange-neutral);
 }
 
 .nopadding {
@@ -283,46 +269,6 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.collapse-section-header {
-    display: flex;
-    min-height: 50px;
-    width: 100%;
-    align-items: center;
-}
-
-.collapse-section-header h1,
-.collapse-section-header h2,
-.collapse-section-header h3,
-.collapse-section-header h4,
-.collapse-section-header h5,
-.collapse-section-header h6 {
-    margin-right: auto;
-}
-
-.collapse-section-content {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    transition:
-        max-height 0.3s ease,
-        margin 0.3s ease,
-        padding 0.3s ease;
-    border-radius: 20px;
-    background: var(--collapse-section-content-bg);
-}
-
-.collapse-section-content h1,
-.collapse-section-content h2,
-.collapse-section-content h3 {
-    scroll-margin-top: 50px;
-}
-
-.expanded .collapse-section-content {
-    margin: 10px;
-    padding: 10px;
 }
 
 .imgbox {
