@@ -7,7 +7,6 @@
     <title>Calvin Vest</title>
     <meta name="description" content="A little website about me.">
     <meta name="keywords" content="your, hobby, keywords, go, here">
-    <!--Remember to set base href on each page-->
     <base href="">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" type="image/png" href="assets/images/icon.png">
@@ -87,37 +86,89 @@
     <div id="page-container">
         <nav class="sidebar">
             <section>
-                <!--add h3 for section headers-->
-                <!--add ul with li a href links for items of section-->
-                <h3>Section Header</h3>
+                <h3>I don't know what to put here</h3>
+                <p>
+                    Ooh! Y'know what, here's some random Wiki rabbit holes I've been on lately. I'll update
+                    this from time to time, I guess. We'll see.
+                </p>
                 <ul>
                     <li>
-                        <a href="#" class="side-btn">Example link</a>
+                        <a href="https://en.wikipedia.org/wiki/House_of_Romanov" class="side-btn" target="_blank" rel="noopener noreferrer">
+                            <div class="icon-container">
+                                <i class="fa-brands fa-wikipedia-w"></i>
+                            </div>
+                            House of Romanov
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="side-btn">Another example</a>
+                        <a href="https://en.wikipedia.org/wiki/Kievan_Rus%27" class="side-btn" target="_blank" rel="noopener noreferrer">
+                            <div class="icon-container">
+                                <i class="fa-brands fa-wikipedia-w"></i>
+                            </div>
+                            Kievan Rus'
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="side-btn">Yet another example with a really long title.</a>
+                        <a href="https://en.wikipedia.org/wiki/New_Philadelphia_National_Historic_Site" class="side-btn" target="_blank" rel="noopener noreferrer">
+                            <div class="icon-container">
+                                <i class="fa-brands fa-wikipedia-w"></i>
+                            </div>
+                            New Phila. NHS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Pope_Leo_XIV" class="side-btn" target="_blank" rel="noopener noreferrer">
+                            <div class="icon-container">
+                                <i class="fa-brands fa-wikipedia-w"></i>
+                            </div>
+                            Pope Leo XIV
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Sedlec_Ossuary" class="side-btn" target="_blank" rel="noopener noreferrer">
+                            <div class="icon-container">
+                                <i class="fa-brands fa-wikipedia-w"></i>
+                            </div>
+                            Sedlec Ossuary
+                        </a>
                     </li>
                 </ul>
             </section>
         </nav>
 
         <main id="content-wrap">
-            <!--This is filler content. Replace page-by-page -->
-            <section>
-                <h3>This is some example text.</h3>
-                <p>This is some more text.</p>
-                <p>This is even more text with a <a href="#">link</a>.</p>
-            </section>
-            <section>
-                <h3>This is a new section.</h3>
-                <p>This is some text in this new section. It's a pretty long one, so it'll probably create a new line.
-                    I'm mostly putting this much text here because I want to see just how this page wraps this example
-                    text on the page. It's really just a big block of text so I can make sure this page looks really
-                    nice when I put a lot of actual real-world content in here. I haven't done that yet, so this is just
-                    more and more and more text to fill the place in the meantime.</p>
+            <section class="expanded">
+                <div class="collapse-section-header">
+                    <h1>About Me</h1>
+                    <button class="collapse-section-toggle" data-target="about-intro">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </button>
+                </div>
+                <div class="collapse-section-content" data-content="about-intro">
+                    <h2>Who am I?</h2>
+                    <p>
+                        I'm just a guy, closing on 30, with a bunch of hobbies and projects that I keep
+                        myself busy with in my free time.
+                    </p>
+                    <p>
+                        I'm a computer science student, I work in the meat department of a grocery store,
+                        I'm an amateur genealogist, a huge Star Wars fan, and I play too many video games.
+                    </p>
+                    <h2>What is this?</h2>
+                    <p>
+                        This is my website! I wanted a place to show everything off. My hobbies, projects I've
+                        worked on, things I just think are cool, ways to connect with professional contacts and
+                        gaming buddies alike, and a chance for me to keep my web development skills fresh.
+                    </p>
+                    <p>
+                        Granted, this website isn't anything special. Just some bare-bones HTML with some styling
+                        and scripting to make it look pretty, but the content and functionality itself are all pretty
+                        low-grade. I've had plans for how to improve this place ever since its inception, but I really
+                        only work on this in bursts (this is getting added May '25, for what it's worth.)
+                    </p>
+                </div>
             </section>
         </main>
 
