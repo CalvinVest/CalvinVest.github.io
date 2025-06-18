@@ -1,0 +1,20 @@
+.corpus-scripturae {
+    display: inline-block;
+    text-indent: -30px;
+    padding-left: 30px;
+}
+
+.corpus-scripturae sup {
+    color: var(--container-link);
+    font-weight: bold;
+}
+
+.corpus-scripturae sup a {
+    font-weight: 100;
+}
+
+.corpus-scripturae sup:first-of-type {
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 0.8;
+}
