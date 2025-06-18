@@ -85,50 +85,89 @@
     </nav>
 
     <div id="page-container">
-        <nav class="sidebar">
-            <section>
-                <!--add h3 for section headers-->
-                <!--add ul with li a href links for items of section-->
-                <h3>Section Header</h3>
-                <ul>
-                    <li>
-                        <a href="#" class="side-btn">Example link</a>
-                    </li>
-                    <li>
-                        <a href="#" class="side-btn">Another example</a>
-                    </li>
-                    <li>
-                        <a href="#" class="side-btn">Yet another example with a really long title.</a>
-                    </li>
-                </ul>
-            </section>
-        </nav>
+		<nav class="sidebar">
+			<section>
+				<h3>My Universities</h3>
+				<ul>
+					<li>
+						<a class="side-btn"
+							target="_blank" rel="noopener noreferrer">
+							<div class="icon-container">
+								<i class="fa-solid fa-w"></i>
+							</div>
+							Western Governors University
+						</a>
+					</li>
+					<li>
+						<a class="side-btn"
+							target="_blank" rel="noopener noreferrer">
+							<div class="icon-container">
+								<i class="fa-solid fa-e"></i>
+							</div>
+							Southern Illinois University - Edwardsville
+						</a>
+					</li>
+					<li>
+						<a class="side-btn"
+							target="_blank" rel="noopener noreferrer">
+							<div class="icon-container">
+								<i class="fa-solid fa-i"></i>
+							</div>
+							Illinois Central College
+						</a>
+					</li>
+				</ul>
+			</section>
+		</nav>
 
-        <main id="content-wrap">
-            <!--This is filler content. Replace page-by-page -->
-            <section>
-                <h3>This is some example text.</h3>
-                <p>This is some more text.</p>
-                <p>This is even more text with a <a href="#">link</a>.</p>
-            </section>
-            <section>
-                <h3>This is a new section.</h3>
-                <p>This is some text in this new section. It's a pretty long one, so it'll probably create a new line.
-                    I'm mostly putting this much text here because I want to see just how this page wraps this example
-                    text on the page. It's really just a big block of text so I can make sure this page looks really
-                    nice when I put a lot of actual real-world content in here. I haven't done that yet, so this is just
-                    more and more and more text to fill the place in the meantime.</p>
-            </section>
-        </main>
+		<main id="content-wrap">
+            <section class="expanded">
+            <div class="collapse-section-header">
+                <h1>I'm a Computer Science major.</h1>
+                <button class="collapse-section-toggle" data-target="cs-major">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </button>
+            </div>
 
-        <footer id="footer">
-            <p>
-                &copy; 2023 CalvinVest @ github |
-                <a target="_blank" href="https://icons8.com/icon/111021/c">Letter C</a> icon by <a target="_blank"
-                    href="https://icons8.com">Icons8</a>
-            </p>
-        </footer>
-    </div>
+            <div class="collapse-section-content" data-content="cs-major">
+                <p>I've been a student at Western Governor's University since 2021, earning my BSCS.</p>
+            </div>
+            </section>
+
+			<section class="expanded">
+            <div class="collapse-section-header">
+                <h1>I've moved schools a couple times.</h1>
+                <button class="collapse-section-toggle" data-target="moved-schools">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </button>
+            </div>
+
+            <div class="collapse-section-content" data-content="moved-schools">
+                <p>
+                    I first started college courses in the fall of 2014, as a dual-credit high school student. I
+                    started
+                    as an Engineering major. Since then, I've transferred to Southern Illinois University as an
+                    Electrical Engineering, than an Electrical and Computer Engineering student. Around the time of
+                    the
+                    start of the COVID-19 pandemic, I chose to change direction, and start pursuing a degree in
+                    computer
+                    science. I changed my major and transferred to Western Governor's University, and I've been
+                    there
+                    since.
+                </p>
+            </div>
+            </section>
+		</main>
+		<footer id="footer">
+			<p>
+				&copy; 2023-2025 CalvinVest @ github
+			</p>
+		</footer>
+	</div>
 </body>
 
 </html>
