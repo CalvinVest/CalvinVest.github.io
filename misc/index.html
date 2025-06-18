@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Red Page</title>
+	<base href="../">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="icon" type="image/png" href="assets/images/icon.png">
+	<script src="https://kit.fontawesome.com/082c5f5bcb.js" crossorigin="anonymous"></script>
+	<script src="assets/js/scripts.js"></script>
+</head>
+
+<body id="red-page">
+	<nav class="top-navbar">
+		<ul>
+			<li><a href="index.html"><img src="assets/images/logo.png" class="logo"></a></li>
+			<li>
+				<a href="index.html" id="home-button">
+					Home
+					<div class="icon-container">
+						<i class="fa-solid fa-house-chimney"></i>
+					</div>
+				</a>
+			</li>
+			<li class="has-dropdown">
+				<a href="academics/index.html" id="academics-button">
+					Academics
+					<div class="icon-container">
+						<i class="fa-solid fa-graduation-cap"></i>
+					</div>
+				</a>
+				<ul class="dropdown">
+					<li class="list-item"><a href="academics/progress.html">My academic progress</a></li>
+					<li class="list-item"><a href="academics/projects/index.html">School projects</a></li>
+					<li class="list-item"><a href="academics/employment.html">Employers/Job info</a></li>
+				</ul>
+			</li>
+			<li class="has-dropdown">
+				<a href="genealogy/index.html" id="genealogy-button">
+					Genealogy
+					<div class="icon-container">
+						<i class="fa-solid fa-people-roof"></i>
+					</div>
+				</a>
+				<ul class="dropdown">
+					<li class="list-item"><a href="genealogy/progress.html">My Ancestry progress</a></li>
+					<li class="list-item"><a href="genealogy/earlydates.html">How far back does it go?</a></li>
+					<li class="list-item"><a href="genealogy/recent.html">Recent Discoveries</a></li>
+				</ul>
+			</li>
+			<li class="has-dropdown">
+				<a href="programming.html" id="programming-button">
+					Programming
+					<div class="icon-container">
+						<i class="fa-solid fa-code"></i>
+					</div>
+				</a>
+				<ul class="dropdown">
+					<li class="list-item"><a href="programming/projecteuler.html">Project Euler</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="about.html" id="about-button">
+					About
+					<div class="icon-container">
+						<i class="fa-regular fa-circle-question"></i>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="contact.html" id="contact-button">
+					Contact
+					<div class="icon-container">
+						<i class="fa-solid fa-envelope"></i>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="page-container">
+		<nav class="sidebar">
+			<section>
+				<h3>Quick Links</h3>
+				<ul>
+					<li>
+						<a href="genealogy/surnameindex.html" class="side-btn">
+							<div class="icon-container">
+								<i class="fa-solid fa-list"></i>
+							</div>
+							Surname Index
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h3>My Religious Studies</h3>
+				<ul>
+					<li>
+						<a href="athenaeum-annomorensis/antiquis/library/abrahamic/canon/old-testament/pentateuch/genesis.html" class="side-btn">
+							<div class="icon-container">
+								<i class="fa-solid fa-g"></i>
+							</div>
+							Genesis
+						</a>
+					</li>
+				</ul>
+			</section>
+		</nav>
+
+		<main id="content-wrap">
+			<section class="expanded">
+				<div class="collapse-section-header">
+					<h1>Example Section</h1>
+					<button class="collapse-section-toggle" data-target="misc-intro">
+						<div class="icon-container">
+							<i class="fa-solid fa-chevron-up"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse-section-content" data-content="misc-intro">
+					
+				</div>
+			</section>
+		</main>
+
+		<footer id="footer">
+			<p>
+				&copy; 2023-2025 CalvinVest @ github
+			</p>
+		</footer>
+	</div>
+</body>
+
+</html>
