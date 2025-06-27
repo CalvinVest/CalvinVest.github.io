@@ -58,6 +58,10 @@
     --txt-link-hov: var(--orange-neutral);
     --txt-link-curr: var(--orange-neutral);
     --txt-credit: var(--footer-txt);
+
+    --text-blue: #A7C7E7;
+    --text-green: #8FBF8F;
+    --text-purple: #D6A7D1;
     /* ========================= */
 
     /* ================================================== */
@@ -153,3 +157,7 @@
     --footer-txt: var(--page-lightest);
 
 }
+
+.text-blue   { color: var(--text-blue); }
+.text-green  { color: var(--text-green); }
+.text-purple { color: var(--text-purple); }
